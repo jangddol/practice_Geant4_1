@@ -9,7 +9,7 @@
 #include "G4Box.hh"
 
 
-PracDetectorConstruction::PracDetectorConstruction() : G4VUserDetectorConstruct() {}
+PracDetectorConstruction::PracDetectorConstruction() : G4VUserDetectorConstruction() {}
 
 
 PracDetectorConstruction::~PracDetectorConstruction(){}
@@ -17,7 +17,7 @@ PracDetectorConstruction::~PracDetectorConstruction(){}
 
 G4VPhysicalVolume* PracDetectorConstruction::Construct()
 {
-	G4Bool checkOverlaps = true;
+	G4bool checkOverlaps = true;
     // Get nist material manager
 	G4NistManager* nist = G4NistManager::Instance();
 
@@ -43,7 +43,7 @@ G4VPhysicalVolume* PracDetectorConstruction::Construct()
 
 	// Shape
 	G4double shape_sizeXYZ = 0.1;
-	G4Material* shape_material = nist->FindOrBuildMaterial(""G4_POLYETHYLENE""); 
+	G4Material* shape_material = nist->FindOrBuildMaterial("G4_POLYETHYLENE"); 
 	G4ThreeVector shape_position = G4ThreeVector(0, 0, 0);
 
 	G4Box* solidShape = new G4Box("Shape",                                                        // name of the Shape
