@@ -25,7 +25,7 @@ void PracRunAction::BeginOfRunAction(const G4Run*)
 }
 
 
-void PracRunAction::EndOfRunAction(const G4Run*)
+void PracRunAction::EndOfRunAction(const G4Run* run)
 {
 	G4int nofEvents = run->GetNumberOfEvent();
 	if (nofEvents == 0) return;

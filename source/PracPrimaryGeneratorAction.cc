@@ -28,7 +28,7 @@ PracPrimaryGeneratorAction::~PracPrimaryGeneratorAction()
 }
 
 
-void PracPrimaryGeneratorAction::GeneratorPrimaries(G4Event* anEvent)
+void PracPrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
 {
 	G4double x0 = 0;
 	G4double y0 = 0;
