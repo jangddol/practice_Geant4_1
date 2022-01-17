@@ -3,7 +3,7 @@
 #ifndef PracRunAction_h
 #define PracRunAction_h
 
-#include "G4UserRuncAction.hh"
+#include "G4UserRunAction.hh"
 #include "globals.hh"
 
 clas G4Run;
