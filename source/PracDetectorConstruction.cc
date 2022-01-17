@@ -9,7 +9,7 @@
 #include "G4Box.hh"
 
 
-PracDetectorConstruction::PracDetectorConstruction() : G4VUserDetectorConstruc(), fScoringVolume(0){}
+PracDetectorConstruction::PracDetectorConstruction() : G4VUserDetectorConstruct() {}
 
 
 PracDetectorConstruction::~PracDetectorConstruction(){}
@@ -17,7 +17,7 @@ PracDetectorConstruction::~PracDetectorConstruction(){}
 
 G4VPhysicalVolume* PracDetectorConstruction::Construct()
 {
-	G4Boolean checkOverlaps = true;
+	G4Bool checkOverlaps = true;
     // Get nist material manager
 	G4NistManager* nist = G4NistManager::Instance();
 
@@ -25,11 +25,11 @@ G4VPhysicalVolume* PracDetectorConstruction::Construct()
 	G4double world_sizeXYZ = 1;
 	G4Material* world_material = nist->FindOrBuildMaterial("G4_AIR");
 
-	G4Box* solidWolrd = new G4Box("World",														  // name of the world
+	G4Box* solidWorld = new G4Box("World",														  // name of the world
 								  0.5 * world_sizeXYZ, 0.5 * world_sizeXYZ, 0.5 * world_sizeXYZ); // size of the world
 
 	G4LogicalVolume* logicWorld = new G4LogicalVolume(solidWorld, // solid
-													  world_mat,  // material
+													  world_material,  // material
 													  "World");   // name
 	
 	G4VPhysicalVolume* physWorld = new G4PVPlacement(0,               // no rotation
@@ -53,7 +53,7 @@ G4VPhysicalVolume* PracDetectorConstruction::Construct()
 													  shape_material, // material
 													  "Shape");       // name
 
-	G4VPhysicalVolume* physWorld = new G4PVPlacement(0,              // no rotation
+	G4VPhysicalVolume* physShape = new G4PVPlacement(0,              // no rotation
 													 shape_position, // at (0, 0, 0)
 													 logicShape,     // logical volume
 													 "Shape",        // name
