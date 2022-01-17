@@ -42,7 +42,7 @@ G4VPhysicalVolume* PracDetectorConstruction::Construct()
 
 	// Shape
 	G4double shape_sizeXYZ = 0.1;
-	G4Material* shape_material = nist->FindOrBuildMaterial(); // incomplet ///////////////////////////////////////////////////////////////////////
+	G4Material* shape_material = nist->FindOrBuildMaterial(); // incomplete ///////////////////////////////////////////////////////////////////////
 	G4ThreeVector shape_position = G4ThreeVector(0, 0, 0);
 
 	G4Box* solidShape = new G4Box("Shape",                                                        // name of the Shape
@@ -62,7 +62,7 @@ G4VPhysicalVolume* PracDetectorConstruction::Construct()
 							 checkOverlaps); // overlaps checking
 	
 	// Set Shape as scoring volume
-	fScoringVolume = logicShape2;
+	fScoringVolume = logicShape;
 
 	// Always return the physical World
 	return physWorld;
