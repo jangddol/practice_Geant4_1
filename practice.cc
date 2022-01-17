@@ -17,8 +17,8 @@ int main(int argc, char** argv)
 
 	//Physics List - incomplete
 	G4VModularPhysicsList* physicsList = new FTFP_BERT;
-	physicsList->SetVervoseLevel(1);
-	runManager->SetUserInitialization(physicalList);
+	physicsList->SetVerboseLevel(1);
+	runManager->SetUserInitialization(physicsList);
 
 	// Action Initialize
 	runManager->SetUserInitialization(new PracActionInitialization());
