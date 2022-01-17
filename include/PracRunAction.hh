@@ -8,7 +8,7 @@
 
 class G4Run;
 
-class PracRunAction : public G4RUserRunAction
+class PracRunAction : public G4UserRunAction
 {
 	public:
 		PracRunAction();
