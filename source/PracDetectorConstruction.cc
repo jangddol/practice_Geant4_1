@@ -17,7 +17,8 @@ PracDetectorConstruction::~PracDetectorConstruction(){}
 
 G4VPhysicalVolume* PracDetectorConstruction::Construct()
 {
-	// Get nist material manager
+	G4Boolean checkOverlaps = true;
+    // Get nist material manager
 	G4NistManager* nist = G4NistManager::Instance();
 
 	// World
@@ -38,7 +39,7 @@ G4VPhysicalVolume* PracDetectorConstruction::Construct()
 													 0,               // mother volume
 													 false,           // no boolean operation
 													 0,               // copy number
-													 true);           // overlaps checking
+													 checkOverlaps);           // overlaps checking
 
 	// Shape
 	G4double shape_sizeXYZ = 0.1;
@@ -60,9 +61,6 @@ G4VPhysicalVolume* PracDetectorConstruction::Construct()
 													 false,          // no boolean operation
 													 0,              // copy number
 													 checkOverlaps); // overlaps checking
-	
-	// Set Shape as scoring volume
-	fScoringVolume = logicShape;
 
 	// Always return the physical World
 	return physWorld;

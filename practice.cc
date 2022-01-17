@@ -10,13 +10,13 @@
 
 int main(int argc, char** argv)
 {
-	H4UIExecutive* ui = new G4UIExecutive(argc, argv);
+	G4UIExecutive* ui = new G4UIExecutive(argc, argv);
 	
 	//runManager
 	auto* runManager = G4RunManagerFactory::CreateRunManager(G4RunManagerType::Default);
 
 	//Physics List - incomplete
-	G4ModularPhysicsList* physicsList = new FTFP_BERT;
+	G4VModularPhysicsList* physicsList = new FTFP_BERT;
 	physicsList->SetVervoseLevel(1);
 	runManager->SetUserInitialization(physicalList);
 
