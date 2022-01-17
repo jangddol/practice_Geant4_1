@@ -8,7 +8,7 @@ project(Prac)
 # Find Geant4 package
 option(WITH_GEANT4_UIVIS "practice_Geant4_1" ON)
 if(WITH_GEANT4_UIVIS)
-    find_package(Geant REQUIRED ui_all vis_all)
+    find_package(Geant4 REQUIRED ui_all vis_all)
 else()
     find_package(Geant4 REQUIRED)
 endif()
@@ -26,7 +26,7 @@ add_executable(practice practice.cc ${sources} ${headers})
 target_link_libraries(practice ${Geant4_LIBRARIES})
 
 # Copy all scripts to the build derectory
-set(PRACTICE_SCRIPTS practice.in practice.out init_vis.mac run1.mac run2.mac vis.mac)
+set(PRACTICE_SCRIPTS)
 
 foreach(_script ${PRACTICE_SCRIPTS})
     configure_file(${PROJECT_SOURCE_DIR}/${_script} ${PROJECT_BINARY_DIR}/${_script} COPYONLY)
