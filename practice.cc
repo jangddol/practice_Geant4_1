@@ -32,6 +32,18 @@ int main(int argc, char** argv)
 	
 	// User Interface manager
 	G4UImanager* UImanager = G4UImanager::GetUIpointer();
+	if (!ui)
+	{
+		G4String command = "/control/execute ";
+		G4String fileName = argv[1];
+		UImanager->ApplyCommand(command + fileName);
+	}
+	else
+	{
+		UImanager->ApplyCommand("/control/execute init_vis.mac");
+		ui->SessionStart();
+		delete ui;
+	}
 
 	delete visManager;
 	delete runManager;

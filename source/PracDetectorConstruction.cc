@@ -22,7 +22,7 @@ G4VPhysicalVolume* PracDetectorConstruction::Construct()
 
 	// World
 	G4double world_sizeXYZ = 1;
-	G4Material* world_material = nist->FindOrBuildMaterial(); // incomplete //////////////////////////////////////////////////////////////////////
+	G4Material* world_material = nist->FindOrBuildMaterial("G4_AIR");
 
 	G4Box* solidWolrd = new G4Box("World",														  // name of the world
 								  0.5 * world_sizeXYZ, 0.5 * world_sizeXYZ, 0.5 * world_sizeXYZ); // size of the world
@@ -42,7 +42,7 @@ G4VPhysicalVolume* PracDetectorConstruction::Construct()
 
 	// Shape
 	G4double shape_sizeXYZ = 0.1;
-	G4Material* shape_material = nist->FindOrBuildMaterial(); // incomplete ///////////////////////////////////////////////////////////////////////
+	G4Material* shape_material = nist->FindOrBuildMaterial(""G4_POLYETHYLENE""); 
 	G4ThreeVector shape_position = G4ThreeVector(0, 0, 0);
 
 	G4Box* solidShape = new G4Box("Shape",                                                        // name of the Shape
