@@ -6,19 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/sorimjangddol/termhome/practice_Geant4_1/source/PracDetectorConstruction.cc
-PracDetectorConstruction.hh
-/home/sorimjangddol/termhome/practice_Geant4_1/source/PracDetectorConstruction.hh
+/home/sorimjangddol/termhome/practice_Geant4_1/source/PracPrimaryGeneratorAction.cc
+PracPrimaryGeneratorAction.hh
+/home/sorimjangddol/termhome/practice_Geant4_1/source/PracPrimaryGeneratorAction.hh
 G4RunManager.hh
 /home/sorimjangddol/termhome/practice_Geant4_1/source/G4RunManager.hh
-G4LogicalVolume.hh
-/home/sorimjangddol/termhome/practice_Geant4_1/source/G4LogicalVolume.hh
-G4PVPlacement.hh
-/home/sorimjangddol/termhome/practice_Geant4_1/source/G4PVPlacement.hh
-G4NistManager.hh
-/home/sorimjangddol/termhome/practice_Geant4_1/source/G4NistManager.hh
-G4Box.hh
-/home/sorimjangddol/termhome/practice_Geant4_1/source/G4Box.hh
+G4ParticleGun.hh
+/home/sorimjangddol/termhome/practice_Geant4_1/source/G4ParticleGun.hh
+G4ParticleTable.hh
+/home/sorimjangddol/termhome/practice_Geant4_1/source/G4ParticleTable.hh
+G4ParticleDefinition.hh
+/home/sorimjangddol/termhome/practice_Geant4_1/source/G4ParticleDefinition.hh
+G4SystemOfUnits.hh
+/home/sorimjangddol/termhome/practice_Geant4_1/source/G4SystemOfUnits.hh
 
 /opt/clhep/2.4.4.0/include/CLHEP/Geometry/BasicVector3D.h
 iosfwd
@@ -39,18 +39,6 @@ CLHEP/Vector/ThreeVector.h
 /opt/clhep/2.4.4.0/include/CLHEP/Geometry/CLHEP/Vector/ThreeVector.h
 CLHEP/Geometry/BasicVector3D.h
 /opt/clhep/2.4.4.0/include/CLHEP/Geometry/CLHEP/Geometry/BasicVector3D.h
-
-/opt/clhep/2.4.4.0/include/CLHEP/Geometry/Plane3D.h
-iosfwd
--
-CLHEP/Geometry/defs.h
-/opt/clhep/2.4.4.0/include/CLHEP/Geometry/CLHEP/Geometry/defs.h
-CLHEP/Geometry/Point3D.h
-/opt/clhep/2.4.4.0/include/CLHEP/Geometry/CLHEP/Geometry/Point3D.h
-CLHEP/Geometry/Normal3D.h
-/opt/clhep/2.4.4.0/include/CLHEP/Geometry/CLHEP/Geometry/Normal3D.h
-CLHEP/Geometry/Transform3D.h
-/opt/clhep/2.4.4.0/include/CLHEP/Geometry/CLHEP/Geometry/Transform3D.h
 
 /opt/clhep/2.4.4.0/include/CLHEP/Geometry/Point3D.h
 iosfwd
@@ -730,40 +718,6 @@ G4BlockingList.icc
 
 /opt/geant4/10.7.p01/include/Geant4/G4BlockingList.icc
 
-/opt/geant4/10.7.p01/include/Geant4/G4BoundingEnvelope.hh
-vector
--
-geomdefs.hh
-/opt/geant4/10.7.p01/include/Geant4/geomdefs.hh
-G4ThreeVector.hh
-/opt/geant4/10.7.p01/include/Geant4/G4ThreeVector.hh
-G4VoxelLimits.hh
-/opt/geant4/10.7.p01/include/Geant4/G4VoxelLimits.hh
-G4Transform3D.hh
-/opt/geant4/10.7.p01/include/Geant4/G4Transform3D.hh
-G4Point3D.hh
-/opt/geant4/10.7.p01/include/Geant4/G4Point3D.hh
-G4Plane3D.hh
-/opt/geant4/10.7.p01/include/Geant4/G4Plane3D.hh
-
-/opt/geant4/10.7.p01/include/Geant4/G4Box.hh
-G4GeomTypes.hh
-/opt/geant4/10.7.p01/include/Geant4/G4GeomTypes.hh
-G4UBox.hh
-/opt/geant4/10.7.p01/include/Geant4/G4UBox.hh
-G4CSGSolid.hh
-/opt/geant4/10.7.p01/include/Geant4/G4CSGSolid.hh
-G4Polyhedron.hh
-/opt/geant4/10.7.p01/include/Geant4/G4Polyhedron.hh
-G4Box.icc
-/opt/geant4/10.7.p01/include/Geant4/G4Box.icc
-
-/opt/geant4/10.7.p01/include/Geant4/G4Box.icc
-
-/opt/geant4/10.7.p01/include/Geant4/G4CSGSolid.hh
-G4VSolid.hh
-/opt/geant4/10.7.p01/include/Geant4/G4VSolid.hh
-
 /opt/geant4/10.7.p01/include/Geant4/G4ClassificationOfNewTrack.hh
 
 /opt/geant4/10.7.p01/include/Geant4/G4DCofThisEvent.hh
@@ -972,8 +926,6 @@ G4GRSVolume.icc
 
 /opt/geant4/10.7.p01/include/Geant4/G4GRSVolume.icc
 
-/opt/geant4/10.7.p01/include/Geant4/G4GeomConfig.hh
-
 /opt/geant4/10.7.p01/include/Geant4/G4GeomSplitter.hh
 globals.hh
 /opt/geant4/10.7.p01/include/Geant4/globals.hh
@@ -981,10 +933,6 @@ geomwdefs.hh
 /opt/geant4/10.7.p01/include/Geant4/geomwdefs.hh
 G4AutoLock.hh
 /opt/geant4/10.7.p01/include/Geant4/G4AutoLock.hh
-
-/opt/geant4/10.7.p01/include/Geant4/G4GeomTypes.hh
-G4GeomConfig.hh
-/opt/geant4/10.7.p01/include/Geant4/G4GeomConfig.hh
 
 /opt/geant4/10.7.p01/include/Geant4/G4GlobalConfig.hh
 
@@ -997,14 +945,6 @@ G4VHitsCollection.hh
 /opt/geant4/10.7.p01/include/Geant4/G4VHitsCollection.hh
 vector
 -
-
-/opt/geant4/10.7.p01/include/Geant4/G4ICRU90StoppingData.hh
-globals.hh
-/opt/geant4/10.7.p01/include/Geant4/globals.hh
-G4Material.hh
-/opt/geant4/10.7.p01/include/Geant4/G4Material.hh
-G4LPhysicsFreeVector.hh
-/opt/geant4/10.7.p01/include/Geant4/G4LPhysicsFreeVector.hh
 
 /opt/geant4/10.7.p01/include/Geant4/G4IonisParamElm.hh
 G4ios.hh
@@ -1037,10 +977,6 @@ vector
 -
 G4Isotope.hh
 /opt/geant4/10.7.p01/include/Geant4/G4Isotope.hh
-
-/opt/geant4/10.7.p01/include/Geant4/G4LPhysicsFreeVector.hh
-G4PhysicsFreeVector.hh
-/opt/geant4/10.7.p01/include/Geant4/G4PhysicsFreeVector.hh
 
 /opt/geant4/10.7.p01/include/Geant4/G4Log.hh
 G4Types.hh
@@ -1248,56 +1184,6 @@ G4Navigator.icc
 
 /opt/geant4/10.7.p01/include/Geant4/G4Navigator.icc
 
-/opt/geant4/10.7.p01/include/Geant4/G4NistElementBuilder.hh
-vector
--
-CLHEP/Units/PhysicalConstants.h
--
-globals.hh
-/opt/geant4/10.7.p01/include/Geant4/globals.hh
-G4Element.hh
-/opt/geant4/10.7.p01/include/Geant4/G4Element.hh
-G4Threading.hh
-/opt/geant4/10.7.p01/include/Geant4/G4Threading.hh
-
-/opt/geant4/10.7.p01/include/Geant4/G4NistManager.hh
-vector
--
-CLHEP/Units/PhysicalConstants.h
--
-globals.hh
-/opt/geant4/10.7.p01/include/Geant4/globals.hh
-G4Material.hh
-/opt/geant4/10.7.p01/include/Geant4/G4Material.hh
-G4NistElementBuilder.hh
-/opt/geant4/10.7.p01/include/Geant4/G4NistElementBuilder.hh
-G4NistMaterialBuilder.hh
-/opt/geant4/10.7.p01/include/Geant4/G4NistMaterialBuilder.hh
-G4ICRU90StoppingData.hh
-/opt/geant4/10.7.p01/include/Geant4/G4ICRU90StoppingData.hh
-G4Pow.hh
-/opt/geant4/10.7.p01/include/Geant4/G4Pow.hh
-G4Threading.hh
-/opt/geant4/10.7.p01/include/Geant4/G4Threading.hh
-
-/opt/geant4/10.7.p01/include/Geant4/G4NistMaterialBuilder.hh
-vector
--
-CLHEP/Units/PhysicalConstants.h
--
-globals.hh
-/opt/geant4/10.7.p01/include/Geant4/globals.hh
-G4Material.hh
-/opt/geant4/10.7.p01/include/Geant4/G4Material.hh
-G4Threading.hh
-/opt/geant4/10.7.p01/include/Geant4/G4Threading.hh
-
-/opt/geant4/10.7.p01/include/Geant4/G4Normal3D.hh
-globals.hh
-/opt/geant4/10.7.p01/include/Geant4/globals.hh
-CLHEP/Geometry/Normal3D.h
--
-
 /opt/geant4/10.7.p01/include/Geant4/G4NormalNavigation.hh
 iomanip
 -
@@ -1335,12 +1221,6 @@ pwdefs.hh
 /opt/geant4/10.7.p01/include/Geant4/pwdefs.hh
 G4AutoLock.hh
 /opt/geant4/10.7.p01/include/Geant4/G4AutoLock.hh
-
-/opt/geant4/10.7.p01/include/Geant4/G4PVPlacement.hh
-G4VPhysicalVolume.hh
-/opt/geant4/10.7.p01/include/Geant4/G4VPhysicalVolume.hh
-G4Transform3D.hh
-/opt/geant4/10.7.p01/include/Geant4/G4Transform3D.hh
 
 /opt/geant4/10.7.p01/include/Geant4/G4ParameterisedNavigation.hh
 G4Types.hh
@@ -1402,6 +1282,20 @@ G4ParticleDefinition.icc
 
 /opt/geant4/10.7.p01/include/Geant4/G4ParticleDefinition.icc
 
+/opt/geant4/10.7.p01/include/Geant4/G4ParticleGun.hh
+globals.hh
+/opt/geant4/10.7.p01/include/Geant4/globals.hh
+G4VPrimaryGenerator.hh
+/opt/geant4/10.7.p01/include/Geant4/G4VPrimaryGenerator.hh
+G4ThreeVector.hh
+/opt/geant4/10.7.p01/include/Geant4/G4ThreeVector.hh
+G4ParticleDefinition.hh
+/opt/geant4/10.7.p01/include/Geant4/G4ParticleDefinition.hh
+G4PrimaryVertex.hh
+/opt/geant4/10.7.p01/include/Geant4/G4PrimaryVertex.hh
+G4ParticleMomentum.hh
+/opt/geant4/10.7.p01/include/Geant4/G4ParticleMomentum.hh
+
 /opt/geant4/10.7.p01/include/Geant4/G4ParticleMomentum.hh
 G4ThreeVector.hh
 /opt/geant4/10.7.p01/include/Geant4/G4ThreeVector.hh
@@ -1429,14 +1323,6 @@ map
 -
 G4ParticleDefinition.hh
 /opt/geant4/10.7.p01/include/Geant4/G4ParticleDefinition.hh
-
-/opt/geant4/10.7.p01/include/Geant4/G4PhysicsFreeVector.hh
-G4DataVector.hh
-/opt/geant4/10.7.p01/include/Geant4/G4DataVector.hh
-G4PhysicsVector.hh
-/opt/geant4/10.7.p01/include/Geant4/G4PhysicsVector.hh
-globals.hh
-/opt/geant4/10.7.p01/include/Geant4/globals.hh
 
 /opt/geant4/10.7.p01/include/Geant4/G4PhysicsModelCatalog.hh
 vector
@@ -1485,40 +1371,6 @@ G4PhysicsVector.icc
 /opt/geant4/10.7.p01/include/Geant4/G4PhysicsVector.icc
 
 /opt/geant4/10.7.p01/include/Geant4/G4PhysicsVectorType.hh
-
-/opt/geant4/10.7.p01/include/Geant4/G4Plane3D.hh
-G4Normal3D.hh
-/opt/geant4/10.7.p01/include/Geant4/G4Normal3D.hh
-G4Point3D.hh
-/opt/geant4/10.7.p01/include/Geant4/G4Point3D.hh
-globals.hh
-/opt/geant4/10.7.p01/include/Geant4/globals.hh
-CLHEP/Geometry/Plane3D.h
--
-
-/opt/geant4/10.7.p01/include/Geant4/G4Point3D.hh
-globals.hh
-/opt/geant4/10.7.p01/include/Geant4/globals.hh
-CLHEP/Geometry/Point3D.h
--
-
-/opt/geant4/10.7.p01/include/Geant4/G4Polyhedron.hh
-globals.hh
-/opt/geant4/10.7.p01/include/Geant4/globals.hh
-HepPolyhedron.h
-/opt/geant4/10.7.p01/include/Geant4/HepPolyhedron.h
-G4Visible.hh
-/opt/geant4/10.7.p01/include/Geant4/G4Visible.hh
-
-/opt/geant4/10.7.p01/include/Geant4/G4Pow.hh
-G4DataVector.hh
-/opt/geant4/10.7.p01/include/Geant4/G4DataVector.hh
-G4Exp.hh
-/opt/geant4/10.7.p01/include/Geant4/G4Exp.hh
-G4Log.hh
-/opt/geant4/10.7.p01/include/Geant4/G4Log.hh
-globals.hh
-/opt/geant4/10.7.p01/include/Geant4/globals.hh
 
 /opt/geant4/10.7.p01/include/Geant4/G4PrimaryParticle.hh
 globals.hh
@@ -1914,6 +1766,10 @@ G4String.icc
 
 /opt/geant4/10.7.p01/include/Geant4/G4String.icc
 
+/opt/geant4/10.7.p01/include/Geant4/G4SystemOfUnits.hh
+CLHEP/Units/SystemOfUnits.h
+-
+
 /opt/geant4/10.7.p01/include/Geant4/G4Threading.hh
 G4Types.hh
 /opt/geant4/10.7.p01/include/Geant4/G4Types.hh
@@ -2080,40 +1936,6 @@ complex
 tls.hh
 /opt/geant4/10.7.p01/include/Geant4/tls.hh
 
-/opt/geant4/10.7.p01/include/Geant4/G4UAdapter.hh
-G4ThreeVector.hh
-/opt/geant4/10.7.p01/include/Geant4/G4ThreeVector.hh
-G4VSolid.hh
-/opt/geant4/10.7.p01/include/Geant4/G4VSolid.hh
-G4AffineTransform.hh
-/opt/geant4/10.7.p01/include/Geant4/G4AffineTransform.hh
-G4VoxelLimits.hh
-/opt/geant4/10.7.p01/include/Geant4/G4VoxelLimits.hh
-G4VGraphicsScene.hh
-/opt/geant4/10.7.p01/include/Geant4/G4VGraphicsScene.hh
-G4Polyhedron.hh
-/opt/geant4/10.7.p01/include/Geant4/G4Polyhedron.hh
-G4VisExtent.hh
-/opt/geant4/10.7.p01/include/Geant4/G4VisExtent.hh
-G4BoundingEnvelope.hh
-/opt/geant4/10.7.p01/include/Geant4/G4BoundingEnvelope.hh
-G4AutoLock.hh
-/opt/geant4/10.7.p01/include/Geant4/G4AutoLock.hh
-G4GeomTypes.hh
-/opt/geant4/10.7.p01/include/Geant4/G4GeomTypes.hh
-VecGeom/base/Global.h
--
-VecGeom/base/Vector3D.h
--
-
-/opt/geant4/10.7.p01/include/Geant4/G4UBox.hh
-G4UAdapter.hh
-/opt/geant4/10.7.p01/include/Geant4/G4UAdapter.hh
-VecGeom/volumes/UnplacedBox.h
--
-G4Polyhedron.hh
-/opt/geant4/10.7.p01/include/Geant4/G4Polyhedron.hh
-
 /opt/geant4/10.7.p01/include/Geant4/G4UIcommand.hh
 vector
 -
@@ -2180,12 +2002,6 @@ G4VSolid.hh
 G4ThreeVector.hh
 /opt/geant4/10.7.p01/include/Geant4/G4ThreeVector.hh
 
-/opt/geant4/10.7.p01/include/Geant4/G4VGraphicsScene.hh
-globals.hh
-/opt/geant4/10.7.p01/include/Geant4/globals.hh
-G4Transform3D.hh
-/opt/geant4/10.7.p01/include/Geant4/G4Transform3D.hh
-
 /opt/geant4/10.7.p01/include/Geant4/G4VHitsCollection.hh
 globals.hh
 /opt/geant4/10.7.p01/include/Geant4/globals.hh
@@ -2235,6 +2051,10 @@ G4VPhysicalVolume.icc
 /opt/geant4/10.7.p01/include/Geant4/G4VPhysicalVolume.icc
 
 /opt/geant4/10.7.p01/include/Geant4/G4VPhysicalVolume.icc
+
+/opt/geant4/10.7.p01/include/Geant4/G4VPrimaryGenerator.hh
+G4ThreeVector.hh
+/opt/geant4/10.7.p01/include/Geant4/G4ThreeVector.hh
 
 /opt/geant4/10.7.p01/include/Geant4/G4VProcess.hh
 cmath
@@ -2314,13 +2134,9 @@ globals.hh
 G4ThreeVector.hh
 /opt/geant4/10.7.p01/include/Geant4/G4ThreeVector.hh
 
-/opt/geant4/10.7.p01/include/Geant4/G4VUserDetectorConstruction.hh
-globals.hh
-/opt/geant4/10.7.p01/include/Geant4/globals.hh
-vector
--
-
 /opt/geant4/10.7.p01/include/Geant4/G4VUserEventInformation.hh
+
+/opt/geant4/10.7.p01/include/Geant4/G4VUserPrimaryGeneratorAction.hh
 
 /opt/geant4/10.7.p01/include/Geant4/G4VUserTrackInformation.hh
 globals.hh
@@ -2329,38 +2145,6 @@ globals.hh
 /opt/geant4/10.7.p01/include/Geant4/G4VVolumeMaterialScanner.hh
 G4Types.hh
 /opt/geant4/10.7.p01/include/Geant4/G4Types.hh
-
-/opt/geant4/10.7.p01/include/Geant4/G4VisExtent.hh
-globals.hh
-/opt/geant4/10.7.p01/include/Geant4/globals.hh
-G4Point3D.hh
-/opt/geant4/10.7.p01/include/Geant4/G4Point3D.hh
-G4Transform3D.hh
-/opt/geant4/10.7.p01/include/Geant4/G4Transform3D.hh
-
-/opt/geant4/10.7.p01/include/Geant4/G4Visible.hh
-globals.hh
-/opt/geant4/10.7.p01/include/Geant4/globals.hh
-iostream
--
-G4Visible.icc
-/opt/geant4/10.7.p01/include/Geant4/G4Visible.icc
-
-/opt/geant4/10.7.p01/include/Geant4/G4Visible.icc
-
-/opt/geant4/10.7.p01/include/Geant4/G4VoxelLimits.hh
-G4Types.hh
-/opt/geant4/10.7.p01/include/Geant4/G4Types.hh
-geomdefs.hh
-/opt/geant4/10.7.p01/include/Geant4/geomdefs.hh
-G4ThreeVector.hh
-/opt/geant4/10.7.p01/include/Geant4/G4ThreeVector.hh
-assert.h
--
-G4VoxelLimits.icc
-/opt/geant4/10.7.p01/include/Geant4/G4VoxelLimits.icc
-
-/opt/geant4/10.7.p01/include/Geant4/G4VoxelLimits.icc
 
 /opt/geant4/10.7.p01/include/Geant4/G4VoxelNavigation.hh
 geomdefs.hh
@@ -2401,16 +2185,6 @@ G4Types.hh
 /opt/geant4/10.7.p01/include/Geant4/G4Types.hh
 iostream
 -
-
-/opt/geant4/10.7.p01/include/Geant4/HepPolyhedron.h
-G4Types.hh
-/opt/geant4/10.7.p01/include/Geant4/G4Types.hh
-G4Point3D.hh
-/opt/geant4/10.7.p01/include/Geant4/G4Point3D.hh
-G4Normal3D.hh
-/opt/geant4/10.7.p01/include/Geant4/G4Normal3D.hh
-G4Transform3D.hh
-/opt/geant4/10.7.p01/include/Geant4/G4Transform3D.hh
 
 /opt/geant4/10.7.p01/include/Geant4/PTL/Globals.hh
 algorithm
@@ -2530,9 +2304,11 @@ G4GlobalConfig.hh
 G4Types.hh
 /opt/geant4/10.7.p01/include/Geant4/G4Types.hh
 
-include/PracDetectorConstruction.hh
-G4VUserDetectorConstruction.hh
-include/G4VUserDetectorConstruction.hh
+include/PracPrimaryGeneratorAction.hh
+G4VUserPrimaryGeneratorAction.hh
+include/G4VUserPrimaryGeneratorAction.hh
+G4ParticleGun.hh
+include/G4ParticleGun.hh
 globals.hh
 include/globals.hh
 
