@@ -6,7 +6,7 @@
 #include "PracDetectorConstruction.hh"
 #include "PracActionInitialization.hh"
 
-
+#include "FTFP_BERT.hh"
 
 int main(int argc, char** argv)
 {
@@ -16,7 +16,7 @@ int main(int argc, char** argv)
 	auto* runManager = G4RunManagerFactory::CreateRunManager(G4RunManagerType::Default);
 
 	//Physics List - incomplete
-	G4ModularPhysicsList* physicsList = new ;
+	G4ModularPhysicsList* physicsList = new FTFP_BERT;
 	physicsList->SetVervoseLevel(1);
 	runManager->SetUserInitialization(physicalList);
 
