@@ -6,7 +6,7 @@
 #include "G4UserRunAction.hh"
 #include "globals.hh"
 
-clas G4Run;
+class G4Run;
 
 class PracRunAction : public G4RUserRunAction
 {
@@ -15,7 +15,7 @@ class PracRunAction : public G4RUserRunAction
 		virtual ~PracRunAction();
 
 		virtual void BeginOfRunAction(const G4Run*);
-		virtual coid EndOfRunAction(const G4Run*);
+		virtual void EndOfRunAction(const G4Run*);
 };
 
 #endif

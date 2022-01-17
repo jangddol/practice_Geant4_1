@@ -16,7 +16,7 @@ class PracSteppingAction : public G4UserSteppingAction
 		PracSteppingAction(PracEventAction* eventAction);
 		virtual ~PracSteppingAction();
 
-		virtual void UserSteppingAction(const G4step*);
+		virtual void UserSteppingAction(const G4Step*);
 	
 	private:
 		PracEventAction* fEventAction;
