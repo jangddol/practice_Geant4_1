@@ -12,7 +12,7 @@ PracEventAction::PracEventAction(PracRunAction* runAction) : G4UserEventAction()
 }
 
 
-PracEventAction::~PracEventACtion() {}
+PracEventAction::~PracEventAction() {}
 
 
 void PracEventAction::BeginOfEventAction(const G4Event*)
