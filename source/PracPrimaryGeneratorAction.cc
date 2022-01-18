@@ -30,9 +30,9 @@ PracPrimaryGeneratorAction::~PracPrimaryGeneratorAction()
 
 void PracPrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
 {
-	G4double x0 = 0;
-	G4double y0 = 0;
-	G4double z0 = -0.5;
+	G4double x0 = 0*m;
+	G4double y0 = 0*m;
+	G4double z0 = -0.5*m;
 
 	fParticleGun->SetParticlePosition(G4ThreeVector(x0, y0, z0));
 
