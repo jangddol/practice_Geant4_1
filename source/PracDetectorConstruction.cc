@@ -5,6 +5,7 @@
 #include "G4PVPlacement.hh"
 
 #include "G4NistManager.hh"
+#include "G4SystemOfUnit"
 
 #include "G4Box.hh"
 
@@ -22,15 +23,15 @@ G4VPhysicalVolume* PracDetectorConstruction::Construct()
 	G4NistManager* nist = G4NistManager::Instance();
 
 	// World
-	G4double world_sizeXYZ = 1;
+	G4double world_sizeXYZ = 1*m;
 	G4Material* world_material = nist->FindOrBuildMaterial("G4_AIR");
 
 	G4Box* solidWorld = new G4Box("World",														  // name of the world
 								  0.5 * world_sizeXYZ, 0.5 * world_sizeXYZ, 0.5 * world_sizeXYZ); // size of the world
 
-	G4LogicalVolume* logicWorld = new G4LogicalVolume(solidWorld, // solid
+	G4LogicalVolume* logicWorld = new G4LogicalVolume(solidWorld,      // solid
 													  world_material,  // material
-													  "World");   // name
+													  "World");        // name
 	
 	G4VPhysicalVolume* physWorld = new G4PVPlacement(0,               // no rotation
 													 G4ThreeVector(), // at (0, 0, 0)
@@ -39,10 +40,10 @@ G4VPhysicalVolume* PracDetectorConstruction::Construct()
 													 0,               // mother volume
 													 false,           // no boolean operation
 													 0,               // copy number
-													 checkOverlaps);           // overlaps checking
+													 checkOverlaps);  // overlaps checking
 
 	// Shape
-	G4double shape_sizeXYZ = 0.1;
+	G4double shape_sizeXYZ = 0.1*m;
 	G4Material* shape_material = nist->FindOrBuildMaterial("G4_POLYETHYLENE"); 
 	G4ThreeVector shape_position = G4ThreeVector(0, 0, 0);
 

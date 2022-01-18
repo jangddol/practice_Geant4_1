@@ -6,18 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/sorimjangddol/termhome/practice_Geant4_1/source/PracActionInitialization.cc
-PracActionInitialization.hh
-/home/sorimjangddol/termhome/practice_Geant4_1/source/PracActionInitialization.hh
-PracPrimaryGeneratorAction.hh
-/home/sorimjangddol/termhome/practice_Geant4_1/source/PracPrimaryGeneratorAction.hh
-PracRunAction.hh
-/home/sorimjangddol/termhome/practice_Geant4_1/source/PracRunAction.hh
-PracEventAction.hh
-/home/sorimjangddol/termhome/practice_Geant4_1/source/PracEventAction.hh
-PracSteppingAction.hh
-/home/sorimjangddol/termhome/practice_Geant4_1/source/PracSteppingAction.hh
-
 /home/sorimjangddol/termhome/practice_Geant4_1/source/PracSteppingAction.cc
 PracSteppingAction.hh
 /home/sorimjangddol/termhome/practice_Geant4_1/source/PracSteppingAction.hh
@@ -472,20 +460,6 @@ G4ParticleDefinition.icc
 
 /opt/geant4/10.7.p01/include/Geant4/G4ParticleDefinition.icc
 
-/opt/geant4/10.7.p01/include/Geant4/G4ParticleGun.hh
-globals.hh
-/opt/geant4/10.7.p01/include/Geant4/globals.hh
-G4VPrimaryGenerator.hh
-/opt/geant4/10.7.p01/include/Geant4/G4VPrimaryGenerator.hh
-G4ThreeVector.hh
-/opt/geant4/10.7.p01/include/Geant4/G4ThreeVector.hh
-G4ParticleDefinition.hh
-/opt/geant4/10.7.p01/include/Geant4/G4ParticleDefinition.hh
-G4PrimaryVertex.hh
-/opt/geant4/10.7.p01/include/Geant4/G4PrimaryVertex.hh
-G4ParticleMomentum.hh
-/opt/geant4/10.7.p01/include/Geant4/G4ParticleMomentum.hh
-
 /opt/geant4/10.7.p01/include/Geant4/G4ParticleMomentum.hh
 G4ThreeVector.hh
 /opt/geant4/10.7.p01/include/Geant4/G4ThreeVector.hh
@@ -523,28 +497,6 @@ G4PhysicsVector.icc
 /opt/geant4/10.7.p01/include/Geant4/G4PhysicsVector.icc
 
 /opt/geant4/10.7.p01/include/Geant4/G4PhysicsVectorType.hh
-
-/opt/geant4/10.7.p01/include/Geant4/G4PrimaryParticle.hh
-globals.hh
-/opt/geant4/10.7.p01/include/Geant4/globals.hh
-G4Allocator.hh
-/opt/geant4/10.7.p01/include/Geant4/G4Allocator.hh
-G4ThreeVector.hh
-/opt/geant4/10.7.p01/include/Geant4/G4ThreeVector.hh
-pwdefs.hh
-/opt/geant4/10.7.p01/include/Geant4/pwdefs.hh
-
-/opt/geant4/10.7.p01/include/Geant4/G4PrimaryVertex.hh
-globals.hh
-/opt/geant4/10.7.p01/include/Geant4/globals.hh
-pwdefs.hh
-/opt/geant4/10.7.p01/include/Geant4/pwdefs.hh
-G4Allocator.hh
-/opt/geant4/10.7.p01/include/Geant4/G4Allocator.hh
-G4ThreeVector.hh
-/opt/geant4/10.7.p01/include/Geant4/G4ThreeVector.hh
-G4PrimaryParticle.hh
-/opt/geant4/10.7.p01/include/Geant4/G4PrimaryParticle.hh
 
 /opt/geant4/10.7.p01/include/Geant4/G4Profiler.hh
 G4GlobalConfig.hh
@@ -802,12 +754,6 @@ complex
 tls.hh
 /opt/geant4/10.7.p01/include/Geant4/tls.hh
 
-/opt/geant4/10.7.p01/include/Geant4/G4UserEventAction.hh
-
-/opt/geant4/10.7.p01/include/Geant4/G4UserRunAction.hh
-G4Types.hh
-/opt/geant4/10.7.p01/include/Geant4/G4Types.hh
-
 /opt/geant4/10.7.p01/include/Geant4/G4UserSteppingAction.hh
 
 /opt/geant4/10.7.p01/include/Geant4/G4VExceptionHandler.hh
@@ -834,10 +780,6 @@ G4VPhysicalVolume.icc
 
 /opt/geant4/10.7.p01/include/Geant4/G4VPhysicalVolume.icc
 
-/opt/geant4/10.7.p01/include/Geant4/G4VPrimaryGenerator.hh
-G4ThreeVector.hh
-/opt/geant4/10.7.p01/include/Geant4/G4ThreeVector.hh
-
 /opt/geant4/10.7.p01/include/Geant4/G4VTouchable.hh
 G4Types.hh
 /opt/geant4/10.7.p01/include/Geant4/G4Types.hh
@@ -849,10 +791,6 @@ G4VTouchable.icc
 /opt/geant4/10.7.p01/include/Geant4/G4VTouchable.icc
 
 /opt/geant4/10.7.p01/include/Geant4/G4VTouchable.icc
-
-/opt/geant4/10.7.p01/include/Geant4/G4VUserActionInitialization.hh
-
-/opt/geant4/10.7.p01/include/Geant4/G4VUserPrimaryGeneratorAction.hh
 
 /opt/geant4/10.7.p01/include/Geant4/G4VUserTrackInformation.hh
 globals.hh
@@ -955,30 +893,6 @@ G4GlobalConfig.hh
 /opt/geant4/10.7.p01/include/Geant4/trkdefs.hh
 G4Types.hh
 /opt/geant4/10.7.p01/include/Geant4/G4Types.hh
-
-include/PracActionInitialization.hh
-G4VUserActionInitialization.hh
-include/G4VUserActionInitialization.hh
-
-include/PracEventAction.hh
-G4UserEventAction.hh
-include/G4UserEventAction.hh
-globals.hh
-include/globals.hh
-
-include/PracPrimaryGeneratorAction.hh
-G4VUserPrimaryGeneratorAction.hh
-include/G4VUserPrimaryGeneratorAction.hh
-G4ParticleGun.hh
-include/G4ParticleGun.hh
-globals.hh
-include/globals.hh
-
-include/PracRunAction.hh
-G4UserRunAction.hh
-include/G4UserRunAction.hh
-globals.hh
-include/globals.hh
 
 include/PracSteppingAction.hh
 G4UserSteppingAction.hh

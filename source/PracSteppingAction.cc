@@ -10,7 +10,6 @@
 
 PracSteppingAction::PracSteppingAction(PracEventAction* eventAction)
 {
-    G4cout << "Step is Constructed." << G4endl;
     // 밑에서 언급중인 fScoring 관련이 필요하면 아마 여기에 fScoringVolume의 초기화가 들어가야 할텐데
     // 일단 빼보고 해봅시다.
 }
@@ -18,7 +17,7 @@ PracSteppingAction::PracSteppingAction(PracEventAction* eventAction)
 
 PracSteppingAction::~PracSteppingAction()
 {
-    G4cout << "Step is Destructed." << G4endl;
+    // pass
 }
 
 
