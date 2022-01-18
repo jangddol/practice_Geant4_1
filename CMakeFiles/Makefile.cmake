@@ -11,6 +11,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.16.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeSystem.cmake"
   "CMakeLists.txt"
+  "init_vis.mac"
+  "vis.mac"
   "/opt/clhep/2.4.4.0/lib/CLHEP-2.4.4.0/CLHEPConfig.cmake"
   "/opt/clhep/2.4.4.0/lib/CLHEP-2.4.4.0/CLHEPConfigVersion.cmake"
   "/opt/clhep/2.4.4.0/lib/CLHEP-2.4.4.0/CLHEPLibraryDepends-relwithdebinfo.cmake"
@@ -115,6 +117,8 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
+  "init_vis.mac"
+  "vis.mac"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
