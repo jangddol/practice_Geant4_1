@@ -1,8 +1,8 @@
 /run/verbose 2
 /run/initialize /control/execute vis.ma/tracking/storeTrajectory 2
+/run/verbose 2
 /run/verbose 0
-er/create OGL
-/vis/viewer/create ! ! 600x600-0+0
+vis/viewer/create ! ! 600x600-0+0
 /vis/viewer/refresh
 /vis/viewer/set/autoRefresh false
 /vis/verbose errors
@@ -51,6 +51,10 @@ er/create OGL
 /vis/viewer/refresh
 /vis/verbose warnings
 /run/beamOn 1
+/vis/viewer/set/style w
+/vis/viewer/refresh
+/vis/viewer/set/hiddenEdge 0
+/vis/viewer/refresh
 /run/beamOn 1
 /run/beamOn 1
 /run/beamOn 1
@@ -80,86 +84,101 @@ er/create OGL
 /run/beamOn 1
 /run/beamOn 1
 /run/beamOn 1
-/run/beamOn 50
-/run/beamOn 50
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/verbose 2
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
+/run/beamOn 1
 /run/verbose 0
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/vis/viewer/set/style s
-/vis/viewer/refresh
-/vis/viewer/set/hiddenEdge 0
-/vis/viewer/refresh
-/vis/viewer/set/style w
-/vis/viewer/refresh
-/vis/viewer/set/hiddenEdge 1
-/vis/viewer/refresh
-/run/beamOn 1
-/vis/viewer/set/style w
-/vis/viewer/refresh
-/vis/viewer/set/hiddenEdge 1
-/vis/viewer/refresh
-/vis/viewer/set/style s
-/vis/viewer/refresh
-/vis/viewer/set/hiddenEdge 1
-/vis/viewer/refresh
-/vis/viewer/set/style s
-/vis/viewer/refresh
-/vis/viewer/set/hiddenEdge 0
-/vis/viewer/refresh
-/vis/viewer/set/style w
-/vis/viewer/refresh
-/vis/viewer/set/hiddenEdge 1
-/vis/viewer/refresh
-/vis/viewer/set/style w
-/vis/viewer/refresh
-/vis/viewer/set/hiddenEdge 0
-/vis/viewer/refresh
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
-/run/beamOn 1
 /run/beamOn 1
 /run/beamOn 1
 /run/beamOn 1
