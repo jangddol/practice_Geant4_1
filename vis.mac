@@ -49,7 +49,7 @@
 
 # To get nice view
 # Make the "World" box invisible
-/vis/geometry/set/visibility World 0 true
+/vis/geometry/set/visibility World 0 false
 
 /vis/viewer/set/style surface
 /vis/viewer/set/hiddenMarker true

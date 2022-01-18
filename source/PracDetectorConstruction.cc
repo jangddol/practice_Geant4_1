@@ -5,7 +5,7 @@
 #include "G4PVPlacement.hh"
 
 #include "G4NistManager.hh"
-#include "G4SystemOfUnit"
+#include "G4SystemOfUnits.hh"
 
 #include "G4Box.hh"
 
@@ -24,7 +24,7 @@ G4VPhysicalVolume* PracDetectorConstruction::Construct()
 
 	// World
 	G4double world_sizeXYZ = 1*m;
-	G4Material* world_material = nist->FindOrBuildMaterial("G4_AIR");
+	G4Material* world_material = nist->FindOrBuildMaterial("G4_Galactic");
 
 	G4Box* solidWorld = new G4Box("World",														  // name of the world
 								  0.5 * world_sizeXYZ, 0.5 * world_sizeXYZ, 0.5 * world_sizeXYZ); // size of the world
