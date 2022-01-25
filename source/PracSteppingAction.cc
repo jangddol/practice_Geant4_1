@@ -32,8 +32,5 @@ void PracSteppingAction::UserSteppingAction(const G4Step* step)
     G4cout << "Step Length                 : " << (step->GetStepLength())/cm << G4endl;
     G4cout << "Total Energy Deposit        : " << step->GetTotalEnergyDeposit() << G4endl;
     G4cout << "Delta Position              : " << step->GetDeltaPosition() << G4endl;
-    G4cout << "Delta Time                  : " << step->GetDeltaTime() << G4endl;
-    G4cout << "Delta Momentum              : " << step->GetDeltaMomentum() << G4endl;
-    G4cout << "Delta Energy                : " << step->GetDeltaEnergy() << G4endl;
     G4cout << "====================  End of Step Information (Manual)  ====================" << G4endl;
 }
