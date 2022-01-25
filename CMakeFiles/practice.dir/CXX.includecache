@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+/home/sorimjangddol/termhome/practice_Geant4_1/source/PracEventAction.cc
+PracEventAction.hh
+/home/sorimjangddol/termhome/practice_Geant4_1/source/PracEventAction.hh
+G4Event.hh
+/home/sorimjangddol/termhome/practice_Geant4_1/source/G4Event.hh
+
 /home/sorimjangddol/termhome/practice_Geant4_1/source/PracSteppingAction.cc
 PracSteppingAction.hh
 /home/sorimjangddol/termhome/practice_Geant4_1/source/PracSteppingAction.hh

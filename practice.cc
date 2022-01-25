@@ -15,7 +15,7 @@ int main(int argc, char** argv)
 	//runManager
 	auto* runManager = G4RunManagerFactory::CreateRunManager(G4RunManagerType::Default);
 
-	//Physics List - incomplete
+	//Physics List
 	G4VModularPhysicsList* physicsList = new FTFP_BERT;
 	physicsList->SetVerboseLevel(1);
 	runManager->SetUserInitialization(physicsList);

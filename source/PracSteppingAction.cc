@@ -33,14 +33,16 @@ void PracSteppingAction::UserSteppingAction(const G4Step* step)
     G4cout << "Total Energy Deposit        : " << step->GetTotalEnergyDeposit() << G4endl;
     G4cout << "Delta Position              : " << step->GetDeltaPosition() << G4endl;
     G4cout << "====================  End of Step Information (Manual)  ====================" << G4endl;
+    G4cout << G4endl;
     
     if (!fScoringVolume)
     {
         const PracDetectorConstruction* detectorConstruction = static_cast<const PracDetectorConstruction*>(G4RunManager::GetRunManager()->GetUserDetectorConstruction());
+        fScoringVolume = detectorConstruction->GetScoringVolume();
     }
-    G4LogicalVolume* currentLogicalVolume = step->GetTrack()->GetVolume()->GetLogicalVolume();
+    G4LogicalVolume* currentLogicalVolume = step->GetPreStepPoint()->GetTouchableHandle()->GetVolume()->GetLogicalVolume();
     
-    if (currentLogicalVolume == fScoringVolume)
+    if ((currentLogicalVolume == fScoringVolume) && (step->GetTrack()->GetTrackID()==1))
     {
         fEventAction->AddEnergyDeposit(step->GetTotalEnergyDeposit());
         fEventAction->AddStepLength(step->GetTrack()->GetStepLength());

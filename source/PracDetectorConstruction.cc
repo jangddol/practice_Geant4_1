@@ -62,7 +62,8 @@ G4VPhysicalVolume* PracDetectorConstruction::Construct()
 													 false,          // no boolean operation
 													 0,              // copy number
 													 checkOverlaps); // overlaps checking
-
+    
+    fScoringVolume = logicShape;
 	// Always return the physical World
 	return physWorld;
 }

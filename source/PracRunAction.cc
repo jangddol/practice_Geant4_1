@@ -19,7 +19,7 @@ PracRunAction::PracRunAction() : G4UserRunAction()
 PracRunAction::~PracRunAction() {}
 
 
-void PracRunAction::BeginOfRunAction(const G4Run* run)
+void PracRunAction::BeginOfRunAction(const G4Run*)
 {
     // pass
 }

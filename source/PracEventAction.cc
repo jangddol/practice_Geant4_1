@@ -16,7 +16,8 @@ PracEventAction::~PracEventAction() {}
 
 void PracEventAction::BeginOfEventAction(const G4Event*)
 {
-    // pass
+    fEnergyDeposit = 0;
+    fStepLength = 0;
 }
 
 
@@ -26,5 +27,6 @@ void PracEventAction::EndOfEventAction(const G4Event* event)
     G4cout << "Event ID                 : " << event->GetEventID() << G4endl;
     G4cout << "Total Energy Deposit     : " << fEnergyDeposit << G4endl;
     G4cout << "Total Step Length        : " << fStepLength << G4endl;
-    G4cout << "==================== Start of Event Information (Manual) ====================" << G4endl;
+    G4cout << "====================  End of Event Information (Manual)  ====================" << G4endl;
+    G4cout << G4endl;
 }
