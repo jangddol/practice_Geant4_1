@@ -4,6 +4,7 @@
 #define PracSteppingAction_h
 
 #include "G4UserSteppingAction.hh"
+#include "G4LogicalVolume.hh"
 #include "globals.hh"
 
 class PracEventAction;
@@ -20,6 +21,7 @@ class PracSteppingAction : public G4UserSteppingAction
 	
 	private:
 		PracEventAction* fEventAction;
+        G4LogicalVolume* fScoringVolume;
 };
 
 #endif
