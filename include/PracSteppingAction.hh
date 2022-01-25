@@ -20,7 +20,6 @@ class PracSteppingAction : public G4UserSteppingAction
 	
 	private:
 		PracEventAction* fEventAction;
-		//G4LogicalVolume* fScoringVolume;
 };
 
 #endif

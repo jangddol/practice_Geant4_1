@@ -11,14 +11,18 @@ class PracRunAction;
 class PracEventAction : public G4UserEventAction
 {
 	public:
-		PracEventAction(PracRunAction* runAction);
+		PracEventAction(PracRunAction*);
 		virtual ~PracEventAction();
+        
+        void AddEnergyDeposit(const G4double energyDeposit){fEnergyDeposit += energyDeposit;}
+        void AddStepLength(const G4double stepLength){fStepLength += stepLength;}
 
 		virtual void BeginOfEventAction(const G4Event* event);
 		virtual void EndOfEventAction(const G4Event* event);
-	
-	private:
-		PracRunAction* fRunAction;
+
+    private:
+        G4double fEnergyDeposit;
+        G4double fStepLength;
 };
 
 #endif

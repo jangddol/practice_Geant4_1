@@ -1,5 +1,5 @@
 #include "PracSteppingAction.hh"
-//#include "PracEventAction.hh"
+#include "PracEventAction.hh"
 //#include "PracDetectorConstruction.hh"
 
 #include "G4Step.hh"
@@ -10,7 +10,7 @@
 #include "G4SystemOfUnits.hh"
 
 
-PracSteppingAction::PracSteppingAction(PracEventAction* eventAction)
+PracSteppingAction::PracSteppingAction(PracEventAction* eventAction) : G4UserSteppingAction(), fEventAction(eventAction)
 {
     // pass
 }
@@ -33,4 +33,7 @@ void PracSteppingAction::UserSteppingAction(const G4Step* step)
     G4cout << "Total Energy Deposit        : " << step->GetTotalEnergyDeposit() << G4endl;
     G4cout << "Delta Position              : " << step->GetDeltaPosition() << G4endl;
     G4cout << "====================  End of Step Information (Manual)  ====================" << G4endl;
+
+    fEventAction->AddEnergyDeposit(step->GetTotalEnergyDeposit());
+    fEventAction->AddStepLength(step->GetTrack()->GetStepLength());
 }

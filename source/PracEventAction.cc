@@ -3,10 +3,9 @@
 
 #include "G4Event.hh"
 //#include "G4RunManager.hh" 
-	// 이건 왜 들어가 있는거지?
 
 
-PracEventAction::PracEventAction(PracRunAction* runAction) : G4UserEventAction(), fRunAction(runAction)
+PracEventAction::PracEventAction(PracRunAction*) : G4UserEventAction(), fEnergyDeposit(0), fStepLength(0)
 {
 	// pass
 }

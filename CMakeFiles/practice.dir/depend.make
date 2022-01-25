@@ -1176,6 +1176,7 @@ CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: /opt/geant4/10.7.p01/inc
 CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4TrackStatus.hh
 CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4TrackVector.hh
 CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4Types.hh
+CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4UserEventAction.hh
 CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4UserSteppingAction.hh
 CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4VExceptionHandler.hh
 CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4VPhysicalVolume.hh
@@ -1194,5 +1195,6 @@ CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: /opt/geant4/10.7.p01/inc
 CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/templates.hh
 CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/tls.hh
 CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/trkdefs.hh
+CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: include/PracEventAction.hh
 CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: include/PracSteppingAction.hh
 
