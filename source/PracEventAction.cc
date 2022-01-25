@@ -1,11 +1,11 @@
 #include "PracEventAction.hh"
-//#include "PracRunAction.hh"
+#include "PracRunAction.hh"
 
 #include "G4Event.hh"
 //#include "G4RunManager.hh" 
 
 
-PracEventAction::PracEventAction(PracRunAction*) : G4UserEventAction(), fEnergyDeposit(0), fStepLength(0)
+PracEventAction::PracEventAction(PracRunAction* runAction) : G4UserEventAction(), fEnergyDeposit(0), fStepLength(0), fRunAction(runAction)
 {
 	// pass
 }
@@ -29,4 +29,9 @@ void PracEventAction::EndOfEventAction(const G4Event* event)
     G4cout << "Total Step Length        : " << fStepLength << G4endl;
     G4cout << "====================  End of Event Information (Manual)  ====================" << G4endl;
     G4cout << G4endl;
+
+    if (fEnergyDeposit == 100)
+    {
+        fRunAction->PutStepLengthData(fStepLength);
+    }
 }

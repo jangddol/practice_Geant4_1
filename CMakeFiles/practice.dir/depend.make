@@ -778,6 +778,7 @@ CMakeFiles/practice.dir/source/PracEventAction.cc.o: /opt/geant4/10.7.p01/includ
 CMakeFiles/practice.dir/source/PracEventAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4TrajectoryContainer.hh
 CMakeFiles/practice.dir/source/PracEventAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4Types.hh
 CMakeFiles/practice.dir/source/PracEventAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4UserEventAction.hh
+CMakeFiles/practice.dir/source/PracEventAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4UserRunAction.hh
 CMakeFiles/practice.dir/source/PracEventAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4VDigiCollection.hh
 CMakeFiles/practice.dir/source/PracEventAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4VExceptionHandler.hh
 CMakeFiles/practice.dir/source/PracEventAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4VHitsCollection.hh
@@ -793,6 +794,7 @@ CMakeFiles/practice.dir/source/PracEventAction.cc.o: /opt/geant4/10.7.p01/includ
 CMakeFiles/practice.dir/source/PracEventAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/templates.hh
 CMakeFiles/practice.dir/source/PracEventAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/tls.hh
 CMakeFiles/practice.dir/source/PracEventAction.cc.o: include/PracEventAction.hh
+CMakeFiles/practice.dir/source/PracEventAction.cc.o: include/PracRunAction.hh
 
 CMakeFiles/practice.dir/source/PracPrimaryGeneratorAction.cc.o: source/PracPrimaryGeneratorAction.cc
 CMakeFiles/practice.dir/source/PracPrimaryGeneratorAction.cc.o: /opt/clhep/2.4.4.0/include/CLHEP/Geometry/BasicVector3D.h

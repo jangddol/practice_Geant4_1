@@ -779,6 +779,7 @@ CMakeFiles/practice.dir/source/PracEventAction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/G4TrajectoryContainer.hh
  /opt/geant4/10.7.p01/include/Geant4/G4Types.hh
  /opt/geant4/10.7.p01/include/Geant4/G4UserEventAction.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4UserRunAction.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VDigiCollection.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VExceptionHandler.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VHitsCollection.hh
@@ -794,6 +795,7 @@ CMakeFiles/practice.dir/source/PracEventAction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/templates.hh
  /opt/geant4/10.7.p01/include/Geant4/tls.hh
  include/PracEventAction.hh
+ include/PracRunAction.hh
 CMakeFiles/practice.dir/source/PracPrimaryGeneratorAction.cc.o
  /home/sorimjangddol/termhome/practice_Geant4_1/source/PracPrimaryGeneratorAction.cc
  /opt/clhep/2.4.4.0/include/CLHEP/Geometry/BasicVector3D.h
