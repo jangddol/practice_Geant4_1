@@ -14,7 +14,7 @@ int main(int argc, char** argv)
 	
 	//runManager
 	auto* runManager = G4RunManagerFactory::CreateRunManager(G4RunManagerType::Default);
-    runManager->SetNumberOfThreads(1);
+    // runManager->SetNumberOfThreads(1);
 
 	//Physics List
 	G4VModularPhysicsList* physicsList = new FTFP_BERT;
