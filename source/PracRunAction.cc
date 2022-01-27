@@ -4,35 +4,53 @@
 
 //#include "G4RunManager.hh"
 #include "G4Run.hh"
+#include "G4AccumulableManager.hh"
 //#include "G4LogicalVolumeStore.hh"
 //#include "G4LogicalVolume.hh"
 //#include "G4UnitsTable.hh"
 //#include "G4SystemOfUnits.hh"
+#include "g4csv.hh"
 
-
-PracRunAction::PracRunAction() : G4UserRunAction(), stepLengthData({}), sumStepLength(0), sqsumStepLength(0), meanStepLength(0), stdvStepLength(0)
+PracRunAction::PracRunAction() : G4UserRunAction(), stepLengthNumber(0), sumStepLength(0.), sqsumStepLength(0.), meanStepLength(0), stdvStepLength(0)
 {
-	// pass
+    G4AccumulableManager* accumulableManager = G4AccumulableManager::Instance();
+    accumulableManager->RegisterAccumulable(stepLengthNumber);
+    accumulableManager->RegisterAccumulable(sumStepLength);
+    accumulableManager->RegisterAccumulable(sqsumStepLength);
+
+    G4AnalysisManager* anaMan = G4AnalysisManager::Instance();
+    anaMan -> OpenFile("output");
+    anaMan -> CreateNtuple("data", "data");
+    anaMan -> CreateNtupleDColumn("ed");
+    anaMan -> CreateNtupleDColumn("distance");
+    anaMan -> FinishNtuple();
 }
 
 
-PracRunAction::~PracRunAction() {}
+PracRunAction::~PracRunAction()
+{
+    G4AnalysisManager* anaMan = G4AnalysisManager::Instance();
+    anaMan -> Write();
+    anaMan -> CloseFile();
+}
 
 
 void PracRunAction::PutStepLengthData(G4double stepLength)
 {
-    this->stepLengthData.push_back(stepLength);
-    this->sumStepLength += stepLength;
-    this->sqsumStepLength += stepLength * stepLength;
-    G4int datanumber = this->stepLengthData.size();
-    this->meanStepLength = this->sumStepLength / datanumber;
-    G4double stdv2StepLength = this->sqsumStepLength / datanumber - this->meanStepLength * meanStepLength;
-    this->stdvStepLength = std::sqrt(stdv2StepLength);
+    stepLengthNumber += 1;
+    sumStepLength += stepLength;
+    sqsumStepLength += stepLength * stepLength;
 }
 
 void PracRunAction::BeginOfRunAction(const G4Run*)
 {
-    // pass
+    if (!(IsMaster()))
+    {
+        stepLengthNumber = 0;
+        sumStepLength = 0;
+        sqsumStepLength = 0 ;
+    }
+
 }
 
 
@@ -41,10 +59,24 @@ void PracRunAction::EndOfRunAction(const G4Run* run)
     G4int nofEvents = run->GetNumberOfEvent();
     if (nofEvents == 0) return;
     
-    G4cout << "==================== Start of Run Information (Manual) ====================" << G4endl;
-    G4cout << "Run ID : " << run->GetRunID() << G4endl;
-    G4cout << "Cummulated Data Number : " << stepLengthData.size() << G4endl;
-    G4cout << "Mean Value of Travel Distance : " << meanStepLength << G4endl;
-    G4cout << "Stdv Value of Travel Distance : " << stdvStepLength << G4endl;
-    G4cout << "====================  End of Run Information (Manual)  ====================" << G4endl;
+    G4AccumulableManager* accumulableManager = G4AccumulableManager::Instance();
+    accumulableManager->Merge();
+
+    G4double mStepLengthNumber = stepLengthNumber.GetValue();
+    G4double mSumStepLength = sumStepLength.GetValue();
+    G4double mSqSumStepLength = sqsumStepLength.GetValue();
+    
+    meanStepLength = mSumStepLength / mStepLengthNumber;
+    G4double stdv2StepLength = mSqSumStepLength / mStepLengthNumber - meanStepLength * meanStepLength;
+    stdvStepLength = std::sqrt(stdv2StepLength);
+
+    // if (IsMaster())
+    {
+        G4cout << "==================== Start of Run Information (Manual) ====================" << G4endl;
+        G4cout << "Run ID : " << run->GetRunID() << G4endl;
+        G4cout << "Cummulated Data Number : " << mStepLengthNumber << G4endl;
+        G4cout << "Mean Value of Travel Distance : " << meanStepLength << G4endl;
+        G4cout << "Stdv Value of Travel Distance : " << stdvStepLength << G4endl;
+        G4cout << "====================  End of Run Information (Manual)  ====================" << G4endl;
+    }
 }

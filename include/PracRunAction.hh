@@ -4,7 +4,7 @@
 #define PracRunAction_h
 
 #include "G4UserRunAction.hh"
-#include <vector>
+#include "G4Accumulable.hh"
 #include "globals.hh"
 
 class G4Run;
@@ -21,9 +21,9 @@ class PracRunAction : public G4UserRunAction
 		virtual void EndOfRunAction(const G4Run* run);
 
     private:
-        std::vector<G4double> stepLengthData;
-        G4double sumStepLength;
-        G4double sqsumStepLength;
+        G4Accumulable<G4int> stepLengthNumber;
+        G4Accumulable<G4double> sumStepLength;
+        G4Accumulable<G4double> sqsumStepLength;
         G4double meanStepLength;
         G4double stdvStepLength;
 };

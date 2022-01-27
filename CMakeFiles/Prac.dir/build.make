@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sorimjangddol/termhome/practice_Geant4_1
+CMAKE_SOURCE_DIR = /home/sorimjangddol/termhome/practice_Geant4_1_MT
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sorimjangddol/termhome/practice_Geant4_1
+CMAKE_BINARY_DIR = /home/sorimjangddol/termhome/practice_Geant4_1_MT
 
 # Utility rule file for Prac.
 
@@ -71,6 +71,6 @@ CMakeFiles/Prac.dir/clean:
 .PHONY : CMakeFiles/Prac.dir/clean
 
 CMakeFiles/Prac.dir/depend:
-	cd /home/sorimjangddol/termhome/practice_Geant4_1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sorimjangddol/termhome/practice_Geant4_1 /home/sorimjangddol/termhome/practice_Geant4_1 /home/sorimjangddol/termhome/practice_Geant4_1 /home/sorimjangddol/termhome/practice_Geant4_1 /home/sorimjangddol/termhome/practice_Geant4_1/CMakeFiles/Prac.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sorimjangddol/termhome/practice_Geant4_1_MT && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sorimjangddol/termhome/practice_Geant4_1_MT /home/sorimjangddol/termhome/practice_Geant4_1_MT /home/sorimjangddol/termhome/practice_Geant4_1_MT /home/sorimjangddol/termhome/practice_Geant4_1_MT /home/sorimjangddol/termhome/practice_Geant4_1_MT/CMakeFiles/Prac.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Prac.dir/depend
 
