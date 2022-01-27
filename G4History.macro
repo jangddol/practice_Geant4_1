@@ -49,4 +49,14 @@
 /vis/viewer/set/autoRefresh true
 /vis/viewer/refresh
 /vis/verbose warnings
+<<<<<<< HEAD
 /run/beamOn 200
+=======
+/run/beamOn 100
+/run/beamOn 100
+/run/beamOn 100
+/run/beamOn 100
+/run/beamOn 100
+/run/beamOn 100
+/run/beamOn 100
+>>>>>>> 709bac082eeb3dfc23cdfdf0bd3f4ca889a4c3f2

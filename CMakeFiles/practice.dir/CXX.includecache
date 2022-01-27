@@ -6,6 +6,7 @@
 
 #IncludeRegexTransform: 
 
+<<<<<<< HEAD
 /home/sorimjangddol/termhome/practice_Geant4_1_MT/source/PracEventAction.cc
 PracEventAction.hh
 /home/sorimjangddol/termhome/practice_Geant4_1_MT/source/PracEventAction.hh
@@ -29,6 +30,19 @@ G4AccumulableManager.hh
 /home/sorimjangddol/termhome/practice_Geant4_1_MT/source/G4AccumulableManager.hh
 g4csv.hh
 /home/sorimjangddol/termhome/practice_Geant4_1_MT/source/g4csv.hh
+=======
+/home/sorimjangddol/termhome/practice_Geant4_1/source/PracRunAction.cc
+PracRunAction.hh
+/home/sorimjangddol/termhome/practice_Geant4_1/source/PracRunAction.hh
+PracPrimaryGeneratorAction.hh
+/home/sorimjangddol/termhome/practice_Geant4_1/source/PracPrimaryGeneratorAction.hh
+PracDetectorConstruction.hh
+/home/sorimjangddol/termhome/practice_Geant4_1/source/PracDetectorConstruction.hh
+G4Run.hh
+/home/sorimjangddol/termhome/practice_Geant4_1/source/G4Run.hh
+vector
+-
+>>>>>>> 709bac082eeb3dfc23cdfdf0bd3f4ca889a4c3f2
 
 /opt/clhep/2.4.4.0/include/CLHEP/Units/PhysicalConstants.h
 CLHEP/Units/defs.h
@@ -56,6 +70,7 @@ cmath
 
 /opt/clhep/2.4.4.0/include/CLHEP/Vector/defs.h
 
+<<<<<<< HEAD
 /opt/geant4/10.7.p01/include/Geant4/G4Accumulable.hh
 G4VAccumulable.hh
 /opt/geant4/10.7.p01/include/Geant4/G4VAccumulable.hh
@@ -82,6 +97,8 @@ G4AccumulableManager.icc
 
 /opt/geant4/10.7.p01/include/Geant4/G4AccumulableManager.icc
 
+=======
+>>>>>>> 709bac082eeb3dfc23cdfdf0bd3f4ca889a4c3f2
 /opt/geant4/10.7.p01/include/Geant4/G4Allocator.hh
 cstddef
 -
@@ -92,6 +109,7 @@ G4AllocatorPool.hh
 
 /opt/geant4/10.7.p01/include/Geant4/G4AllocatorPool.hh
 
+<<<<<<< HEAD
 /opt/geant4/10.7.p01/include/Geant4/G4AnalysisManagerState.hh
 globals.hh
 /opt/geant4/10.7.p01/include/Geant4/globals.hh
@@ -112,6 +130,8 @@ memory
 globals.hh
 /opt/geant4/10.7.p01/include/Geant4/globals.hh
 
+=======
+>>>>>>> 709bac082eeb3dfc23cdfdf0bd3f4ca889a4c3f2
 /opt/geant4/10.7.p01/include/Geant4/G4AutoLock.hh
 G4Threading.hh
 /opt/geant4/10.7.p01/include/Geant4/G4Threading.hh
@@ -124,6 +144,7 @@ mutex
 system_error
 -
 
+<<<<<<< HEAD
 /opt/geant4/10.7.p01/include/Geant4/G4BaseAnalysisManager.hh
 G4Fcn.hh
 /opt/geant4/10.7.p01/include/Geant4/G4Fcn.hh
@@ -513,6 +534,101 @@ pwdefs.hh
 /opt/geant4/10.7.p01/include/Geant4/G4PrimaryVertex.hh
 globals.hh
 /opt/geant4/10.7.p01/include/Geant4/globals.hh
+=======
+/opt/geant4/10.7.p01/include/Geant4/G4EnvironmentUtils.hh
+cstdlib
+-
+iomanip
+-
+iostream
+-
+map
+-
+mutex
+-
+sstream
+-
+string
+-
+G4Exception.hh
+/opt/geant4/10.7.p01/include/Geant4/G4Exception.hh
+G4ExceptionSeverity.hh
+/opt/geant4/10.7.p01/include/Geant4/G4ExceptionSeverity.hh
+G4String.hh
+/opt/geant4/10.7.p01/include/Geant4/G4String.hh
+G4ios.hh
+/opt/geant4/10.7.p01/include/Geant4/G4ios.hh
+
+/opt/geant4/10.7.p01/include/Geant4/G4Exception.hh
+G4String.hh
+/opt/geant4/10.7.p01/include/Geant4/G4String.hh
+G4VExceptionHandler.hh
+/opt/geant4/10.7.p01/include/Geant4/G4VExceptionHandler.hh
+G4ios.hh
+/opt/geant4/10.7.p01/include/Geant4/G4ios.hh
+
+/opt/geant4/10.7.p01/include/Geant4/G4ExceptionSeverity.hh
+
+/opt/geant4/10.7.p01/include/Geant4/G4GlobalConfig.hh
+
+/opt/geant4/10.7.p01/include/Geant4/G4PDefManager.hh
+stdlib.h
+-
+globals.hh
+/opt/geant4/10.7.p01/include/Geant4/globals.hh
+pwdefs.hh
+/opt/geant4/10.7.p01/include/Geant4/pwdefs.hh
+G4AutoLock.hh
+/opt/geant4/10.7.p01/include/Geant4/G4AutoLock.hh
+
+/opt/geant4/10.7.p01/include/Geant4/G4ParticleDefinition.hh
+vector
+-
+CLHEP/Units/PhysicalConstants.h
+-
+globals.hh
+/opt/geant4/10.7.p01/include/Geant4/globals.hh
+G4ios.hh
+/opt/geant4/10.7.p01/include/Geant4/G4ios.hh
+G4PDefManager.hh
+/opt/geant4/10.7.p01/include/Geant4/G4PDefManager.hh
+G4ParticleDefinition.icc
+/opt/geant4/10.7.p01/include/Geant4/G4ParticleDefinition.icc
+
+/opt/geant4/10.7.p01/include/Geant4/G4ParticleDefinition.icc
+
+/opt/geant4/10.7.p01/include/Geant4/G4ParticleGun.hh
+globals.hh
+/opt/geant4/10.7.p01/include/Geant4/globals.hh
+G4VPrimaryGenerator.hh
+/opt/geant4/10.7.p01/include/Geant4/G4VPrimaryGenerator.hh
+G4ThreeVector.hh
+/opt/geant4/10.7.p01/include/Geant4/G4ThreeVector.hh
+G4ParticleDefinition.hh
+/opt/geant4/10.7.p01/include/Geant4/G4ParticleDefinition.hh
+G4PrimaryVertex.hh
+/opt/geant4/10.7.p01/include/Geant4/G4PrimaryVertex.hh
+G4ParticleMomentum.hh
+/opt/geant4/10.7.p01/include/Geant4/G4ParticleMomentum.hh
+
+/opt/geant4/10.7.p01/include/Geant4/G4ParticleMomentum.hh
+G4ThreeVector.hh
+/opt/geant4/10.7.p01/include/Geant4/G4ThreeVector.hh
+
+/opt/geant4/10.7.p01/include/Geant4/G4PrimaryParticle.hh
+globals.hh
+/opt/geant4/10.7.p01/include/Geant4/globals.hh
+G4Allocator.hh
+/opt/geant4/10.7.p01/include/Geant4/G4Allocator.hh
+G4ThreeVector.hh
+/opt/geant4/10.7.p01/include/Geant4/G4ThreeVector.hh
+pwdefs.hh
+/opt/geant4/10.7.p01/include/Geant4/pwdefs.hh
+
+/opt/geant4/10.7.p01/include/Geant4/G4PrimaryVertex.hh
+globals.hh
+/opt/geant4/10.7.p01/include/Geant4/globals.hh
+>>>>>>> 709bac082eeb3dfc23cdfdf0bd3f4ca889a4c3f2
 pwdefs.hh
 /opt/geant4/10.7.p01/include/Geant4/pwdefs.hh
 G4Allocator.hh
@@ -528,6 +644,7 @@ G4GlobalConfig.hh
 G4Profiler.icc
 /opt/geant4/10.7.p01/include/Geant4/G4Profiler.icc
 timemory/utility/argparse.hpp
+<<<<<<< HEAD
 -
 globals.hh
 /opt/geant4/10.7.p01/include/Geant4/globals.hh
@@ -1048,9 +1165,14 @@ chrono
 cstdlib
 -
 iomanip
+=======
+>>>>>>> 709bac082eeb3dfc23cdfdf0bd3f4ca889a4c3f2
 -
-iostream
+globals.hh
+/opt/geant4/10.7.p01/include/Geant4/globals.hh
+cstddef
 -
+<<<<<<< HEAD
 map
 -
 mutex
@@ -1152,9 +1274,53 @@ axis
 
 /opt/geant4/10.7.p01/include/Geant4/tools/histo/axis
 string
+=======
+functional
+-
+string
+-
+utility
+-
+type_traits
+-
+tuple
 -
 vector
 -
+array
+-
+ostream
+-
+string
+-
+
+/opt/geant4/10.7.p01/include/Geant4/G4Profiler.icc
+functional
+-
+type_traits
+-
+tuple
+-
+initializer_list
+-
+string
+-
+sstream
+-
+PTL/Globals.hh
+/opt/geant4/10.7.p01/include/Geant4/PTL/Globals.hh
+timemory/utility/utility.hpp
+>>>>>>> 709bac082eeb3dfc23cdfdf0bd3f4ca889a4c3f2
+-
+
+/opt/geant4/10.7.p01/include/Geant4/G4Run.hh
+globals.hh
+/opt/geant4/10.7.p01/include/Geant4/globals.hh
+G4Profiler.hh
+/opt/geant4/10.7.p01/include/Geant4/G4Profiler.hh
+vector
+-
+<<<<<<< HEAD
 
 /opt/geant4/10.7.p01/include/Geant4/tools/histo/b1
 base_histo
@@ -1246,12 +1412,46 @@ histo_data
 
 /opt/geant4/10.7.p01/include/Geant4/tools/impi
 string
+=======
+
+/opt/geant4/10.7.p01/include/Geant4/G4String.hh
+cstring
+-
+iostream
+-
+stdio.h
+-
+string
+-
+G4Types.hh
+/opt/geant4/10.7.p01/include/Geant4/G4Types.hh
+G4String.icc
+/opt/geant4/10.7.p01/include/Geant4/G4String.icc
+
+/opt/geant4/10.7.p01/include/Geant4/G4String.icc
+
+/opt/geant4/10.7.p01/include/Geant4/G4Threading.hh
+G4Types.hh
+/opt/geant4/10.7.p01/include/Geant4/G4Types.hh
+globals.hh
+/opt/geant4/10.7.p01/include/Geant4/globals.hh
+chrono
+-
+condition_variable
+-
+future
+-
+mutex
+-
+thread
+>>>>>>> 709bac082eeb3dfc23cdfdf0bd3f4ca889a4c3f2
 -
 vector
 -
 typedefs
 /opt/geant4/10.7.p01/include/Geant4/tools/typedefs
 
+<<<<<<< HEAD
 /opt/geant4/10.7.p01/include/Geant4/tools/lina/eqT
 
 /opt/geant4/10.7.p01/include/Geant4/tools/long_out
@@ -1296,8 +1496,64 @@ sprintf
 typedefs
 /opt/geant4/10.7.p01/include/Geant4/tools/typedefs
 cstddef
+=======
+/opt/geant4/10.7.p01/include/Geant4/G4ThreeVector.hh
+globals.hh
+/opt/geant4/10.7.p01/include/Geant4/globals.hh
+CLHEP/Vector/ThreeVector.h
 -
+
+/opt/geant4/10.7.p01/include/Geant4/G4Types.hh
+G4GlobalConfig.hh
+/opt/geant4/10.7.p01/include/Geant4/G4GlobalConfig.hh
+complex
+-
+tls.hh
+/opt/geant4/10.7.p01/include/Geant4/tls.hh
+
+/opt/geant4/10.7.p01/include/Geant4/G4UserRunAction.hh
+G4Types.hh
+/opt/geant4/10.7.p01/include/Geant4/G4Types.hh
+
+/opt/geant4/10.7.p01/include/Geant4/G4VExceptionHandler.hh
+G4ExceptionSeverity.hh
+/opt/geant4/10.7.p01/include/Geant4/G4ExceptionSeverity.hh
+G4Types.hh
+/opt/geant4/10.7.p01/include/Geant4/G4Types.hh
+
+/opt/geant4/10.7.p01/include/Geant4/G4VPrimaryGenerator.hh
+G4ThreeVector.hh
+/opt/geant4/10.7.p01/include/Geant4/G4ThreeVector.hh
+
+/opt/geant4/10.7.p01/include/Geant4/G4VUserDetectorConstruction.hh
+globals.hh
+/opt/geant4/10.7.p01/include/Geant4/globals.hh
 vector
+-
+
+/opt/geant4/10.7.p01/include/Geant4/G4VUserPrimaryGeneratorAction.hh
+
+/opt/geant4/10.7.p01/include/Geant4/G4ios.hh
+G4Types.hh
+/opt/geant4/10.7.p01/include/Geant4/G4Types.hh
+iostream
+-
+
+/opt/geant4/10.7.p01/include/Geant4/PTL/Globals.hh
+algorithm
+-
+PTL/Types.hh
+/opt/geant4/10.7.p01/include/Geant4/PTL/PTL/Types.hh
+PTL/Utility.hh
+/opt/geant4/10.7.p01/include/Geant4/PTL/PTL/Utility.hh
+initializer_list
+-
+tuple
+-
+type_traits
+>>>>>>> 709bac082eeb3dfc23cdfdf0bd3f4ca889a4c3f2
+-
+utility
 -
 
 /opt/geant4/10.7.p01/include/Geant4/tools/press_func
@@ -1374,6 +1630,7 @@ string
 cstdio
 -
 
+<<<<<<< HEAD
 /opt/geant4/10.7.p01/include/Geant4/tools/safe_cast
 cid
 /opt/geant4/10.7.p01/include/Geant4/tools/cid
@@ -1564,8 +1821,15 @@ string
 ../cid
 /opt/geant4/10.7.p01/include/Geant4/tools/cid
 string
+=======
+/opt/geant4/10.7.p01/include/Geant4/globals.hh
+G4ios.hh
+/opt/geant4/10.7.p01/include/Geant4/G4ios.hh
+algorithm
+>>>>>>> 709bac082eeb3dfc23cdfdf0bd3f4ca889a4c3f2
 -
 
+<<<<<<< HEAD
 /opt/geant4/10.7.p01/include/Geant4/tools/wroot/idir
 seek
 /opt/geant4/10.7.p01/include/Geant4/tools/wroot/seek
@@ -1666,6 +1930,14 @@ branch_object
 
 /opt/geant4/10.7.p01/include/Geant4/tools/wroot/wbuf
 ostream
+=======
+/opt/geant4/10.7.p01/include/Geant4/pwdefs.hh
+G4Types.hh
+/opt/geant4/10.7.p01/include/Geant4/G4Types.hh
+
+/opt/geant4/10.7.p01/include/Geant4/templates.hh
+climits
+>>>>>>> 709bac082eeb3dfc23cdfdf0bd3f4ca889a4c3f2
 -
 ../long_out
 /opt/geant4/10.7.p01/include/Geant4/tools/long_out
@@ -1680,18 +1952,28 @@ cstring
 vector
 -
 
+<<<<<<< HEAD
+=======
+/opt/geant4/10.7.p01/include/Geant4/tls.hh
+G4GlobalConfig.hh
+/opt/geant4/10.7.p01/include/Geant4/G4GlobalConfig.hh
+
+>>>>>>> 709bac082eeb3dfc23cdfdf0bd3f4ca889a4c3f2
 include/PracDetectorConstruction.hh
 G4VUserDetectorConstruction.hh
 include/G4VUserDetectorConstruction.hh
 globals.hh
 include/globals.hh
 
+<<<<<<< HEAD
 include/PracEventAction.hh
 G4UserEventAction.hh
 include/G4UserEventAction.hh
 globals.hh
 include/globals.hh
 
+=======
+>>>>>>> 709bac082eeb3dfc23cdfdf0bd3f4ca889a4c3f2
 include/PracPrimaryGeneratorAction.hh
 G4VUserPrimaryGeneratorAction.hh
 include/G4VUserPrimaryGeneratorAction.hh
@@ -1703,8 +1985,13 @@ include/globals.hh
 include/PracRunAction.hh
 G4UserRunAction.hh
 include/G4UserRunAction.hh
+<<<<<<< HEAD
 G4Accumulable.hh
 include/G4Accumulable.hh
+=======
+vector
+-
+>>>>>>> 709bac082eeb3dfc23cdfdf0bd3f4ca889a4c3f2
 globals.hh
 include/globals.hh
 
