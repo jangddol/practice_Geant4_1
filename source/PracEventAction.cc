@@ -32,7 +32,6 @@ void PracEventAction::EndOfEventAction(const G4Event* event)
 
     if (fEnergyDeposit > 99)
     {
-        G4cout << "Put Data" << G4endl;
         fRunAction->PutStepLengthData(fStepLength);
     }
 

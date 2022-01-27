@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sorimjangddol/termhome/practice_Geant4_1_MT
+CMAKE_SOURCE_DIR = /home/sorimjangddol/termhome/practice_Geant4_1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sorimjangddol/termhome/practice_Geant4_1_MT
+CMAKE_BINARY_DIR = /home/sorimjangddol/termhome/practice_Geant4_1
 
 # Include any dependencies generated for this target.
 include CMakeFiles/practice.dir/depend.make
@@ -59,94 +59,94 @@ include CMakeFiles/practice.dir/flags.make
 
 CMakeFiles/practice.dir/practice.cc.o: CMakeFiles/practice.dir/flags.make
 CMakeFiles/practice.dir/practice.cc.o: practice.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorimjangddol/termhome/practice_Geant4_1_MT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/practice.dir/practice.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/practice.dir/practice.cc.o -c /home/sorimjangddol/termhome/practice_Geant4_1_MT/practice.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorimjangddol/termhome/practice_Geant4_1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/practice.dir/practice.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/practice.dir/practice.cc.o -c /home/sorimjangddol/termhome/practice_Geant4_1/practice.cc
 
 CMakeFiles/practice.dir/practice.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/practice.dir/practice.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sorimjangddol/termhome/practice_Geant4_1_MT/practice.cc > CMakeFiles/practice.dir/practice.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sorimjangddol/termhome/practice_Geant4_1/practice.cc > CMakeFiles/practice.dir/practice.cc.i
 
 CMakeFiles/practice.dir/practice.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/practice.dir/practice.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sorimjangddol/termhome/practice_Geant4_1_MT/practice.cc -o CMakeFiles/practice.dir/practice.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sorimjangddol/termhome/practice_Geant4_1/practice.cc -o CMakeFiles/practice.dir/practice.cc.s
 
 CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: CMakeFiles/practice.dir/flags.make
 CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: source/PracActionInitialization.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorimjangddol/termhome/practice_Geant4_1_MT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/practice.dir/source/PracActionInitialization.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/practice.dir/source/PracActionInitialization.cc.o -c /home/sorimjangddol/termhome/practice_Geant4_1_MT/source/PracActionInitialization.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorimjangddol/termhome/practice_Geant4_1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/practice.dir/source/PracActionInitialization.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/practice.dir/source/PracActionInitialization.cc.o -c /home/sorimjangddol/termhome/practice_Geant4_1/source/PracActionInitialization.cc
 
 CMakeFiles/practice.dir/source/PracActionInitialization.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/practice.dir/source/PracActionInitialization.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sorimjangddol/termhome/practice_Geant4_1_MT/source/PracActionInitialization.cc > CMakeFiles/practice.dir/source/PracActionInitialization.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sorimjangddol/termhome/practice_Geant4_1/source/PracActionInitialization.cc > CMakeFiles/practice.dir/source/PracActionInitialization.cc.i
 
 CMakeFiles/practice.dir/source/PracActionInitialization.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/practice.dir/source/PracActionInitialization.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sorimjangddol/termhome/practice_Geant4_1_MT/source/PracActionInitialization.cc -o CMakeFiles/practice.dir/source/PracActionInitialization.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sorimjangddol/termhome/practice_Geant4_1/source/PracActionInitialization.cc -o CMakeFiles/practice.dir/source/PracActionInitialization.cc.s
 
 CMakeFiles/practice.dir/source/PracDetectorConstruction.cc.o: CMakeFiles/practice.dir/flags.make
 CMakeFiles/practice.dir/source/PracDetectorConstruction.cc.o: source/PracDetectorConstruction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorimjangddol/termhome/practice_Geant4_1_MT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/practice.dir/source/PracDetectorConstruction.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/practice.dir/source/PracDetectorConstruction.cc.o -c /home/sorimjangddol/termhome/practice_Geant4_1_MT/source/PracDetectorConstruction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorimjangddol/termhome/practice_Geant4_1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/practice.dir/source/PracDetectorConstruction.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/practice.dir/source/PracDetectorConstruction.cc.o -c /home/sorimjangddol/termhome/practice_Geant4_1/source/PracDetectorConstruction.cc
 
 CMakeFiles/practice.dir/source/PracDetectorConstruction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/practice.dir/source/PracDetectorConstruction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sorimjangddol/termhome/practice_Geant4_1_MT/source/PracDetectorConstruction.cc > CMakeFiles/practice.dir/source/PracDetectorConstruction.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sorimjangddol/termhome/practice_Geant4_1/source/PracDetectorConstruction.cc > CMakeFiles/practice.dir/source/PracDetectorConstruction.cc.i
 
 CMakeFiles/practice.dir/source/PracDetectorConstruction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/practice.dir/source/PracDetectorConstruction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sorimjangddol/termhome/practice_Geant4_1_MT/source/PracDetectorConstruction.cc -o CMakeFiles/practice.dir/source/PracDetectorConstruction.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sorimjangddol/termhome/practice_Geant4_1/source/PracDetectorConstruction.cc -o CMakeFiles/practice.dir/source/PracDetectorConstruction.cc.s
 
 CMakeFiles/practice.dir/source/PracEventAction.cc.o: CMakeFiles/practice.dir/flags.make
 CMakeFiles/practice.dir/source/PracEventAction.cc.o: source/PracEventAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorimjangddol/termhome/practice_Geant4_1_MT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/practice.dir/source/PracEventAction.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/practice.dir/source/PracEventAction.cc.o -c /home/sorimjangddol/termhome/practice_Geant4_1_MT/source/PracEventAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorimjangddol/termhome/practice_Geant4_1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/practice.dir/source/PracEventAction.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/practice.dir/source/PracEventAction.cc.o -c /home/sorimjangddol/termhome/practice_Geant4_1/source/PracEventAction.cc
 
 CMakeFiles/practice.dir/source/PracEventAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/practice.dir/source/PracEventAction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sorimjangddol/termhome/practice_Geant4_1_MT/source/PracEventAction.cc > CMakeFiles/practice.dir/source/PracEventAction.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sorimjangddol/termhome/practice_Geant4_1/source/PracEventAction.cc > CMakeFiles/practice.dir/source/PracEventAction.cc.i
 
 CMakeFiles/practice.dir/source/PracEventAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/practice.dir/source/PracEventAction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sorimjangddol/termhome/practice_Geant4_1_MT/source/PracEventAction.cc -o CMakeFiles/practice.dir/source/PracEventAction.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sorimjangddol/termhome/practice_Geant4_1/source/PracEventAction.cc -o CMakeFiles/practice.dir/source/PracEventAction.cc.s
 
 CMakeFiles/practice.dir/source/PracPrimaryGeneratorAction.cc.o: CMakeFiles/practice.dir/flags.make
 CMakeFiles/practice.dir/source/PracPrimaryGeneratorAction.cc.o: source/PracPrimaryGeneratorAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorimjangddol/termhome/practice_Geant4_1_MT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/practice.dir/source/PracPrimaryGeneratorAction.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/practice.dir/source/PracPrimaryGeneratorAction.cc.o -c /home/sorimjangddol/termhome/practice_Geant4_1_MT/source/PracPrimaryGeneratorAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorimjangddol/termhome/practice_Geant4_1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/practice.dir/source/PracPrimaryGeneratorAction.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/practice.dir/source/PracPrimaryGeneratorAction.cc.o -c /home/sorimjangddol/termhome/practice_Geant4_1/source/PracPrimaryGeneratorAction.cc
 
 CMakeFiles/practice.dir/source/PracPrimaryGeneratorAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/practice.dir/source/PracPrimaryGeneratorAction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sorimjangddol/termhome/practice_Geant4_1_MT/source/PracPrimaryGeneratorAction.cc > CMakeFiles/practice.dir/source/PracPrimaryGeneratorAction.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sorimjangddol/termhome/practice_Geant4_1/source/PracPrimaryGeneratorAction.cc > CMakeFiles/practice.dir/source/PracPrimaryGeneratorAction.cc.i
 
 CMakeFiles/practice.dir/source/PracPrimaryGeneratorAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/practice.dir/source/PracPrimaryGeneratorAction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sorimjangddol/termhome/practice_Geant4_1_MT/source/PracPrimaryGeneratorAction.cc -o CMakeFiles/practice.dir/source/PracPrimaryGeneratorAction.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sorimjangddol/termhome/practice_Geant4_1/source/PracPrimaryGeneratorAction.cc -o CMakeFiles/practice.dir/source/PracPrimaryGeneratorAction.cc.s
 
 CMakeFiles/practice.dir/source/PracRunAction.cc.o: CMakeFiles/practice.dir/flags.make
 CMakeFiles/practice.dir/source/PracRunAction.cc.o: source/PracRunAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorimjangddol/termhome/practice_Geant4_1_MT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/practice.dir/source/PracRunAction.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/practice.dir/source/PracRunAction.cc.o -c /home/sorimjangddol/termhome/practice_Geant4_1_MT/source/PracRunAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorimjangddol/termhome/practice_Geant4_1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/practice.dir/source/PracRunAction.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/practice.dir/source/PracRunAction.cc.o -c /home/sorimjangddol/termhome/practice_Geant4_1/source/PracRunAction.cc
 
 CMakeFiles/practice.dir/source/PracRunAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/practice.dir/source/PracRunAction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sorimjangddol/termhome/practice_Geant4_1_MT/source/PracRunAction.cc > CMakeFiles/practice.dir/source/PracRunAction.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sorimjangddol/termhome/practice_Geant4_1/source/PracRunAction.cc > CMakeFiles/practice.dir/source/PracRunAction.cc.i
 
 CMakeFiles/practice.dir/source/PracRunAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/practice.dir/source/PracRunAction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sorimjangddol/termhome/practice_Geant4_1_MT/source/PracRunAction.cc -o CMakeFiles/practice.dir/source/PracRunAction.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sorimjangddol/termhome/practice_Geant4_1/source/PracRunAction.cc -o CMakeFiles/practice.dir/source/PracRunAction.cc.s
 
 CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: CMakeFiles/practice.dir/flags.make
 CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: source/PracSteppingAction.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorimjangddol/termhome/practice_Geant4_1_MT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/practice.dir/source/PracSteppingAction.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/practice.dir/source/PracSteppingAction.cc.o -c /home/sorimjangddol/termhome/practice_Geant4_1_MT/source/PracSteppingAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorimjangddol/termhome/practice_Geant4_1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/practice.dir/source/PracSteppingAction.cc.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/practice.dir/source/PracSteppingAction.cc.o -c /home/sorimjangddol/termhome/practice_Geant4_1/source/PracSteppingAction.cc
 
 CMakeFiles/practice.dir/source/PracSteppingAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/practice.dir/source/PracSteppingAction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sorimjangddol/termhome/practice_Geant4_1_MT/source/PracSteppingAction.cc > CMakeFiles/practice.dir/source/PracSteppingAction.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sorimjangddol/termhome/practice_Geant4_1/source/PracSteppingAction.cc > CMakeFiles/practice.dir/source/PracSteppingAction.cc.i
 
 CMakeFiles/practice.dir/source/PracSteppingAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/practice.dir/source/PracSteppingAction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sorimjangddol/termhome/practice_Geant4_1_MT/source/PracSteppingAction.cc -o CMakeFiles/practice.dir/source/PracSteppingAction.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sorimjangddol/termhome/practice_Geant4_1/source/PracSteppingAction.cc -o CMakeFiles/practice.dir/source/PracSteppingAction.cc.s
 
 # Object files for target practice
 practice_OBJECTS = \
@@ -216,7 +216,7 @@ practice: /opt/geant4/10.7.p01/lib/libG4global.so
 practice: /opt/geant4/10.7.p01/lib/libG4ptl.so.0.0.2
 practice: /opt/clhep/2.4.4.0/lib/libCLHEP-2.4.4.0.so
 practice: CMakeFiles/practice.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sorimjangddol/termhome/practice_Geant4_1_MT/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable practice"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sorimjangddol/termhome/practice_Geant4_1/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable practice"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/practice.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -229,6 +229,6 @@ CMakeFiles/practice.dir/clean:
 .PHONY : CMakeFiles/practice.dir/clean
 
 CMakeFiles/practice.dir/depend:
-	cd /home/sorimjangddol/termhome/practice_Geant4_1_MT && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sorimjangddol/termhome/practice_Geant4_1_MT /home/sorimjangddol/termhome/practice_Geant4_1_MT /home/sorimjangddol/termhome/practice_Geant4_1_MT /home/sorimjangddol/termhome/practice_Geant4_1_MT /home/sorimjangddol/termhome/practice_Geant4_1_MT/CMakeFiles/practice.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sorimjangddol/termhome/practice_Geant4_1 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sorimjangddol/termhome/practice_Geant4_1 /home/sorimjangddol/termhome/practice_Geant4_1 /home/sorimjangddol/termhome/practice_Geant4_1 /home/sorimjangddol/termhome/practice_Geant4_1 /home/sorimjangddol/termhome/practice_Geant4_1/CMakeFiles/practice.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/practice.dir/depend
 

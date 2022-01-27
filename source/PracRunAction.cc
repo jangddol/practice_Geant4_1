@@ -36,13 +36,6 @@ void PracRunAction::PutStepLengthData(G4double stepLength)
     stepLengthNumber += 1;
     sumStepLength += stepLength;
     sqsumStepLength += stepLength * stepLength;
-    this->stepLengthData.push_back(stepLength);
-    G4int datalength = stepLengthData.size();
-    this->sumStepLength += stepLength;
-    this->sqsumStepLength += stepLength * stepLength;
-    this->meanStepLength = this->sumStepLength / datalength;
-    G4double stdv2StepLength = this->sqsumStepLength / datalength - this->meanStepLength * meanStepLength;
-    this->stdvStepLength = std::sqrt(stdv2StepLength);
 }
 
 void PracRunAction::BeginOfRunAction(const G4Run*)
@@ -78,7 +71,6 @@ void PracRunAction::EndOfRunAction(const G4Run* run)
         G4cout << "==================== Start of Run Information (Manual) ====================" << G4endl;
         G4cout << "Run ID : " << run->GetRunID() << G4endl;
         G4cout << "Cummulated Data Number : " << mStepLengthNumber << G4endl;
-        G4cout << "Cummulated Data Number : " << stepLengthData.size() << G4endl;
         G4cout << "Mean Value of Travel Distance : " << meanStepLength << G4endl;
         G4cout << "Stdv Value of Travel Distance : " << stdvStepLength << G4endl;
         G4cout << "====================  End of Run Information (Manual)  ====================" << G4endl;

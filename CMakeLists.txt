@@ -26,7 +26,7 @@ add_executable(practice practice.cc ${sources} ${headers})
 target_link_libraries(practice ${Geant4_LIBRARIES})
 
 # Copy all scripts to the build derectory
-set(PRACTICE_SCRIPTS init_vis.mac vis.mac)
+set(PRACTICE_SCRIPTS init_ter.mac init_vis.mac vis.mac)
 
 foreach(_script ${PRACTICE_SCRIPTS})
     configure_file(${PROJECT_SOURCE_DIR}/${_script} ${PROJECT_BINARY_DIR}/${_script} COPYONLY)

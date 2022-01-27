@@ -1,6 +1,12 @@
+#include <cstdio>
+#include <string>
+#include <vector>
+
 #include "G4VisExecutive.hh"
 #include "G4UIExecutive.hh"
 #include "G4UImanager.hh"
+#include "G4UIsession.hh"
+#include "G4UIterminal.hh"
 #include "G4RunManagerFactory.hh"
 
 #include "PracDetectorConstruction.hh"
@@ -10,8 +16,21 @@
 
 int main(int argc, char** argv)
 {
-	G4UIExecutive* ui = new G4UIExecutive(argc, argv);
 	
+    G4UIsession* ui;
+    if (argc == 1)
+    {
+        ui = new G4UIterminal;
+    }
+    else
+    {
+        std::vector<std::string> allArgs(argv, argv+argc);
+        if (allArgs[1] == "-e")
+        {
+            // ui = static_cast<G4UIsession*>(new G4UIExecutive());
+        }
+    }
+
 	//runManager
 	auto* runManager = G4RunManagerFactory::CreateRunManager(G4RunManagerType::Default);
     // runManager->SetNumberOfThreads(1);
@@ -41,7 +60,14 @@ int main(int argc, char** argv)
 	}
 	else
 	{
-		UImanager->ApplyCommand("/control/execute init_vis.mac");
+		if (argc==1)
+        {
+            UImanager->ApplyCommand("/control/execute init_ter.mac");
+        }
+        else
+        {
+            UImanager->ApplyCommand("/control/execute init_vis.mac");
+        }
 		ui->SessionStart();
 		delete ui;
 	}
