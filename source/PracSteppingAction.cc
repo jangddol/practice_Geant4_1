@@ -42,9 +42,13 @@ void PracSteppingAction::UserSteppingAction(const G4Step* step)
     }
     G4LogicalVolume* currentLogicalVolume = step->GetPreStepPoint()->GetTouchableHandle()->GetVolume()->GetLogicalVolume();
     
-    if ((currentLogicalVolume == fScoringVolume) && (step->GetTrack()->GetTrackID()==1))
+    if (currentLogicalVolume == fScoringVolume) 
     {
         fEventAction->AddEnergyDeposit(step->GetTotalEnergyDeposit());
+    }
+
+    if ((currentLogicalVolume == fScoringVolume) && (step->GetTrack()->GetTrackID()==1))
+    {
         fEventAction->AddStepLength(step->GetTrack()->GetStepLength());
     }
 }
