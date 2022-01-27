@@ -9,7 +9,7 @@
 
 PracPrimaryGeneratorAction::PracPrimaryGeneratorAction() : G4VUserPrimaryGeneratorAction(), fParticleGun(0)
 {
-	G4int n_particle = 10;
+	G4int n_particle = 1;
 	fParticleGun = new G4ParticleGun(n_particle);
 
 	// default particle kinematic

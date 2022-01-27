@@ -16,18 +16,18 @@
 
 int main(int argc, char** argv)
 {
-	
-    G4UIsession* ui;
+    G4UIsession* ter_ui;
+    G4UIExecutive* exe_ui;
     if (argc == 1)
     {
-        ui = new G4UIterminal;
+        ter_ui = new G4UIterminal;
     }
     else
     {
         std::vector<std::string> allArgs(argv, argv+argc);
         if (allArgs[1] == "-e")
         {
-            // ui = static_cast<G4UIsession*>(new G4UIExecutive());
+            exe_ui = new G4UIExecutive(argc, argv);
         }
     }
 
@@ -52,24 +52,27 @@ int main(int argc, char** argv)
 	
 	// User Interface manager
 	G4UImanager* UImanager = G4UImanager::GetUIpointer();
-	if (!ui)
-	{
-		G4String command = "/control/execute ";
-		G4String fileName = argv[1];
-		UImanager->ApplyCommand(command + fileName);
-	}
-	else
+	
+    //if (!ui)
+	//{
+	//	G4String command = "/control/execute ";
+	//	G4String fileName = argv[1];
+	//	UImanager->ApplyCommand(command + fileName);
+	//}
+	//else
 	{
 		if (argc==1)
         {
             UImanager->ApplyCommand("/control/execute init_ter.mac");
+            ter_ui->SessionStart();
         }
         else
         {
             UImanager->ApplyCommand("/control/execute init_vis.mac");
+            exe_ui->SessionStart();
         }
-		ui->SessionStart();
-		delete ui;
+		delete ter_ui;
+        delete exe_ui;
 	}
 
 	delete visManager;
