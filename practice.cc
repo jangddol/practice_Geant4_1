@@ -11,6 +11,7 @@
 
 #include "PracDetectorConstruction.hh"
 #include "PracActionInitialization.hh"
+#include "PracCoutModeSingleton.hh"
 
 #include "FTFP_BERT.hh"
 
@@ -28,6 +29,20 @@ int main(int argc, char** argv)
         if (allArgs[1] == "-e")
         {
             exe_ui = new G4UIExecutive(argc, argv);
+        }
+        else if (allArgs[1] == "-v")
+        {
+            ter_ui = new G4UIterminal;
+
+            PracCoutModeSingleton* coutmodeinstance = PracCoutModeSingleton::GetInstance();
+            coutmodeinstance->SetPracCoutMode(true);
+        }
+        else if ((allArgs[1] == "-ve") || (allArgs[1] == "-ev"))
+        {
+            exe_ui = new G4UIExecutive(argc, argv);
+
+            PracCoutModeSingleton* coutmodeinstance = PracCoutModeSingleton::GetInstance();
+            coutmodeinstance->SetPracCoutMode(true);
         }
     }
 

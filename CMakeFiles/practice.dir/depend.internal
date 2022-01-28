@@ -528,6 +528,7 @@ CMakeFiles/practice.dir/practice.cc.o
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/wbuf
  /opt/geant4/10.7.p01/include/Geant4/trkdefs.hh
  include/PracActionInitialization.hh
+ include/PracCoutModeSingleton.hh
  include/PracDetectorConstruction.hh
 CMakeFiles/practice.dir/source/PracActionInitialization.cc.o
  /home/sorimjangddol/termhome/practice_Geant4_1/source/PracActionInitialization.cc
@@ -1373,6 +1374,7 @@ CMakeFiles/practice.dir/source/PracEventAction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/seek
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/tree
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/wbuf
+ include/PracCoutModeSingleton.hh
  include/PracEventAction.hh
  include/PracRunAction.hh
 CMakeFiles/practice.dir/source/PracPrimaryGeneratorAction.cc.o
