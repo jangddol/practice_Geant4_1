@@ -1,6 +1,7 @@
 #include <cstdio>
 #include <string>
 #include <vector>
+#include <cassert>
 
 #include "G4VisExecutive.hh"
 #include "G4UIExecutive.hh"
@@ -15,40 +16,47 @@
 
 #include "FTFP_BERT.hh"
 
+PracCoutModeSingleton* PracCoutModeSingleton::instance = nullptr;
+
 int main(int argc, char** argv)
 {
-    G4UIsession* ter_ui;
-    G4UIExecutive* exe_ui;
+    G4UIsession* ter_ui = new G4UIterminal;
+    G4UIExecutive* exe_ui = new G4UIExecutive(argc, argv);
+    
+    G4bool bUI_ter = true;
+    G4bool bCout_info = false;
+
+    PracCoutModeSingleton* coutmodeinstance = PracCoutModeSingleton::GetInstance();
+
     if (argc == 1)
     {
-        ter_ui = new G4UIterminal;
+        bUI_ter = true;
     }
     else
     {
         std::vector<std::string> allArgs(argv, argv+argc);
         if (allArgs[1] == "-e")
         {
-            exe_ui = new G4UIExecutive(argc, argv);
+            bUI_ter = false;
         }
         else if (allArgs[1] == "-v")
         {
-            ter_ui = new G4UIterminal;
-
-            PracCoutModeSingleton* coutmodeinstance = PracCoutModeSingleton::GetInstance();
-            coutmodeinstance->SetPracCoutMode(true);
+            bCout_info = true;
         }
         else if ((allArgs[1] == "-ve") || (allArgs[1] == "-ev"))
         {
-            exe_ui = new G4UIExecutive(argc, argv);
-
-            PracCoutModeSingleton* coutmodeinstance = PracCoutModeSingleton::GetInstance();
-            coutmodeinstance->SetPracCoutMode(true);
+            bUI_ter = false;
+            bCout_info = true;
+        }
+        else
+        {
+            assert(true && "Wrong Command");
         }
     }
 
 	//runManager
 	auto* runManager = G4RunManagerFactory::CreateRunManager(G4RunManagerType::Default);
-    // runManager->SetNumberOfThreads(1);
+    runManager->SetNumberOfThreads(1);
 
 	//Physics List
 	G4VModularPhysicsList* physicsList = new FTFP_BERT;
@@ -68,27 +76,27 @@ int main(int argc, char** argv)
 	// User Interface manager
 	G4UImanager* UImanager = G4UImanager::GetUIpointer();
 	
-    //if (!ui)
-	//{
-	//	G4String command = "/control/execute ";
-	//	G4String fileName = argv[1];
-	//	UImanager->ApplyCommand(command + fileName);
-	//}
-	//else
-	{
-		if (argc==1)
-        {
-            UImanager->ApplyCommand("/control/execute init_ter.mac");
-            ter_ui->SessionStart();
-        }
-        else
-        {
-            UImanager->ApplyCommand("/control/execute init_vis.mac");
-            exe_ui->SessionStart();
-        }
-		delete ter_ui;
-        delete exe_ui;
-	}
+    if (bCout_info)
+    {
+        coutmodeinstance->SetPracCoutMode(true);
+    }
+    else
+    {
+        coutmodeinstance->SetPracCoutMode(false);
+    }
+	if (bUI_ter)
+    {
+        UImanager->ApplyCommand("/control/execute init_ter.mac");
+        ter_ui->SessionStart();
+    }
+    else
+    {
+        UImanager->ApplyCommand("/control/execute init_vis.mac");
+        exe_ui->SessionStart();
+    }
+    
+	delete ter_ui;
+    delete exe_ui;
 
 	delete visManager;
 	delete runManager;

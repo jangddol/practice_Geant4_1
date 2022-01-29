@@ -39,7 +39,7 @@ void PracEventAction::EndOfEventAction(const G4Event* event)
         G4cout << G4endl;
     }
 
-    if (fEnergyDeposit > 99)
+    if (true)
     {
         fRunAction->PutStepLengthData(fStepLength);
     }

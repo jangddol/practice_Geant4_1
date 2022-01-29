@@ -9,11 +9,22 @@
 class PracCoutModeSingleton
 {
     private:
+        PracCoutModeSingleton(){};
+        PracCoutModeSingleton(const PracCoutModeSingleton& other);
+        ~PracCoutModeSingleton(){};
+
         static PracCoutModeSingleton* instance;
-        PracCoutModeSingleton();
         G4bool pracCoutMode;
     public:
-        static PracCoutModeSingleton* GetInstance(){return instance;}
+        static PracCoutModeSingleton* GetInstance()
+        {
+            if (instance == NULL)
+            {
+                instance = new PracCoutModeSingleton;
+            }
+            return instance;
+        }
+        
         G4bool GetPracCoutMode(){return pracCoutMode;}
         void SetPracCoutMode(G4bool coutmode){pracCoutMode = coutmode;}
 };
