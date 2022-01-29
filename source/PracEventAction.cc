@@ -8,7 +8,7 @@
 
 #include "G4SystemOfUnits.hh"
 
-PracEventAction::PracEventAction(PracRunAction* runAction) : G4UserEventAction(), fEnergyDeposit(0), fStepLength(0), fRunAction(runAction)
+PracEventAction::PracEventAction(PracRunAction* runAction) : G4UserEventAction(), fEnergyDeposit(0), fEnergyDepositProton(0), fStepLength(0), fRunAction(runAction)
 {
 	// pass
 }
@@ -20,6 +20,7 @@ PracEventAction::~PracEventAction() {}
 void PracEventAction::BeginOfEventAction(const G4Event*)
 {
     fEnergyDeposit = 0.;
+    fEnergyDepositProton = 0.;
     fStepLength = 0.;
 }
 
@@ -46,6 +47,7 @@ void PracEventAction::EndOfEventAction(const G4Event* event)
 
     G4AnalysisManager* anaMan = G4AnalysisManager::Instance();
     anaMan -> FillNtupleDColumn(0, fEnergyDeposit);
-    anaMan -> FillNtupleDColumn(1, fStepLength);
+    anaMan -> FillNtupleDColumn(1, fEnergyDepositProton);
+    anaMan -> FillNtupleDColumn(2, fStepLength);
     anaMan -> AddNtupleRow();
 }

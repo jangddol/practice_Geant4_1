@@ -18,6 +18,7 @@ PracRunAction::PracRunAction() : G4UserRunAction(), stepLengthNumber(0), sumStep
     anaMan -> OpenFile("output");
     anaMan -> CreateNtuple("data", "data");
     anaMan -> CreateNtupleDColumn("ed");
+    anaMan -> CreateNtupleDColumn("ed_proton");
     anaMan -> CreateNtupleDColumn("distance");
     anaMan -> FinishNtuple();
 }

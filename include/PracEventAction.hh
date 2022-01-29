@@ -15,6 +15,7 @@ class PracEventAction : public G4UserEventAction
 		virtual ~PracEventAction();
         
         void AddEnergyDeposit(const G4double energyDeposit){fEnergyDeposit += energyDeposit;}
+        void AddEnergyDepositProton(const G4double energyDepositProton){fEnergyDepositProton += energyDepositProton;}
         void AddStepLength(const G4double stepLength){fStepLength += stepLength;}
 
 		virtual void BeginOfEventAction(const G4Event* event);
@@ -22,6 +23,7 @@ class PracEventAction : public G4UserEventAction
 
     private:
         G4double fEnergyDeposit;
+        G4double fEnergyDepositProton;
         G4double fStepLength;
         PracRunAction* fRunAction;
 };

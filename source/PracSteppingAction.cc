@@ -50,5 +50,6 @@ void PracSteppingAction::UserSteppingAction(const G4Step* step)
     if ((currentLogicalVolume == fScoringVolume) && (step->GetTrack()->GetTrackID()==1))
     {
         fEventAction->AddStepLength(step->GetTrack()->GetStepLength());
+        fEventAction->AddEnergyDepositProton(step->GetTotalEnergyDeposit());
     }
 }
