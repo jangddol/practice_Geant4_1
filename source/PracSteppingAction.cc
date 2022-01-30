@@ -44,12 +44,17 @@ void PracSteppingAction::UserSteppingAction(const G4Step* step)
     
     if (currentLogicalVolume == fScoringVolume) 
     {
-        fEventAction->AddEnergyDeposit(step->GetTotalEnergyDeposit());
-    }
-
-    if ((currentLogicalVolume == fScoringVolume) && (step->GetTrack()->GetTrackID()==1))
-    {
-        fEventAction->AddStepLength(step->GetTrack()->GetStepLength());
-        fEventAction->AddEnergyDepositProton(step->GetTotalEnergyDeposit());
+        G4int trackId = step->GetTrack()->GetTrackID();
+        G4int runIdSize = fEventAction->GetRunIdVectorSize();
+        if (trackId > runIdSize)
+        {
+            fEventAction->AppendRunIdVector(fEventAction->GetRunAction()->GetRunID());
+            fEventAction->AppendEventIdVector(fEventAction->GetEventID());
+            fEventAction->AppendTrackIdVector(trackId);
+            fEventAction->AppendParticleNameVector(step->GetTrack()->GetParticleDefinition()->GetParticleName());
+        }
+        fEventAction->AddEnergyDepositVector(step->GetTotalEnergyDeposit(), trackId);
+        fEventAction->AddTravelDistanceVector(step->GetStepLength(), trackId);
+        
     }
 }

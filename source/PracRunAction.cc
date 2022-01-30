@@ -17,8 +17,11 @@ PracRunAction::PracRunAction() : G4UserRunAction(), stepLengthNumber(0), sumStep
     G4AnalysisManager* anaMan = G4AnalysisManager::Instance();
     anaMan -> OpenFile("output");
     anaMan -> CreateNtuple("data", "data");
+    anaMan -> CreateNtupleIColumn("RunID");
+    anaMan -> CreateNtupleIColumn("EventID");
+    anaMan -> CreateNtupleIColumn("TrackID");
+    anaMan -> CreateNtupleSColumn("Particle_Name");
     anaMan -> CreateNtupleDColumn("ed");
-    anaMan -> CreateNtupleDColumn("ed_proton");
     anaMan -> CreateNtupleDColumn("distance");
     anaMan -> FinishNtuple();
 }
@@ -39,8 +42,9 @@ void PracRunAction::PutStepLengthData(G4double stepLength)
     sqsumStepLength += stepLength * stepLength;
 }
 
-void PracRunAction::BeginOfRunAction(const G4Run*)
+void PracRunAction::BeginOfRunAction(const G4Run* run)
 {
+    runID = run->GetRunID();
     if (!(IsMaster()))
     {
         stepLengthNumber = 0;

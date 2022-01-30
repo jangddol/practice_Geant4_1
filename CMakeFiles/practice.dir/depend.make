@@ -573,7 +573,9 @@ CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p
 CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4CsvNtupleFileManager.hh
 CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4CsvNtupleManager.hh
 CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4CsvRNtupleManager.hh
+CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4DCofThisEvent.hh
 CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4EnvironmentUtils.hh
+CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4Event.hh
 CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4Exception.hh
 CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4ExceptionSeverity.hh
 CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4Fcn.hh
@@ -582,6 +584,7 @@ CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p
 CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4H1ToolsManager.hh
 CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4H2ToolsManager.hh
 CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4H3ToolsManager.hh
+CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4HCofThisEvent.hh
 CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4HnInformation.hh
 CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4HnManager.hh
 CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4LogicalVolume.hh
@@ -622,6 +625,7 @@ CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p
 CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4ToolsAnalysisManager.icc
 CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4ToolsAnalysisReader.hh
 CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4ToolsAnalysisReader.icc
+CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4TrajectoryContainer.hh
 CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4Types.hh
 CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4UserEventAction.hh
 CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4UserRunAction.hh
@@ -632,11 +636,13 @@ CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p
 CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4VAnalysisManager.icc
 CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4VAnalysisReader.hh
 CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4VAnalysisReader.icc
+CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4VDigiCollection.hh
 CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4VExceptionHandler.hh
 CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4VFileManager.hh
 CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4VH1Manager.hh
 CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4VH2Manager.hh
 CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4VH3Manager.hh
+CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4VHitsCollection.hh
 CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4VNtupleFileManager.hh
 CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4VNtupleManager.hh
 CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4VP1Manager.hh
@@ -647,8 +653,10 @@ CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p
 CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4VRNtupleManager.hh
 CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4VTFileManager.hh
 CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4VTHnFileManager.hh
+CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4VTrajectory.hh
 CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4VUserActionInitialization.hh
 CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4VUserDetectorConstruction.hh
+CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4VUserEventInformation.hh
 CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4VUserPrimaryGeneratorAction.hh
 CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4ios.hh
 CMakeFiles/practice.dir/source/PracActionInitialization.cc.o: /opt/geant4/10.7.p01/include/Geant4/PTL/Globals.hh
@@ -2068,6 +2076,8 @@ CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: /opt/clhep/2.4.4.0/inclu
 CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: /opt/clhep/2.4.4.0/include/CLHEP/Vector/ThreeVector.icc
 CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: /opt/clhep/2.4.4.0/include/CLHEP/Vector/ZMxpv.h
 CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: /opt/clhep/2.4.4.0/include/CLHEP/Vector/defs.h
+CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4Accumulable.hh
+CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4Accumulable.icc
 CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4AffineTransform.hh
 CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4AffineTransform.icc
 CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4Allocator.hh
@@ -2140,6 +2150,7 @@ CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: /opt/geant4/10.7.p01/inc
 CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4MaterialPropertiesTable.icc
 CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4MaterialPropertyVector.hh
 CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4MaterialTable.hh
+CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4MergeMode.hh
 CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4NavigationHistory.hh
 CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4NavigationHistory.icc
 CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4NavigationHistoryPool.hh
@@ -2256,6 +2267,8 @@ CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: /opt/geant4/10.7.p01/inc
 CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4UserStackingAction.hh
 CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4UserSteppingAction.hh
 CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4UserTrackingAction.hh
+CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4VAccumulable.hh
+CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4VAccumulable.icc
 CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4VAnalysisManager.hh
 CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4VAnalysisManager.icc
 CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/G4VAnalysisReader.hh
@@ -2391,5 +2404,6 @@ CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: /opt/geant4/10.7.p01/inc
 CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/trkdefs.hh
 CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: include/PracDetectorConstruction.hh
 CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: include/PracEventAction.hh
+CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: include/PracRunAction.hh
 CMakeFiles/practice.dir/source/PracSteppingAction.cc.o: include/PracSteppingAction.hh
 

@@ -8,7 +8,14 @@
 
 #include "G4SystemOfUnits.hh"
 
-PracEventAction::PracEventAction(PracRunAction* runAction) : G4UserEventAction(), fEnergyDeposit(0), fEnergyDepositProton(0), fStepLength(0), fRunAction(runAction)
+PracEventAction::PracEventAction(PracRunAction* runAction) : G4UserEventAction(), 
+                                                             fRunIdVector({}),
+                                                             fEventIdVector({}),
+                                                             fTrackIdVector({}),
+                                                             fParticleNameVector({}),
+                                                             fEnergyDepositVector({}),
+                                                             fTravelDistanceVector({}),
+                                                             fRunAction(runAction)
 {
 	// pass
 }
@@ -17,11 +24,15 @@ PracEventAction::PracEventAction(PracRunAction* runAction) : G4UserEventAction()
 PracEventAction::~PracEventAction() {}
 
 
-void PracEventAction::BeginOfEventAction(const G4Event*)
+void PracEventAction::BeginOfEventAction(const G4Event* event)
 {
-    fEnergyDeposit = 0.;
-    fEnergyDepositProton = 0.;
-    fStepLength = 0.;
+    fEventID = event->GetEventID();
+    fRunIdVector = {};
+    fEventIdVector = {};
+    fTrackIdVector = {};
+    fParticleNameVector = {};
+    fEnergyDepositVector = {};
+    fTravelDistanceVector = {};
 }
 
 
@@ -32,22 +43,24 @@ void PracEventAction::EndOfEventAction(const G4Event* event)
 
     if (coutmode)
     {
-        G4cout << "==================== Start of Event Information (Manual) ====================" << G4endl;
-        G4cout << "Event ID                 : " << event->GetEventID() << G4endl;
-        G4cout << "Total Energy Deposit     : " << fEnergyDeposit << G4endl;
-        G4cout << "Total Step Length        : " << fStepLength << G4endl;
-        G4cout << "====================  End of Event Information (Manual)  ====================" << G4endl;
-        G4cout << G4endl;
-    }
-
-    if (true)
-    {
-        fRunAction->PutStepLengthData(fStepLength);
+        // G4cout << "==================== Start of Event Information (Manual) ====================" << G4endl;
+        // G4cout << "Event ID                 : " << event->GetEventID() << G4endl;
+        // G4cout << "Total Energy Deposit     : " << fEnergyDeposit << G4endl;
+        // G4cout << "Total Step Length        : " << fStepLength << G4endl;
+        // G4cout << "====================  End of Event Information (Manual)  ====================" << G4endl;
+        // G4cout << G4endl;
     }
 
     G4AnalysisManager* anaMan = G4AnalysisManager::Instance();
-    anaMan -> FillNtupleDColumn(0, fEnergyDeposit);
-    anaMan -> FillNtupleDColumn(1, fEnergyDepositProton);
-    anaMan -> FillNtupleDColumn(2, fStepLength);
-    anaMan -> AddNtupleRow();
+    size_t vectorSize = fRunIdVector.size();
+    for (size_t i=0; i < vectorSize; ++i)
+    {
+        anaMan -> FillNtupleIColumn(0, fRunIdVector[i]);
+        anaMan -> FillNtupleIColumn(1, fEventIdVector[i]);
+        anaMan -> FillNtupleIColumn(2, fTrackIdVector[i]);
+        anaMan -> FillNtupleSColumn(3, fParticleNameVector[i]);
+        anaMan -> FillNtupleDColumn(4, fEnergyDepositVector[i]);
+        anaMan -> FillNtupleDColumn(5, fTravelDistanceVector[i]);
+        anaMan -> AddNtupleRow();
+    }
 }

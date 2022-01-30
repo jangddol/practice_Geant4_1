@@ -2,6 +2,9 @@
 #title data
 #separator 44
 #vector_separator 59
+#column int RunID
+#column int EventID
+#column int TrackID
+#column string Particle_Name
 #column double ed
-#column double ed_proton
 #column double distance

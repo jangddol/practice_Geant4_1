@@ -16,6 +16,7 @@ class PracRunAction : public G4UserRunAction
 		virtual ~PracRunAction();
         
         void PutStepLengthData(G4double stepLength);
+        G4int GetRunID(){return runID;}
 
 		virtual void BeginOfRunAction(const G4Run* run);
 		virtual void EndOfRunAction(const G4Run* run);
@@ -26,6 +27,7 @@ class PracRunAction : public G4UserRunAction
         G4Accumulable<G4double> sqsumStepLength;
         G4double meanStepLength;
         G4double stdvStepLength;
+        G4int runID;
 };
 
 #endif
