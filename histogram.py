@@ -4,23 +4,6 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 import sys
 
-np.set_printoptions(threshold=sys.maxsize)
-
-# 형태는 (4+1)-dimension array
-# 처음에 int와 float으로의 전환을 마친 후
-# 파티클 이름에 대한 값을 모두 모아서 몇종류가 있는지 파악,
-# 나머지 인덱스도 최대 값이 얼마인지 파악,
-# 이를 이용해 array를 생성한후,
-# 각 자리에 [energyDeposit, travelDistance]를 넣는다.
-
-# run은 무시하고, event 인덱스를 모두 그냥 이어버리는게 좋을 것 같다.
-
-# 스레드가 여러개인 것을 잘 고려해야한다.
-
-# 최종 목표는 반응이 일어난 목록대로 분류하는 것
-    # 현재 목표는 파티클이 튀어나온 종류에 따라서 분류하는 것
-        # 각 파티클이 몇 트랙을 차지하고 있는지 분류할 것
-
 f1 = open('output_nt_data_t0.csv', 'r')
 f2 = open('output_nt_data_t1.csv', 'r')
 
@@ -61,10 +44,6 @@ for X in EventList:
             energyDepositProton = x[3]
             travelDistance = x[4]
     CalculatedData.append([trackMax, particleNameList, energyDeposit, energyDepositProton, travelDistance])
-
-CalculatedData = np.array(CalculatedData, dtype=object)
-
-# print(CalculatedData)
 
 trackMaxMax = max(CalculatedData, key=lambda x: x[0])[0]  # 1부터 센다
 
@@ -137,6 +116,7 @@ axes[1, 1].set_ylabel("Number of Data")
 plt.subplots(constrained_layout=True)
 fig.savefig("Histogram.png")
 
+"""
 plt.figure(dpi=DPI, figsize=[14, 10])
 plt.hist2d(energyDepositList, energyDepositProtonList, bins=[hist2dbin, hist2dbin], norm=mpl.colors.LogNorm())
 plt.colorbar()
@@ -145,3 +125,4 @@ plt.xlabel("Total Energy Deposit (MeV)")
 plt.ylabel("Proton Energy Deposit (MeV)")
 # plt.xlim(-5, 105)
 plt.savefig("Histogram2D.png")
+"""
