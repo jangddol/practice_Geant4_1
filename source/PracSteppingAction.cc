@@ -1,6 +1,7 @@
 #include "PracSteppingAction.hh"
 #include "PracEventAction.hh"
 #include "PracDetectorConstruction.hh"
+#include "PracCoutModeSingleton.hh"
 
 #include "G4Step.hh"
 #include "G4Event.hh"
@@ -24,17 +25,26 @@ PracSteppingAction::~PracSteppingAction()
 
 void PracSteppingAction::UserSteppingAction(const G4Step* step)
 {
-    // G4cout << "==================== Start of Step Information (Manual) ====================" << G4endl;
-    // G4cout << "Track - TrackID             : " << step->GetTrack()->GetTrackID() << G4endl;
-    // G4cout << "Track - Particle Name       : " << step->GetTrack()->GetParticleDefinition()->GetParticleName() << G4endl;
-    // G4cout << "Track - Position            : " << (step->GetTrack()->GetPosition())/cm << G4endl;
-    // G4cout << "Track - Kinetic Energy      : " << step->GetTrack()->GetKineticEnergy() << G4endl;
-    // G4cout << "Step Length                 : " << (step->GetStepLength())/cm << G4endl;
-    // G4cout << "Total Energy Deposit        : " << step->GetTotalEnergyDeposit() << G4endl;
-    // G4cout << "Delta Position              : " << step->GetDeltaPosition() << G4endl;
-    // G4cout << "====================  End of Step Information (Manual)  ====================" << G4endl;
-    // G4cout << G4endl;
+    PracCoutModeSingleton* coutModeSingleton = PracCoutModeSingleton::GetInstance();
+    G4bool coutMode = coutModeSingleton->GetPracCoutMode();
+    if (coutMode)
+    {
+        G4cout << "==================== Start of Step Information (Manual) ====================" << G4endl;
+        G4cout << "Track - TrackID             : " << step->GetTrack()->GetTrackID() << G4endl;
+        G4cout << "Track - Particle Name       : " << step->GetTrack()->GetParticleDefinition()->GetParticleName() << G4endl;
+        G4cout << "Track - Position            : " << (step->GetTrack()->GetPosition())/cm << G4endl;
+        G4cout << "Track - Kinetic Energy      : " << step->GetTrack()->GetKineticEnergy() << G4endl;
+        G4cout << "Step Length                 : " << (step->GetStepLength())/cm << G4endl;
+        G4cout << "Total Energy Deposit        : " << step->GetTotalEnergyDeposit() << G4endl;
+        G4cout << "Delta Position              : " << step->GetDeltaPosition() << G4endl;
+        G4cout << "====================  End of Step Information (Manual)  ====================" << G4endl;
+        G4cout << G4endl;
+    }
     
+    if (step->GetTotalEnergyDeposit() < 1e-300 && step->GetTotalEnergyDeposit() > 0)
+    {
+        G4cout << step->GetTotalEnergyDeposit() << G4endl;
+    }
     if (!fScoringVolume)
     {
         const PracDetectorConstruction* detectorConstruction = static_cast<const PracDetectorConstruction*>(G4RunManager::GetRunManager()->GetUserDetectorConstruction());
@@ -53,7 +63,10 @@ void PracSteppingAction::UserSteppingAction(const G4Step* step)
             fEventAction->AppendTrackIdVector(trackId);
             fEventAction->AppendParticleNameVector(step->GetTrack()->GetParticleDefinition()->GetParticleName());
         }
-        fEventAction->AddEnergyDepositVector(step->GetTotalEnergyDeposit(), trackId);
+        if(step->GetTotalEnergyDeposit() > 1e-300)
+        {
+            fEventAction->AddEnergyDepositVector(step->GetTotalEnergyDeposit(), trackId);
+        }
         fEventAction->AddTravelDistanceVector(step->GetStepLength(), trackId);
         
     }

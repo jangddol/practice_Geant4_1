@@ -2403,6 +2403,7 @@ CMakeFiles/practice.dir/source/PracSteppingAction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/tree
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/wbuf
  /opt/geant4/10.7.p01/include/Geant4/trkdefs.hh
+ include/PracCoutModeSingleton.hh
  include/PracDetectorConstruction.hh
  include/PracEventAction.hh
  include/PracRunAction.hh

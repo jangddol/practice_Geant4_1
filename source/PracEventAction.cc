@@ -41,18 +41,24 @@ void PracEventAction::EndOfEventAction(const G4Event* event)
     PracCoutModeSingleton* coutmodeinstance = PracCoutModeSingleton::GetInstance();
     G4bool coutmode = coutmodeinstance->GetPracCoutMode();
 
+    size_t vectorSize = fRunIdVector.size();
+
     if (coutmode)
     {
-        // G4cout << "==================== Start of Event Information (Manual) ====================" << G4endl;
-        // G4cout << "Event ID                 : " << event->GetEventID() << G4endl;
-        // G4cout << "Total Energy Deposit     : " << fEnergyDeposit << G4endl;
-        // G4cout << "Total Step Length        : " << fStepLength << G4endl;
-        // G4cout << "====================  End of Event Information (Manual)  ====================" << G4endl;
-        // G4cout << G4endl;
+        G4double totalEnergyDeposit = 0;
+        for (size_t i=0; i < vectorSize; ++i)
+        {
+            totalEnergyDeposit += fEnergyDepositVector[i];
+        }
+        G4cout << "==================== Start of Event Information (Manual) ====================" << G4endl;
+        G4cout << "Event ID                 : " << event->GetEventID() << G4endl;
+        G4cout << "Total Energy Deposit     : " << totalEnergyDeposit << G4endl;
+        G4cout << "Total Step Length        : " << fTravelDistanceVector[0] << G4endl;
+        G4cout << "====================  End of Event Information (Manual)  ====================" << G4endl;
+        G4cout << G4endl;
     }
 
     G4AnalysisManager* anaMan = G4AnalysisManager::Instance();
-    size_t vectorSize = fRunIdVector.size();
     for (size_t i=0; i < vectorSize; ++i)
     {
         anaMan -> FillNtupleIColumn(0, fRunIdVector[i]);

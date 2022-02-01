@@ -6,32 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/sorimjangddol/termhome/practice_Geant4_1/source/PracActionInitialization.cc
-PracActionInitialization.hh
-/home/sorimjangddol/termhome/practice_Geant4_1/source/PracActionInitialization.hh
-PracPrimaryGeneratorAction.hh
-/home/sorimjangddol/termhome/practice_Geant4_1/source/PracPrimaryGeneratorAction.hh
-PracRunAction.hh
-/home/sorimjangddol/termhome/practice_Geant4_1/source/PracRunAction.hh
-PracEventAction.hh
-/home/sorimjangddol/termhome/practice_Geant4_1/source/PracEventAction.hh
-PracSteppingAction.hh
-/home/sorimjangddol/termhome/practice_Geant4_1/source/PracSteppingAction.hh
-
-/home/sorimjangddol/termhome/practice_Geant4_1/source/PracEventAction.cc
-PracEventAction.hh
-/home/sorimjangddol/termhome/practice_Geant4_1/source/PracEventAction.hh
-PracRunAction.hh
-/home/sorimjangddol/termhome/practice_Geant4_1/source/PracRunAction.hh
-PracCoutModeSingleton.hh
-/home/sorimjangddol/termhome/practice_Geant4_1/source/PracCoutModeSingleton.hh
-G4Event.hh
-/home/sorimjangddol/termhome/practice_Geant4_1/source/G4Event.hh
-g4csv.hh
-/home/sorimjangddol/termhome/practice_Geant4_1/source/g4csv.hh
-G4SystemOfUnits.hh
-/home/sorimjangddol/termhome/practice_Geant4_1/source/G4SystemOfUnits.hh
-
 /home/sorimjangddol/termhome/practice_Geant4_1/source/PracSteppingAction.cc
 PracSteppingAction.hh
 /home/sorimjangddol/termhome/practice_Geant4_1/source/PracSteppingAction.hh
@@ -39,6 +13,8 @@ PracEventAction.hh
 /home/sorimjangddol/termhome/practice_Geant4_1/source/PracEventAction.hh
 PracDetectorConstruction.hh
 /home/sorimjangddol/termhome/practice_Geant4_1/source/PracDetectorConstruction.hh
+PracCoutModeSingleton.hh
+/home/sorimjangddol/termhome/practice_Geant4_1/source/PracCoutModeSingleton.hh
 G4Step.hh
 /home/sorimjangddol/termhome/practice_Geant4_1/source/G4Step.hh
 G4Event.hh
@@ -1606,20 +1582,6 @@ G4ParticleDefinition.icc
 
 /opt/geant4/10.7.p01/include/Geant4/G4ParticleDefinition.icc
 
-/opt/geant4/10.7.p01/include/Geant4/G4ParticleGun.hh
-globals.hh
-/opt/geant4/10.7.p01/include/Geant4/globals.hh
-G4VPrimaryGenerator.hh
-/opt/geant4/10.7.p01/include/Geant4/G4VPrimaryGenerator.hh
-G4ThreeVector.hh
-/opt/geant4/10.7.p01/include/Geant4/G4ThreeVector.hh
-G4ParticleDefinition.hh
-/opt/geant4/10.7.p01/include/Geant4/G4ParticleDefinition.hh
-G4PrimaryVertex.hh
-/opt/geant4/10.7.p01/include/Geant4/G4PrimaryVertex.hh
-G4ParticleMomentum.hh
-/opt/geant4/10.7.p01/include/Geant4/G4ParticleMomentum.hh
-
 /opt/geant4/10.7.p01/include/Geant4/G4ParticleMomentum.hh
 G4ThreeVector.hh
 /opt/geant4/10.7.p01/include/Geant4/G4ThreeVector.hh
@@ -2856,8 +2818,6 @@ globals.hh
 G4ThreeVector.hh
 /opt/geant4/10.7.p01/include/Geant4/G4ThreeVector.hh
 
-/opt/geant4/10.7.p01/include/Geant4/G4VUserActionInitialization.hh
-
 /opt/geant4/10.7.p01/include/Geant4/G4VUserDetectorConstruction.hh
 globals.hh
 /opt/geant4/10.7.p01/include/Geant4/globals.hh
@@ -3818,10 +3778,6 @@ vector
 G4Types.hh
 /opt/geant4/10.7.p01/include/Geant4/G4Types.hh
 
-include/PracActionInitialization.hh
-G4VUserActionInitialization.hh
-include/G4VUserActionInitialization.hh
-
 include/PracCoutModeSingleton.hh
 globals.hh
 include/globals.hh
@@ -3843,14 +3799,6 @@ vector
 -
 cassert
 -
-globals.hh
-include/globals.hh
-
-include/PracPrimaryGeneratorAction.hh
-G4VUserPrimaryGeneratorAction.hh
-include/G4VUserPrimaryGeneratorAction.hh
-G4ParticleGun.hh
-include/G4ParticleGun.hh
 globals.hh
 include/globals.hh
 
