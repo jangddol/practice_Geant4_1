@@ -93,11 +93,6 @@ hist2dbin = 1000
 histoutput = axes[0, 0].hist(energyDepositList, bins=histbin, alpha=0.6, label='All Particles')
 histdata[0], binedge[0] = histoutput[:2]
 axes[0, 0].hist(energyDepositProtonList, binedge[0], alpha=0.4, label='Only Proton')
-i = 0
-while i < len(trackIdList):
-    axes[0, 0].hist(trackSortedEnergyDepositList[i], binedge[0], alpha=0.4, label=str(trackIdList[i])+' tracks case')
-    i += 1
-axes[0, 0].legend()
 # axes[0, 0].grid(linewidth=1)
 axes[0, 0].set_title("Energy Deposit Histogram")
 axes[0, 0].set_xlabel("Energy Deposit (MeV)")
@@ -116,11 +111,6 @@ axes[0, 1].text(0, max(histdata[1]) * 0.9, "stdv : {:.3f}".format(np.std(travelD
 
 axes[1, 0].hist(energyDepositList, bins=histbin, alpha=0.6, label='All Particles')
 axes[1, 0].hist(energyDepositProtonList, binedge[0], alpha=0.4, label='Only Proton')
-i = 0
-while i < len(trackIdList):
-    axes[1, 0].hist(trackSortedEnergyDepositList[i], binedge[0], alpha=0.4, label=str(trackIdList[i])+' tracks case')
-    i += 1
-axes[1, 0].legend()
 axes[1, 0].grid(linewidth=0.3)
 axes[1, 0].set_yscale("log")
 axes[1, 0].set_title("Energy Deposit Histogram (Log Scale)")
@@ -145,3 +135,18 @@ plt.xlabel("Total Energy Deposit (MeV)")
 plt.ylabel("Proton Energy Deposit (MeV)")
 # plt.xlim(-5, 105)
 plt.savefig("Histogram2D.png")
+
+
+fig2 = plt.figure(dpi=DPI, figsize=[14, 10])
+axes2 = fig2.subplots(nrows=3, ncols=3)
+i = 0
+while i < 9:
+    ax = axes2[int((i - i%3)/3), int(i%3)]
+    ax.hist(trackSortedEnergyDepositList[i], binedge[0], alpha=0.4, label=str(trackIdList[i])+' tracks case')
+    ax.set_title(str(trackIdList[i]) + "tracks case")
+    ax.set_xlabel("Total Energy Deposit (MeV)")
+    ax.set_ylabel("Number of Data")
+    ax.set_yscale("log")
+    i += 1
+fig2.subplots_adjust(wspace=0.3, hspace=0.3)
+fig2.savefig("Histogram_trackMax.png")
