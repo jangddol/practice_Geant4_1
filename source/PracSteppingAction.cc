@@ -41,10 +41,6 @@ void PracSteppingAction::UserSteppingAction(const G4Step* step)
         G4cout << G4endl;
     }
     
-    if (step->GetTotalEnergyDeposit() < 1e-300 && step->GetTotalEnergyDeposit() > 0)
-    {
-        G4cout << step->GetTotalEnergyDeposit() << G4endl;
-    }
     if (!fScoringVolume)
     {
         const PracDetectorConstruction* detectorConstruction = static_cast<const PracDetectorConstruction*>(G4RunManager::GetRunManager()->GetUserDetectorConstruction());
@@ -55,19 +51,19 @@ void PracSteppingAction::UserSteppingAction(const G4Step* step)
     if (currentLogicalVolume == fScoringVolume) 
     {
         G4int trackId = step->GetTrack()->GetTrackID();
-        G4int runIdSize = fEventAction->GetRunIdVectorSize();
-        if (trackId > runIdSize)
+        if (fEventAction->IsInTrackIdVector(trackId) == false)
         {
             fEventAction->AppendRunIdVector(fEventAction->GetRunAction()->GetRunID());
             fEventAction->AppendEventIdVector(fEventAction->GetEventID());
             fEventAction->AppendTrackIdVector(trackId);
             fEventAction->AppendParticleNameVector(step->GetTrack()->GetParticleDefinition()->GetParticleName());
+            fEventAction->AppendEnergyDepositVector(step->GetTotalEnergyDeposit());
+            fEventAction->AppendTravelDistanceVector(step->GetStepLength());
         }
-        if(step->GetTotalEnergyDeposit() > 1e-300)
+        else
         {
-            fEventAction->AddEnergyDepositVector(step->GetTotalEnergyDeposit(), trackId);
+            fEventAction->AddEnergyDepositVector(step->GetTotalEnergyDeposit());
+            fEventAction->AddTravelDistanceVector(step->GetStepLength());
         }
-        fEventAction->AddTravelDistanceVector(step->GetStepLength(), trackId);
-        
     }
 }

@@ -1,3 +1,3 @@
 /run/verbose 2
-/run/initialize /run/beamOn 10000
-ied 
+/run/initialize /run/beamOn 5000000
+d 

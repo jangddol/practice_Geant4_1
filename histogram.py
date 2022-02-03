@@ -6,8 +6,10 @@ import sys
 
 f1 = open('output_nt_data_t0.csv', 'r')
 f2 = open('output_nt_data_t1.csv', 'r')
+f3 = open('output_nt_data_t2.csv', 'r')
+f4 = open('output_nt_data_t3.csv', 'r')
 
-F = [f1, f2]
+F = [f1, f2, f3, f4]
 
 ReaderList = [csv.reader(f) for f in F]
 RawData = []
@@ -24,11 +26,18 @@ for reader in ReaderList:
             temp.append(float(line[5]))
             RawData.append(temp)
 
+for f in F:
+    f.close()
+
+del ReaderList
+
 RawData = sorted(RawData, key=lambda x: (x[0], x[1]))
 eventMax = max(RawData, key=lambda x: x[0])[0]
 EventList = [[] for i in range(eventMax + 1)]
 for X in RawData:
     EventList[X[0]].append(X)
+
+del RawData
 
 CalculatedData = []
 for X in EventList:
@@ -45,14 +54,18 @@ for X in EventList:
             travelDistance = x[4]
     CalculatedData.append([trackMax, particleNameList, energyDeposit, energyDepositProton, travelDistance])
 
+del EventList
+
 trackMaxMax = max(CalculatedData, key=lambda x: x[0])[0]  # 1부터 센다
 
+trackIdList = [0 for i in range(trackMaxMax)]
 energyDepositList = []
 energyDepositProtonList = []
 trackSortedEnergyDepositList = [[] for i in range(trackMaxMax)]
 trackSortedEnergyDepositProtonList = [[] for i in range(trackMaxMax)]
 travelDistanceList = []
 for X in CalculatedData:
+    trackIdList[X[0]-1] = X[0]
     energyDepositList.append(X[2])
     energyDepositProtonList.append(X[3])
     trackSortedEnergyDepositList[X[0]-1].append(X[2])
@@ -61,25 +74,29 @@ for X in CalculatedData:
 
 # print(energyDepositList)
 
-energyDepositList = np.array(energyDepositList)
-energyDepositProtonList = np.array(energyDepositProtonList)
-travelDistanceList = np.array(travelDistanceList)
+# energyDepositList = np.array(energyDepositList)
+# energyDepositProtonList = np.array(energyDepositProtonList)
+# travelDistanceList = np.array(travelDistanceList)
 
 histoutput = [0, 0, 0]
 histdata = [0, 0]
 binedge = [0, 0]
 
-DPI = 100
+DPI = 300
 
 fig = plt.figure(figsize=[14, 10], dpi=DPI)
 axes = fig.subplots(nrows=2, ncols=2)
 
-histbin = 100
-hist2dbin = 100
+histbin = 1000
+hist2dbin = 1000
 
 histoutput = axes[0, 0].hist(energyDepositList, bins=histbin, alpha=0.6, label='All Particles')
 histdata[0], binedge[0] = histoutput[:2]
 axes[0, 0].hist(energyDepositProtonList, binedge[0], alpha=0.4, label='Only Proton')
+i = 0
+while i < len(trackIdList):
+    axes[0, 0].hist(trackSortedEnergyDepositList[i], binedge[0], alpha=0.4, label=str(trackIdList[i])+' tracks case')
+    i += 1
 axes[0, 0].legend()
 # axes[0, 0].grid(linewidth=1)
 axes[0, 0].set_title("Energy Deposit Histogram")
@@ -99,6 +116,10 @@ axes[0, 1].text(0, max(histdata[1]) * 0.9, "stdv : {:.3f}".format(np.std(travelD
 
 axes[1, 0].hist(energyDepositList, bins=histbin, alpha=0.6, label='All Particles')
 axes[1, 0].hist(energyDepositProtonList, binedge[0], alpha=0.4, label='Only Proton')
+i = 0
+while i < len(trackIdList):
+    axes[1, 0].hist(trackSortedEnergyDepositList[i], binedge[0], alpha=0.4, label=str(trackIdList[i])+' tracks case')
+    i += 1
 axes[1, 0].legend()
 axes[1, 0].grid(linewidth=0.3)
 axes[1, 0].set_yscale("log")
@@ -116,7 +137,6 @@ axes[1, 1].set_ylabel("Number of Data")
 plt.subplots(constrained_layout=True)
 fig.savefig("Histogram.png")
 
-"""
 plt.figure(dpi=DPI, figsize=[14, 10])
 plt.hist2d(energyDepositList, energyDepositProtonList, bins=[hist2dbin, hist2dbin], norm=mpl.colors.LogNorm())
 plt.colorbar()
@@ -125,4 +145,3 @@ plt.xlabel("Total Energy Deposit (MeV)")
 plt.ylabel("Proton Energy Deposit (MeV)")
 # plt.xlim(-5, 105)
 plt.savefig("Histogram2D.png")
-"""
