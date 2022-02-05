@@ -14,12 +14,7 @@
 #include "PracActionInitialization.hh"
 #include "PracCoutModeSingleton.hh"
 
-#include "FTFP_BERT.hh"
-<<<<<<< HEAD
-#include "QBBC.hh"
 #include "QGSP_BERT_HP.hh"
-=======
->>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
 
 PracCoutModeSingleton* PracCoutModeSingleton::instance = nullptr;
 
@@ -61,17 +56,10 @@ int main(int argc, char** argv)
 
 	//runManager
 	auto* runManager = G4RunManagerFactory::CreateRunManager(G4RunManagerType::Default);
-<<<<<<< HEAD
     runManager->SetNumberOfThreads(1);
-
-	//Physics List
+	
+    //Physics List
 	G4VModularPhysicsList* physicsList = new QGSP_BERT_HP;
-=======
-    runManager->SetNumberOfThreads(4);
-
-	//Physics List
-	G4VModularPhysicsList* physicsList = new FTFP_BERT;
->>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
 	physicsList->SetVerboseLevel(1);
 	runManager->SetUserInitialization(physicsList);
 

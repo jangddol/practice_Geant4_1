@@ -39,11 +39,8 @@ class PracEventAction : public G4UserEventAction
         void AppendTravelDistanceVector(const G4double stepLength){fTravelDistanceVector.push_back(stepLength);}
         void AddEnergyDepositVector(const G4double energyDeposit){fEnergyDepositVector.back() += energyDeposit;}
         void AddTravelDistanceVector(const G4double stepLength){fTravelDistanceVector.back() += stepLength;}
-<<<<<<< HEAD
         void AddEdep(const G4double edep){fEdep += edep;}
         G4double GetEdep(){return fEdep;}
-=======
->>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
         G4int GetEventID(){return fEventID;}
         PracRunAction* GetRunAction(){return fRunAction;}
         
@@ -57,10 +54,7 @@ class PracEventAction : public G4UserEventAction
         std::vector<G4String> fParticleNameVector;
         std::vector<G4double> fEnergyDepositVector;
         std::vector<G4double> fTravelDistanceVector;
-<<<<<<< HEAD
         G4double fEdep;
-=======
->>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
         PracRunAction* fRunAction;
         G4int fEventID;
 };
