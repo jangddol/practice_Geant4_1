@@ -9,11 +9,7 @@
 class PracCoutModeSingleton
 {
     private:
-<<<<<<< HEAD
         PracCoutModeSingleton();
-=======
-        PracCoutModeSingleton(){};
->>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
         PracCoutModeSingleton(const PracCoutModeSingleton& other);
         ~PracCoutModeSingleton(){};
 
