@@ -1,3 +1,8 @@
 /run/verbose 2
+<<<<<<< HEAD
 /run/initialize /run/beamOn 10000
 ied 
+=======
+/run/initialize /run/beamOn 5000000
+d 
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d

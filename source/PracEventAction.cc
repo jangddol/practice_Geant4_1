@@ -4,7 +4,11 @@
 
 #include "G4Event.hh"
 //#include "G4RunManager.hh" 
+<<<<<<< HEAD
 #include "PracAnalysis.hh"
+=======
+#include "g4csv.hh"
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
 
 #include <cassert>
 
@@ -35,7 +39,10 @@ void PracEventAction::BeginOfEventAction(const G4Event* event)
     fParticleNameVector = {};
     fEnergyDepositVector = {};
     fTravelDistanceVector = {};
+<<<<<<< HEAD
     fEdep = 0.;
+=======
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
 }
 
 
@@ -94,6 +101,9 @@ void PracEventAction::EndOfEventAction(const G4Event* event)
         anaMan -> FillNtupleDColumn(4, fEnergyDepositVector.at(i));
         anaMan -> FillNtupleDColumn(5, fTravelDistanceVector.at(i));
         anaMan -> AddNtupleRow();
+<<<<<<< HEAD
         anaMan -> FillH1(0, fEdep);
+=======
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
     }
 }

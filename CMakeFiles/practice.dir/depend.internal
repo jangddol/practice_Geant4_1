@@ -98,10 +98,24 @@ CMakeFiles/practice.dir/practice.cc.o
  /opt/geant4/10.7.p01/include/Geant4/G4AffineTransform.icc
  /opt/geant4/10.7.p01/include/Geant4/G4Allocator.hh
  /opt/geant4/10.7.p01/include/Geant4/G4AllocatorPool.hh
+<<<<<<< HEAD
+=======
+ /opt/geant4/10.7.p01/include/Geant4/G4AnalysisManagerState.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4AnalysisUtilities.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4AnalysisVerbose.hh
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4ApplicationState.hh
  /opt/geant4/10.7.p01/include/Geant4/G4AutoLock.hh
  /opt/geant4/10.7.p01/include/Geant4/G4AuxiliaryNavServices.hh
  /opt/geant4/10.7.p01/include/Geant4/G4AuxiliaryNavServices.icc
+<<<<<<< HEAD
+=======
+ /opt/geant4/10.7.p01/include/Geant4/G4BaseAnalysisManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4BaseFileManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4BaseNtupleManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4BaseRNtupleManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4BinScheme.hh
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4BlockingList.hh
  /opt/geant4/10.7.p01/include/Geant4/G4BlockingList.icc
  /opt/geant4/10.7.p01/include/Geant4/G4Cache.hh
@@ -109,6 +123,17 @@ CMakeFiles/practice.dir/practice.cc.o
  /opt/geant4/10.7.p01/include/Geant4/G4ClassificationOfNewTrack.hh
  /opt/geant4/10.7.p01/include/Geant4/G4Color.hh
  /opt/geant4/10.7.p01/include/Geant4/G4Colour.hh
+<<<<<<< HEAD
+=======
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvAnalysisManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvAnalysisManager.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvAnalysisReader.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvAnalysisReader.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvFileManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvNtupleFileManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvNtupleManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvRNtupleManager.hh
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4DAWNFILE.hh
  /opt/geant4/10.7.p01/include/Geant4/G4DCofThisEvent.hh
  /opt/geant4/10.7.p01/include/Geant4/G4DataVector.hh
@@ -127,6 +152,10 @@ CMakeFiles/practice.dir/practice.cc.o
  /opt/geant4/10.7.p01/include/Geant4/G4ExceptionSeverity.hh
  /opt/geant4/10.7.p01/include/Geant4/G4Exp.hh
  /opt/geant4/10.7.p01/include/Geant4/G4FastVector.hh
+<<<<<<< HEAD
+=======
+ /opt/geant4/10.7.p01/include/Geant4/G4Fcn.hh
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4ForceCondition.hh
  /opt/geant4/10.7.p01/include/Geant4/G4GMocrenFile.hh
  /opt/geant4/10.7.p01/include/Geant4/G4GPILSelection.hh
@@ -137,11 +166,22 @@ CMakeFiles/practice.dir/practice.cc.o
  /opt/geant4/10.7.p01/include/Geant4/G4GeomSplitter.hh
  /opt/geant4/10.7.p01/include/Geant4/G4GlobalConfig.hh
  /opt/geant4/10.7.p01/include/Geant4/G4GraphicsSystemList.hh
+<<<<<<< HEAD
+=======
+ /opt/geant4/10.7.p01/include/Geant4/G4H1ToolsManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4H2ToolsManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4H3ToolsManager.hh
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4HCofThisEvent.hh
  /opt/geant4/10.7.p01/include/Geant4/G4HepRep.hh
  /opt/geant4/10.7.p01/include/Geant4/G4HepRepFile.hh
  /opt/geant4/10.7.p01/include/Geant4/G4HepRepFileXMLWriter.hh
  /opt/geant4/10.7.p01/include/Geant4/G4HitFilterFactories.hh
+<<<<<<< HEAD
+=======
+ /opt/geant4/10.7.p01/include/Geant4/G4HnInformation.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4HnManager.hh
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4IonisParamElm.hh
  /opt/geant4/10.7.p01/include/Geant4/G4IonisParamMat.hh
  /opt/geant4/10.7.p01/include/Geant4/G4Isotope.hh
@@ -175,6 +215,11 @@ CMakeFiles/practice.dir/practice.cc.o
  /opt/geant4/10.7.p01/include/Geant4/G4Normal3D.hh
  /opt/geant4/10.7.p01/include/Geant4/G4NormalNavigation.hh
  /opt/geant4/10.7.p01/include/Geant4/G4NormalNavigation.icc
+<<<<<<< HEAD
+=======
+ /opt/geant4/10.7.p01/include/Geant4/G4NtupleBookingManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4NtupleBookingManager.icc
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4NullModel.hh
  /opt/geant4/10.7.p01/include/Geant4/G4OpenGLImmediateQt.hh
  /opt/geant4/10.7.p01/include/Geant4/G4OpenGLImmediateX.hh
@@ -182,6 +227,11 @@ CMakeFiles/practice.dir/practice.cc.o
  /opt/geant4/10.7.p01/include/Geant4/G4OpenGLStoredQt.hh
  /opt/geant4/10.7.p01/include/Geant4/G4OpenGLStoredX.hh
  /opt/geant4/10.7.p01/include/Geant4/G4OrderedTable.hh
+<<<<<<< HEAD
+=======
+ /opt/geant4/10.7.p01/include/Geant4/G4P1ToolsManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4P2ToolsManager.hh
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4PDefManager.hh
  /opt/geant4/10.7.p01/include/Geant4/G4ParameterisedNavigation.hh
  /opt/geant4/10.7.p01/include/Geant4/G4ParameterisedNavigation.icc
@@ -253,8 +303,24 @@ CMakeFiles/practice.dir/practice.cc.o
  /opt/geant4/10.7.p01/include/Geant4/G4String.hh
  /opt/geant4/10.7.p01/include/Geant4/G4String.icc
  /opt/geant4/10.7.p01/include/Geant4/G4TBBTaskGroup.hh
+<<<<<<< HEAD
  /opt/geant4/10.7.p01/include/Geant4/G4THitsCollection.hh
  /opt/geant4/10.7.p01/include/Geant4/G4THitsMap.hh
+=======
+ /opt/geant4/10.7.p01/include/Geant4/G4TFileInformation.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4TFileManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4TFileManager.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4THitsCollection.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4THitsMap.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4THnManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4THnManager.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4TNtupleDescription.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4TNtupleManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4TNtupleManager.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4TRNtupleDescription.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4TRNtupleManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4TRNtupleManager.icc
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4TaskGroup.hh
  /opt/geant4/10.7.p01/include/Geant4/G4TaskManager.hh
  /opt/geant4/10.7.p01/include/Geant4/G4TaskRunManager.hh
@@ -262,6 +328,13 @@ CMakeFiles/practice.dir/practice.cc.o
  /opt/geant4/10.7.p01/include/Geant4/G4ThreadPool.hh
  /opt/geant4/10.7.p01/include/Geant4/G4Threading.hh
  /opt/geant4/10.7.p01/include/Geant4/G4ThreeVector.hh
+<<<<<<< HEAD
+=======
+ /opt/geant4/10.7.p01/include/Geant4/G4ToolsAnalysisManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4ToolsAnalysisManager.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4ToolsAnalysisReader.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4ToolsAnalysisReader.icc
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4TouchableHandle.hh
  /opt/geant4/10.7.p01/include/Geant4/G4TouchableHistory.hh
  /opt/geant4/10.7.p01/include/Geant4/G4TouchableHistory.icc
@@ -290,17 +363,38 @@ CMakeFiles/practice.dir/practice.cc.o
  /opt/geant4/10.7.p01/include/Geant4/G4UIsession.hh
  /opt/geant4/10.7.p01/include/Geant4/G4UIterminal.hh
  /opt/geant4/10.7.p01/include/Geant4/G4UItokenNum.hh
+<<<<<<< HEAD
  /opt/geant4/10.7.p01/include/Geant4/G4UserStackingAction.hh
  /opt/geant4/10.7.p01/include/Geant4/G4UserSteppingAction.hh
  /opt/geant4/10.7.p01/include/Geant4/G4UserTrackingAction.hh
+=======
+ /opt/geant4/10.7.p01/include/Geant4/G4UserRunAction.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4UserStackingAction.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4UserSteppingAction.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4UserTrackingAction.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VAnalysisManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VAnalysisManager.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4VAnalysisReader.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VAnalysisReader.icc
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4VBasicShell.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VDigi.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VDigiCollection.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VExceptionHandler.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VExternalNavigation.hh
+<<<<<<< HEAD
  /opt/geant4/10.7.p01/include/Geant4/G4VFilter.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VGraphicsScene.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VGraphicsSystem.hh
+=======
+ /opt/geant4/10.7.p01/include/Geant4/G4VFileManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VFilter.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VGraphicsScene.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VGraphicsSystem.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VH1Manager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VH2Manager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VH3Manager.hh
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4VHit.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VHitsCollection.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VMarker.hh
@@ -309,21 +403,41 @@ CMakeFiles/practice.dir/practice.cc.o
  /opt/geant4/10.7.p01/include/Geant4/G4VModel.icc
  /opt/geant4/10.7.p01/include/Geant4/G4VModelFactory.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VModularPhysicsList.hh
+<<<<<<< HEAD
+=======
+ /opt/geant4/10.7.p01/include/Geant4/G4VNtupleFileManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VNtupleManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VP1Manager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VP2Manager.hh
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4VPVParameterisation.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VParticleChange.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VParticleChange.icc
  /opt/geant4/10.7.p01/include/Geant4/G4VPhysicalVolume.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VPhysicalVolume.icc
  /opt/geant4/10.7.p01/include/Geant4/G4VPhysicsConstructor.hh
+<<<<<<< HEAD
  /opt/geant4/10.7.p01/include/Geant4/G4VProcess.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VRML1File.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VRML2File.hh
+=======
+ /opt/geant4/10.7.p01/include/Geant4/G4VPrimaryGenerator.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VProcess.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VRML1File.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VRML2File.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VRNtupleManager.hh
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4VSceneHandler.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VSceneHandler.icc
  /opt/geant4/10.7.p01/include/Geant4/G4VSolid.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VSolid.icc
  /opt/geant4/10.7.p01/include/Geant4/G4VStateDependent.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VSteppingVerbose.hh
+<<<<<<< HEAD
+=======
+ /opt/geant4/10.7.p01/include/Geant4/G4VTFileManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VTHnFileManager.hh
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4VTouchable.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VTouchable.icc
  /opt/geant4/10.7.p01/include/Geant4/G4VTrajectory.hh
@@ -335,6 +449,10 @@ CMakeFiles/practice.dir/practice.cc.o
  /opt/geant4/10.7.p01/include/Geant4/G4VUserDetectorConstruction.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VUserEventInformation.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VUserPhysicsList.hh
+<<<<<<< HEAD
+=======
+ /opt/geant4/10.7.p01/include/Geant4/G4VUserPrimaryGeneratorAction.hh
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4VUserTaskQueue.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VUserTrackInformation.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VViewer.hh
@@ -375,10 +493,18 @@ CMakeFiles/practice.dir/practice.cc.o
  /opt/geant4/10.7.p01/include/Geant4/PTL/VTask.hh
  /opt/geant4/10.7.p01/include/Geant4/PTL/VTaskGroup.hh
  /opt/geant4/10.7.p01/include/Geant4/PTL/VUserTaskQueue.hh
+<<<<<<< HEAD
  /opt/geant4/10.7.p01/include/Geant4/QBBC.hh
  /opt/geant4/10.7.p01/include/Geant4/QGSP_BERT_HP.hh
  /opt/geant4/10.7.p01/include/Geant4/Randomize.hh
  /opt/geant4/10.7.p01/include/Geant4/evtdefs.hh
+=======
+ /opt/geant4/10.7.p01/include/Geant4/Randomize.hh
+ /opt/geant4/10.7.p01/include/Geant4/evtdefs.hh
+ /opt/geant4/10.7.p01/include/Geant4/g4csv.hh
+ /opt/geant4/10.7.p01/include/Geant4/g4csv_defs.hh
+ /opt/geant4/10.7.p01/include/Geant4/g4hntools_defs.hh
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/geomdefs.hh
  /opt/geant4/10.7.p01/include/Geant4/geomwdefs.hh
  /opt/geant4/10.7.p01/include/Geant4/globals.hh
@@ -389,6 +515,86 @@ CMakeFiles/practice.dir/practice.cc.o
  /opt/geant4/10.7.p01/include/Geant4/taskdefs.hh
  /opt/geant4/10.7.p01/include/Geant4/templates.hh
  /opt/geant4/10.7.p01/include/Geant4/tls.hh
+<<<<<<< HEAD
+=======
+ /opt/geant4/10.7.p01/include/Geant4/tools/charp_out
+ /opt/geant4/10.7.p01/include/Geant4/tools/chars
+ /opt/geant4/10.7.p01/include/Geant4/tools/cid
+ /opt/geant4/10.7.p01/include/Geant4/tools/cids
+ /opt/geant4/10.7.p01/include/Geant4/tools/forit
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/axes
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/axis
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/b1
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/b2
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/b3
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/base_histo
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/h1
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/h1d
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/h2
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/h2d
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/h3
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/h3d
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/histo_data
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/p1
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/p1d
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/p2
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/p2d
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/profile_data
+ /opt/geant4/10.7.p01/include/Geant4/tools/impi
+ /opt/geant4/10.7.p01/include/Geant4/tools/lina/eqT
+ /opt/geant4/10.7.p01/include/Geant4/tools/long_out
+ /opt/geant4/10.7.p01/include/Geant4/tools/mem
+ /opt/geant4/10.7.p01/include/Geant4/tools/mnmx
+ /opt/geant4/10.7.p01/include/Geant4/tools/ntuple_binding
+ /opt/geant4/10.7.p01/include/Geant4/tools/ntuple_booking
+ /opt/geant4/10.7.p01/include/Geant4/tools/num2s
+ /opt/geant4/10.7.p01/include/Geant4/tools/press_func
+ /opt/geant4/10.7.p01/include/Geant4/tools/rcmp
+ /opt/geant4/10.7.p01/include/Geant4/tools/rcsv_ntuple
+ /opt/geant4/10.7.p01/include/Geant4/tools/realloc
+ /opt/geant4/10.7.p01/include/Geant4/tools/rntuple
+ /opt/geant4/10.7.p01/include/Geant4/tools/s2time
+ /opt/geant4/10.7.p01/include/Geant4/tools/safe_cast
+ /opt/geant4/10.7.p01/include/Geant4/tools/scast
+ /opt/geant4/10.7.p01/include/Geant4/tools/snpf
+ /opt/geant4/10.7.p01/include/Geant4/tools/snums
+ /opt/geant4/10.7.p01/include/Geant4/tools/sout
+ /opt/geant4/10.7.p01/include/Geant4/tools/sprintf
+ /opt/geant4/10.7.p01/include/Geant4/tools/sto
+ /opt/geant4/10.7.p01/include/Geant4/tools/strip
+ /opt/geant4/10.7.p01/include/Geant4/tools/stype
+ /opt/geant4/10.7.p01/include/Geant4/tools/touplow
+ /opt/geant4/10.7.p01/include/Geant4/tools/typedefs
+ /opt/geant4/10.7.p01/include/Geant4/tools/vdata
+ /opt/geant4/10.7.p01/include/Geant4/tools/vfind
+ /opt/geant4/10.7.p01/include/Geant4/tools/vmanip
+ /opt/geant4/10.7.p01/include/Geant4/tools/wcsv_histo
+ /opt/geant4/10.7.p01/include/Geant4/tools/wcsv_ntuple
+ /opt/geant4/10.7.p01/include/Geant4/tools/words
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/base_leaf
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/basket
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/branch
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/branch_element
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/branch_object
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/buffer
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/columns.icc
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/date
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/ibo
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/icol
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/idir
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/ifile
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/imutex
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/iobject
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/itree
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/key
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/leaf
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/mpi_create_basket
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/named
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/ntuple
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/seek
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/tree
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/wbuf
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/trkdefs.hh
  include/PracActionInitialization.hh
  include/PracCoutModeSingleton.hh
@@ -420,18 +626,57 @@ CMakeFiles/practice.dir/source/PracActionInitialization.cc.o
  /opt/geant4/10.7.p01/include/Geant4/G4Accumulable.icc
  /opt/geant4/10.7.p01/include/Geant4/G4Allocator.hh
  /opt/geant4/10.7.p01/include/Geant4/G4AllocatorPool.hh
+<<<<<<< HEAD
  /opt/geant4/10.7.p01/include/Geant4/G4AutoLock.hh
+=======
+ /opt/geant4/10.7.p01/include/Geant4/G4AnalysisManagerState.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4AnalysisUtilities.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4AnalysisVerbose.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4AutoLock.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4BaseAnalysisManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4BaseFileManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4BaseNtupleManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4BaseRNtupleManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4BinScheme.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvAnalysisManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvAnalysisManager.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvAnalysisReader.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvAnalysisReader.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvFileManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvNtupleFileManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvNtupleManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvRNtupleManager.hh
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4DCofThisEvent.hh
  /opt/geant4/10.7.p01/include/Geant4/G4EnvironmentUtils.hh
  /opt/geant4/10.7.p01/include/Geant4/G4Event.hh
  /opt/geant4/10.7.p01/include/Geant4/G4Exception.hh
  /opt/geant4/10.7.p01/include/Geant4/G4ExceptionSeverity.hh
+<<<<<<< HEAD
  /opt/geant4/10.7.p01/include/Geant4/G4GeomSplitter.hh
  /opt/geant4/10.7.p01/include/Geant4/G4GlobalConfig.hh
  /opt/geant4/10.7.p01/include/Geant4/G4HCofThisEvent.hh
  /opt/geant4/10.7.p01/include/Geant4/G4LogicalVolume.hh
  /opt/geant4/10.7.p01/include/Geant4/G4LogicalVolume.icc
  /opt/geant4/10.7.p01/include/Geant4/G4MergeMode.hh
+=======
+ /opt/geant4/10.7.p01/include/Geant4/G4Fcn.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4GeomSplitter.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4GlobalConfig.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4H1ToolsManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4H2ToolsManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4H3ToolsManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4HCofThisEvent.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4HnInformation.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4HnManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4LogicalVolume.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4LogicalVolume.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4MergeMode.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4NtupleBookingManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4NtupleBookingManager.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4P1ToolsManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4P2ToolsManager.hh
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4PDefManager.hh
  /opt/geant4/10.7.p01/include/Geant4/G4ParticleDefinition.hh
  /opt/geant4/10.7.p01/include/Geant4/G4ParticleDefinition.icc
@@ -446,8 +691,28 @@ CMakeFiles/practice.dir/source/PracActionInitialization.cc.o
  /opt/geant4/10.7.p01/include/Geant4/G4RotationMatrix.hh
  /opt/geant4/10.7.p01/include/Geant4/G4String.hh
  /opt/geant4/10.7.p01/include/Geant4/G4String.icc
+<<<<<<< HEAD
  /opt/geant4/10.7.p01/include/Geant4/G4Threading.hh
  /opt/geant4/10.7.p01/include/Geant4/G4ThreeVector.hh
+=======
+ /opt/geant4/10.7.p01/include/Geant4/G4TFileInformation.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4TFileManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4TFileManager.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4THnManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4THnManager.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4TNtupleDescription.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4TNtupleManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4TNtupleManager.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4TRNtupleDescription.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4TRNtupleManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4TRNtupleManager.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4Threading.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4ThreeVector.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4ToolsAnalysisManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4ToolsAnalysisManager.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4ToolsAnalysisReader.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4ToolsAnalysisReader.icc
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4TrajectoryContainer.hh
  /opt/geant4/10.7.p01/include/Geant4/G4Types.hh
  /opt/geant4/10.7.p01/include/Geant4/G4UserEventAction.hh
@@ -455,6 +720,7 @@ CMakeFiles/practice.dir/source/PracActionInitialization.cc.o
  /opt/geant4/10.7.p01/include/Geant4/G4UserSteppingAction.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VAccumulable.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VAccumulable.icc
+<<<<<<< HEAD
  /opt/geant4/10.7.p01/include/Geant4/G4VDigiCollection.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VExceptionHandler.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VHitsCollection.hh
@@ -463,6 +729,32 @@ CMakeFiles/practice.dir/source/PracActionInitialization.cc.o
  /opt/geant4/10.7.p01/include/Geant4/G4VPrimaryGenerator.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VTrajectory.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VUserActionInitialization.hh
+=======
+ /opt/geant4/10.7.p01/include/Geant4/G4VAnalysisManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VAnalysisManager.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4VAnalysisReader.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VAnalysisReader.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4VDigiCollection.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VExceptionHandler.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VFileManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VH1Manager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VH2Manager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VH3Manager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VHitsCollection.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VNtupleFileManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VNtupleManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VP1Manager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VP2Manager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VPhysicalVolume.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VPhysicalVolume.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4VPrimaryGenerator.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VRNtupleManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VTFileManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VTHnFileManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VTrajectory.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VUserActionInitialization.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VUserDetectorConstruction.hh
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4VUserEventInformation.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VUserPrimaryGeneratorAction.hh
  /opt/geant4/10.7.p01/include/Geant4/G4ios.hh
@@ -470,17 +762,104 @@ CMakeFiles/practice.dir/source/PracActionInitialization.cc.o
  /opt/geant4/10.7.p01/include/Geant4/PTL/Types.hh
  /opt/geant4/10.7.p01/include/Geant4/PTL/Utility.hh
  /opt/geant4/10.7.p01/include/Geant4/evtdefs.hh
+<<<<<<< HEAD
+=======
+ /opt/geant4/10.7.p01/include/Geant4/g4csv.hh
+ /opt/geant4/10.7.p01/include/Geant4/g4csv_defs.hh
+ /opt/geant4/10.7.p01/include/Geant4/g4hntools_defs.hh
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/geomdefs.hh
  /opt/geant4/10.7.p01/include/Geant4/geomwdefs.hh
  /opt/geant4/10.7.p01/include/Geant4/globals.hh
  /opt/geant4/10.7.p01/include/Geant4/pwdefs.hh
  /opt/geant4/10.7.p01/include/Geant4/templates.hh
  /opt/geant4/10.7.p01/include/Geant4/tls.hh
+<<<<<<< HEAD
+=======
+ /opt/geant4/10.7.p01/include/Geant4/tools/charp_out
+ /opt/geant4/10.7.p01/include/Geant4/tools/chars
+ /opt/geant4/10.7.p01/include/Geant4/tools/cid
+ /opt/geant4/10.7.p01/include/Geant4/tools/cids
+ /opt/geant4/10.7.p01/include/Geant4/tools/forit
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/axes
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/axis
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/b1
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/b2
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/b3
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/base_histo
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/h1
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/h1d
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/h2
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/h2d
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/h3
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/h3d
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/histo_data
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/p1
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/p1d
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/p2
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/p2d
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/profile_data
+ /opt/geant4/10.7.p01/include/Geant4/tools/impi
+ /opt/geant4/10.7.p01/include/Geant4/tools/lina/eqT
+ /opt/geant4/10.7.p01/include/Geant4/tools/long_out
+ /opt/geant4/10.7.p01/include/Geant4/tools/mem
+ /opt/geant4/10.7.p01/include/Geant4/tools/mnmx
+ /opt/geant4/10.7.p01/include/Geant4/tools/ntuple_binding
+ /opt/geant4/10.7.p01/include/Geant4/tools/ntuple_booking
+ /opt/geant4/10.7.p01/include/Geant4/tools/num2s
+ /opt/geant4/10.7.p01/include/Geant4/tools/press_func
+ /opt/geant4/10.7.p01/include/Geant4/tools/rcmp
+ /opt/geant4/10.7.p01/include/Geant4/tools/rcsv_ntuple
+ /opt/geant4/10.7.p01/include/Geant4/tools/realloc
+ /opt/geant4/10.7.p01/include/Geant4/tools/rntuple
+ /opt/geant4/10.7.p01/include/Geant4/tools/s2time
+ /opt/geant4/10.7.p01/include/Geant4/tools/safe_cast
+ /opt/geant4/10.7.p01/include/Geant4/tools/scast
+ /opt/geant4/10.7.p01/include/Geant4/tools/snpf
+ /opt/geant4/10.7.p01/include/Geant4/tools/snums
+ /opt/geant4/10.7.p01/include/Geant4/tools/sout
+ /opt/geant4/10.7.p01/include/Geant4/tools/sprintf
+ /opt/geant4/10.7.p01/include/Geant4/tools/sto
+ /opt/geant4/10.7.p01/include/Geant4/tools/strip
+ /opt/geant4/10.7.p01/include/Geant4/tools/stype
+ /opt/geant4/10.7.p01/include/Geant4/tools/touplow
+ /opt/geant4/10.7.p01/include/Geant4/tools/typedefs
+ /opt/geant4/10.7.p01/include/Geant4/tools/vdata
+ /opt/geant4/10.7.p01/include/Geant4/tools/vfind
+ /opt/geant4/10.7.p01/include/Geant4/tools/vmanip
+ /opt/geant4/10.7.p01/include/Geant4/tools/wcsv_histo
+ /opt/geant4/10.7.p01/include/Geant4/tools/wcsv_ntuple
+ /opt/geant4/10.7.p01/include/Geant4/tools/words
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/base_leaf
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/basket
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/branch
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/branch_element
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/branch_object
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/buffer
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/columns.icc
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/date
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/ibo
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/icol
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/idir
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/ifile
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/imutex
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/iobject
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/itree
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/key
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/leaf
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/mpi_create_basket
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/named
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/ntuple
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/seek
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/tree
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/wbuf
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  include/PracActionInitialization.hh
  include/PracEventAction.hh
  include/PracPrimaryGeneratorAction.hh
  include/PracRunAction.hh
  include/PracSteppingAction.hh
+<<<<<<< HEAD
 CMakeFiles/practice.dir/source/PracCoutModeSingleton.cc.o
  /home/sorimjangddol/termhome/practice_Geant4_1/source/PracCoutModeSingleton.cc
  /opt/geant4/10.7.p01/include/Geant4/G4EnvironmentUtils.hh
@@ -496,6 +875,8 @@ CMakeFiles/practice.dir/source/PracCoutModeSingleton.cc.o
  /opt/geant4/10.7.p01/include/Geant4/templates.hh
  /opt/geant4/10.7.p01/include/Geant4/tls.hh
  include/PracCoutModeSingleton.hh
+=======
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
 CMakeFiles/practice.dir/source/PracDetectorConstruction.cc.o
  /home/sorimjangddol/termhome/practice_Geant4_1/source/PracDetectorConstruction.cc
  /opt/clhep/2.4.4.0/include/CLHEP/Geometry/BasicVector3D.h
@@ -591,10 +972,24 @@ CMakeFiles/practice.dir/source/PracDetectorConstruction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/G4AffineTransform.icc
  /opt/geant4/10.7.p01/include/Geant4/G4Allocator.hh
  /opt/geant4/10.7.p01/include/Geant4/G4AllocatorPool.hh
+<<<<<<< HEAD
+=======
+ /opt/geant4/10.7.p01/include/Geant4/G4AnalysisManagerState.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4AnalysisUtilities.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4AnalysisVerbose.hh
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4ApplicationState.hh
  /opt/geant4/10.7.p01/include/Geant4/G4AutoLock.hh
  /opt/geant4/10.7.p01/include/Geant4/G4AuxiliaryNavServices.hh
  /opt/geant4/10.7.p01/include/Geant4/G4AuxiliaryNavServices.icc
+<<<<<<< HEAD
+=======
+ /opt/geant4/10.7.p01/include/Geant4/G4BaseAnalysisManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4BaseFileManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4BaseNtupleManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4BaseRNtupleManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4BinScheme.hh
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4BlockingList.hh
  /opt/geant4/10.7.p01/include/Geant4/G4BlockingList.icc
  /opt/geant4/10.7.p01/include/Geant4/G4BoundingEnvelope.hh
@@ -602,6 +997,17 @@ CMakeFiles/practice.dir/source/PracDetectorConstruction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/G4Box.icc
  /opt/geant4/10.7.p01/include/Geant4/G4CSGSolid.hh
  /opt/geant4/10.7.p01/include/Geant4/G4ClassificationOfNewTrack.hh
+<<<<<<< HEAD
+=======
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvAnalysisManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvAnalysisManager.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvAnalysisReader.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvAnalysisReader.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvFileManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvNtupleFileManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvNtupleManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvRNtupleManager.hh
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4DCofThisEvent.hh
  /opt/geant4/10.7.p01/include/Geant4/G4DataVector.hh
  /opt/geant4/10.7.p01/include/Geant4/G4DataVector.icc
@@ -618,6 +1024,10 @@ CMakeFiles/practice.dir/source/PracDetectorConstruction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/G4ExceptionSeverity.hh
  /opt/geant4/10.7.p01/include/Geant4/G4Exp.hh
  /opt/geant4/10.7.p01/include/Geant4/G4FastVector.hh
+<<<<<<< HEAD
+=======
+ /opt/geant4/10.7.p01/include/Geant4/G4Fcn.hh
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4ForceCondition.hh
  /opt/geant4/10.7.p01/include/Geant4/G4GPILSelection.hh
  /opt/geant4/10.7.p01/include/Geant4/G4GRSSolid.hh
@@ -628,7 +1038,16 @@ CMakeFiles/practice.dir/source/PracDetectorConstruction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/G4GeomSplitter.hh
  /opt/geant4/10.7.p01/include/Geant4/G4GeomTypes.hh
  /opt/geant4/10.7.p01/include/Geant4/G4GlobalConfig.hh
+<<<<<<< HEAD
  /opt/geant4/10.7.p01/include/Geant4/G4HCofThisEvent.hh
+=======
+ /opt/geant4/10.7.p01/include/Geant4/G4H1ToolsManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4H2ToolsManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4H3ToolsManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4HCofThisEvent.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4HnInformation.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4HnManager.hh
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4ICRU90StoppingData.hh
  /opt/geant4/10.7.p01/include/Geant4/G4IonisParamElm.hh
  /opt/geant4/10.7.p01/include/Geant4/G4IonisParamMat.hh
@@ -661,7 +1080,15 @@ CMakeFiles/practice.dir/source/PracDetectorConstruction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/G4Normal3D.hh
  /opt/geant4/10.7.p01/include/Geant4/G4NormalNavigation.hh
  /opt/geant4/10.7.p01/include/Geant4/G4NormalNavigation.icc
+<<<<<<< HEAD
  /opt/geant4/10.7.p01/include/Geant4/G4OrderedTable.hh
+=======
+ /opt/geant4/10.7.p01/include/Geant4/G4NtupleBookingManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4NtupleBookingManager.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4OrderedTable.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4P1ToolsManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4P2ToolsManager.hh
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4PDefManager.hh
  /opt/geant4/10.7.p01/include/Geant4/G4PVPlacement.hh
  /opt/geant4/10.7.p01/include/Geant4/G4ParameterisedNavigation.hh
@@ -725,8 +1152,28 @@ CMakeFiles/practice.dir/source/PracDetectorConstruction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/G4String.hh
  /opt/geant4/10.7.p01/include/Geant4/G4String.icc
  /opt/geant4/10.7.p01/include/Geant4/G4SystemOfUnits.hh
+<<<<<<< HEAD
  /opt/geant4/10.7.p01/include/Geant4/G4Threading.hh
  /opt/geant4/10.7.p01/include/Geant4/G4ThreeVector.hh
+=======
+ /opt/geant4/10.7.p01/include/Geant4/G4TFileInformation.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4TFileManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4TFileManager.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4THnManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4THnManager.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4TNtupleDescription.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4TNtupleManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4TNtupleManager.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4TRNtupleDescription.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4TRNtupleManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4TRNtupleManager.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4Threading.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4ThreeVector.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4ToolsAnalysisManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4ToolsAnalysisManager.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4ToolsAnalysisReader.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4ToolsAnalysisReader.icc
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4TouchableHandle.hh
  /opt/geant4/10.7.p01/include/Geant4/G4TouchableHistory.hh
  /opt/geant4/10.7.p01/include/Geant4/G4TouchableHistory.icc
@@ -749,6 +1196,7 @@ CMakeFiles/practice.dir/source/PracDetectorConstruction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/G4UImessenger.hh
  /opt/geant4/10.7.p01/include/Geant4/G4UIparameter.hh
  /opt/geant4/10.7.p01/include/Geant4/G4UItokenNum.hh
+<<<<<<< HEAD
  /opt/geant4/10.7.p01/include/Geant4/G4UserStackingAction.hh
  /opt/geant4/10.7.p01/include/Geant4/G4UserSteppingAction.hh
  /opt/geant4/10.7.p01/include/Geant4/G4UserTrackingAction.hh
@@ -757,20 +1205,58 @@ CMakeFiles/practice.dir/source/PracDetectorConstruction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/G4VExternalNavigation.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VGraphicsScene.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VHitsCollection.hh
+=======
+ /opt/geant4/10.7.p01/include/Geant4/G4UserRunAction.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4UserStackingAction.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4UserSteppingAction.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4UserTrackingAction.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VAnalysisManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VAnalysisManager.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4VAnalysisReader.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VAnalysisReader.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4VDigiCollection.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VExceptionHandler.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VExternalNavigation.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VFileManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VGraphicsScene.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VH1Manager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VH2Manager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VH3Manager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VHitsCollection.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VNtupleFileManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VNtupleManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VP1Manager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VP2Manager.hh
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4VPVParameterisation.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VParticleChange.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VParticleChange.icc
  /opt/geant4/10.7.p01/include/Geant4/G4VPhysicalVolume.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VPhysicalVolume.icc
+<<<<<<< HEAD
  /opt/geant4/10.7.p01/include/Geant4/G4VProcess.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VSolid.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VSolid.icc
  /opt/geant4/10.7.p01/include/Geant4/G4VSteppingVerbose.hh
+=======
+ /opt/geant4/10.7.p01/include/Geant4/G4VPrimaryGenerator.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VProcess.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VRNtupleManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VSolid.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VSolid.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4VSteppingVerbose.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VTFileManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VTHnFileManager.hh
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4VTouchable.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VTouchable.icc
  /opt/geant4/10.7.p01/include/Geant4/G4VTrajectory.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VUserDetectorConstruction.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VUserEventInformation.hh
+<<<<<<< HEAD
+=======
+ /opt/geant4/10.7.p01/include/Geant4/G4VUserPrimaryGeneratorAction.hh
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4VUserTrackInformation.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VVolumeMaterialScanner.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VisExtent.hh
@@ -787,6 +1273,12 @@ CMakeFiles/practice.dir/source/PracDetectorConstruction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/PTL/Utility.hh
  /opt/geant4/10.7.p01/include/Geant4/Randomize.hh
  /opt/geant4/10.7.p01/include/Geant4/evtdefs.hh
+<<<<<<< HEAD
+=======
+ /opt/geant4/10.7.p01/include/Geant4/g4csv.hh
+ /opt/geant4/10.7.p01/include/Geant4/g4csv_defs.hh
+ /opt/geant4/10.7.p01/include/Geant4/g4hntools_defs.hh
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/geomdefs.hh
  /opt/geant4/10.7.p01/include/Geant4/geomwdefs.hh
  /opt/geant4/10.7.p01/include/Geant4/globals.hh
@@ -794,6 +1286,86 @@ CMakeFiles/practice.dir/source/PracDetectorConstruction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/rundefs.hh
  /opt/geant4/10.7.p01/include/Geant4/templates.hh
  /opt/geant4/10.7.p01/include/Geant4/tls.hh
+<<<<<<< HEAD
+=======
+ /opt/geant4/10.7.p01/include/Geant4/tools/charp_out
+ /opt/geant4/10.7.p01/include/Geant4/tools/chars
+ /opt/geant4/10.7.p01/include/Geant4/tools/cid
+ /opt/geant4/10.7.p01/include/Geant4/tools/cids
+ /opt/geant4/10.7.p01/include/Geant4/tools/forit
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/axes
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/axis
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/b1
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/b2
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/b3
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/base_histo
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/h1
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/h1d
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/h2
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/h2d
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/h3
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/h3d
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/histo_data
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/p1
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/p1d
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/p2
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/p2d
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/profile_data
+ /opt/geant4/10.7.p01/include/Geant4/tools/impi
+ /opt/geant4/10.7.p01/include/Geant4/tools/lina/eqT
+ /opt/geant4/10.7.p01/include/Geant4/tools/long_out
+ /opt/geant4/10.7.p01/include/Geant4/tools/mem
+ /opt/geant4/10.7.p01/include/Geant4/tools/mnmx
+ /opt/geant4/10.7.p01/include/Geant4/tools/ntuple_binding
+ /opt/geant4/10.7.p01/include/Geant4/tools/ntuple_booking
+ /opt/geant4/10.7.p01/include/Geant4/tools/num2s
+ /opt/geant4/10.7.p01/include/Geant4/tools/press_func
+ /opt/geant4/10.7.p01/include/Geant4/tools/rcmp
+ /opt/geant4/10.7.p01/include/Geant4/tools/rcsv_ntuple
+ /opt/geant4/10.7.p01/include/Geant4/tools/realloc
+ /opt/geant4/10.7.p01/include/Geant4/tools/rntuple
+ /opt/geant4/10.7.p01/include/Geant4/tools/s2time
+ /opt/geant4/10.7.p01/include/Geant4/tools/safe_cast
+ /opt/geant4/10.7.p01/include/Geant4/tools/scast
+ /opt/geant4/10.7.p01/include/Geant4/tools/snpf
+ /opt/geant4/10.7.p01/include/Geant4/tools/snums
+ /opt/geant4/10.7.p01/include/Geant4/tools/sout
+ /opt/geant4/10.7.p01/include/Geant4/tools/sprintf
+ /opt/geant4/10.7.p01/include/Geant4/tools/sto
+ /opt/geant4/10.7.p01/include/Geant4/tools/strip
+ /opt/geant4/10.7.p01/include/Geant4/tools/stype
+ /opt/geant4/10.7.p01/include/Geant4/tools/touplow
+ /opt/geant4/10.7.p01/include/Geant4/tools/typedefs
+ /opt/geant4/10.7.p01/include/Geant4/tools/vdata
+ /opt/geant4/10.7.p01/include/Geant4/tools/vfind
+ /opt/geant4/10.7.p01/include/Geant4/tools/vmanip
+ /opt/geant4/10.7.p01/include/Geant4/tools/wcsv_histo
+ /opt/geant4/10.7.p01/include/Geant4/tools/wcsv_ntuple
+ /opt/geant4/10.7.p01/include/Geant4/tools/words
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/base_leaf
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/basket
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/branch
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/branch_element
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/branch_object
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/buffer
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/columns.icc
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/date
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/ibo
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/icol
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/idir
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/ifile
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/imutex
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/iobject
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/itree
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/key
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/leaf
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/mpi_create_basket
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/named
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/ntuple
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/seek
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/tree
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/wbuf
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/trkdefs.hh
  include/PracDetectorConstruction.hh
 CMakeFiles/practice.dir/source/PracEventAction.cc.o
@@ -816,6 +1388,17 @@ CMakeFiles/practice.dir/source/PracEventAction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/G4BaseNtupleManager.hh
  /opt/geant4/10.7.p01/include/Geant4/G4BaseRNtupleManager.hh
  /opt/geant4/10.7.p01/include/Geant4/G4BinScheme.hh
+<<<<<<< HEAD
+=======
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvAnalysisManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvAnalysisManager.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvAnalysisReader.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvAnalysisReader.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvFileManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvNtupleFileManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvNtupleManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvRNtupleManager.hh
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4DCofThisEvent.hh
  /opt/geant4/10.7.p01/include/Geant4/G4EnvironmentUtils.hh
  /opt/geant4/10.7.p01/include/Geant4/G4Event.hh
@@ -838,6 +1421,7 @@ CMakeFiles/practice.dir/source/PracEventAction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/G4PrimaryVertex.hh
  /opt/geant4/10.7.p01/include/Geant4/G4Profiler.hh
  /opt/geant4/10.7.p01/include/Geant4/G4Profiler.icc
+<<<<<<< HEAD
  /opt/geant4/10.7.p01/include/Geant4/G4RootAnalysisManager.hh
  /opt/geant4/10.7.p01/include/Geant4/G4RootAnalysisManager.icc
  /opt/geant4/10.7.p01/include/Geant4/G4RootAnalysisReader.hh
@@ -848,6 +1432,8 @@ CMakeFiles/practice.dir/source/PracEventAction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/G4RootNtupleManager.hh
  /opt/geant4/10.7.p01/include/Geant4/G4RootNtupleManager.icc
  /opt/geant4/10.7.p01/include/Geant4/G4RootRNtupleManager.hh
+=======
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4String.hh
  /opt/geant4/10.7.p01/include/Geant4/G4String.icc
  /opt/geant4/10.7.p01/include/Geant4/G4SystemOfUnits.hh
@@ -889,23 +1475,40 @@ CMakeFiles/practice.dir/source/PracEventAction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/G4VNtupleManager.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VP1Manager.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VP2Manager.hh
+<<<<<<< HEAD
+=======
+ /opt/geant4/10.7.p01/include/Geant4/G4VPrimaryGenerator.hh
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4VRNtupleManager.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VTFileManager.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VTHnFileManager.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VTrajectory.hh
+<<<<<<< HEAD
  /opt/geant4/10.7.p01/include/Geant4/G4VUserEventInformation.hh
+=======
+ /opt/geant4/10.7.p01/include/Geant4/G4VUserDetectorConstruction.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VUserEventInformation.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VUserPrimaryGeneratorAction.hh
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4ios.hh
  /opt/geant4/10.7.p01/include/Geant4/PTL/Globals.hh
  /opt/geant4/10.7.p01/include/Geant4/PTL/Types.hh
  /opt/geant4/10.7.p01/include/Geant4/PTL/Utility.hh
  /opt/geant4/10.7.p01/include/Geant4/evtdefs.hh
+<<<<<<< HEAD
  /opt/geant4/10.7.p01/include/Geant4/g4hntools_defs.hh
  /opt/geant4/10.7.p01/include/Geant4/g4root.hh
  /opt/geant4/10.7.p01/include/Geant4/g4root_defs.hh
+=======
+ /opt/geant4/10.7.p01/include/Geant4/g4csv.hh
+ /opt/geant4/10.7.p01/include/Geant4/g4csv_defs.hh
+ /opt/geant4/10.7.p01/include/Geant4/g4hntools_defs.hh
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/globals.hh
  /opt/geant4/10.7.p01/include/Geant4/pwdefs.hh
  /opt/geant4/10.7.p01/include/Geant4/templates.hh
  /opt/geant4/10.7.p01/include/Geant4/tls.hh
+<<<<<<< HEAD
  /opt/geant4/10.7.p01/include/Geant4/tools/S_STRING
  /opt/geant4/10.7.p01/include/Geant4/tools/charp_out
  /opt/geant4/10.7.p01/include/Geant4/tools/cid
@@ -913,6 +1516,13 @@ CMakeFiles/practice.dir/source/PracEventAction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/tools/cstr
  /opt/geant4/10.7.p01/include/Geant4/tools/forit
  /opt/geant4/10.7.p01/include/Geant4/tools/get_lines
+=======
+ /opt/geant4/10.7.p01/include/Geant4/tools/charp_out
+ /opt/geant4/10.7.p01/include/Geant4/tools/chars
+ /opt/geant4/10.7.p01/include/Geant4/tools/cid
+ /opt/geant4/10.7.p01/include/Geant4/tools/cids
+ /opt/geant4/10.7.p01/include/Geant4/tools/forit
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/tools/histo/axes
  /opt/geant4/10.7.p01/include/Geant4/tools/histo/axis
  /opt/geant4/10.7.p01/include/Geant4/tools/histo/b1
@@ -921,6 +1531,7 @@ CMakeFiles/practice.dir/source/PracEventAction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/tools/histo/base_histo
  /opt/geant4/10.7.p01/include/Geant4/tools/histo/h1
  /opt/geant4/10.7.p01/include/Geant4/tools/histo/h1d
+<<<<<<< HEAD
  /opt/geant4/10.7.p01/include/Geant4/tools/histo/h1df
  /opt/geant4/10.7.p01/include/Geant4/tools/histo/h2
  /opt/geant4/10.7.p01/include/Geant4/tools/histo/h2d
@@ -930,6 +1541,13 @@ CMakeFiles/practice.dir/source/PracEventAction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/tools/histo/h3df
  /opt/geant4/10.7.p01/include/Geant4/tools/histo/histo_data
  /opt/geant4/10.7.p01/include/Geant4/tools/histo/hmpi
+=======
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/h2
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/h2d
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/h3
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/h3d
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/histo_data
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/tools/histo/p1
  /opt/geant4/10.7.p01/include/Geant4/tools/histo/p1d
  /opt/geant4/10.7.p01/include/Geant4/tools/histo/p2
@@ -938,12 +1556,16 @@ CMakeFiles/practice.dir/source/PracEventAction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/tools/impi
  /opt/geant4/10.7.p01/include/Geant4/tools/lina/eqT
  /opt/geant4/10.7.p01/include/Geant4/tools/long_out
+<<<<<<< HEAD
  /opt/geant4/10.7.p01/include/Geant4/tools/mapmanip
+=======
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/tools/mem
  /opt/geant4/10.7.p01/include/Geant4/tools/mnmx
  /opt/geant4/10.7.p01/include/Geant4/tools/ntuple_binding
  /opt/geant4/10.7.p01/include/Geant4/tools/ntuple_booking
  /opt/geant4/10.7.p01/include/Geant4/tools/num2s
+<<<<<<< HEAD
  /opt/geant4/10.7.p01/include/Geant4/tools/path
  /opt/geant4/10.7.p01/include/Geant4/tools/platform
  /opt/geant4/10.7.p01/include/Geant4/tools/press_func
@@ -971,16 +1593,41 @@ CMakeFiles/practice.dir/source/PracEventAction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/tools/strip
  /opt/geant4/10.7.p01/include/Geant4/tools/stype
  /opt/geant4/10.7.p01/include/Geant4/tools/tosu
+=======
+ /opt/geant4/10.7.p01/include/Geant4/tools/press_func
+ /opt/geant4/10.7.p01/include/Geant4/tools/rcmp
+ /opt/geant4/10.7.p01/include/Geant4/tools/rcsv_ntuple
+ /opt/geant4/10.7.p01/include/Geant4/tools/realloc
+ /opt/geant4/10.7.p01/include/Geant4/tools/rntuple
+ /opt/geant4/10.7.p01/include/Geant4/tools/s2time
+ /opt/geant4/10.7.p01/include/Geant4/tools/safe_cast
+ /opt/geant4/10.7.p01/include/Geant4/tools/scast
+ /opt/geant4/10.7.p01/include/Geant4/tools/snpf
+ /opt/geant4/10.7.p01/include/Geant4/tools/snums
+ /opt/geant4/10.7.p01/include/Geant4/tools/sout
+ /opt/geant4/10.7.p01/include/Geant4/tools/sprintf
+ /opt/geant4/10.7.p01/include/Geant4/tools/sto
+ /opt/geant4/10.7.p01/include/Geant4/tools/strip
+ /opt/geant4/10.7.p01/include/Geant4/tools/stype
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/tools/touplow
  /opt/geant4/10.7.p01/include/Geant4/tools/typedefs
  /opt/geant4/10.7.p01/include/Geant4/tools/vdata
  /opt/geant4/10.7.p01/include/Geant4/tools/vfind
  /opt/geant4/10.7.p01/include/Geant4/tools/vmanip
+<<<<<<< HEAD
  /opt/geant4/10.7.p01/include/Geant4/tools/wcsv_ntuple
+=======
+ /opt/geant4/10.7.p01/include/Geant4/tools/wcsv_histo
+ /opt/geant4/10.7.p01/include/Geant4/tools/wcsv_ntuple
+ /opt/geant4/10.7.p01/include/Geant4/tools/words
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/base_leaf
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/basket
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/branch
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/branch_element
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/branch_object
+<<<<<<< HEAD
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/bufobj
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/columns.icc
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/date
@@ -988,11 +1635,17 @@ CMakeFiles/practice.dir/source/PracEventAction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/element
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/file
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/free_seg
+=======
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/buffer
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/columns.icc
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/date
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/ibo
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/icol
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/idir
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/ifile
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/imutex
+<<<<<<< HEAD
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/info
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/infos
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/iobject
@@ -1007,6 +1660,18 @@ CMakeFiles/practice.dir/source/PracEventAction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/tree
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/wbuf
  include/PracAnalysis.hh
+=======
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/iobject
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/itree
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/key
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/leaf
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/mpi_create_basket
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/named
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/ntuple
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/seek
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/tree
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/wbuf
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  include/PracCoutModeSingleton.hh
  include/PracEventAction.hh
  include/PracRunAction.hh
@@ -1445,6 +2110,17 @@ CMakeFiles/practice.dir/source/PracRunAction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/G4BaseNtupleManager.hh
  /opt/geant4/10.7.p01/include/Geant4/G4BaseRNtupleManager.hh
  /opt/geant4/10.7.p01/include/Geant4/G4BinScheme.hh
+<<<<<<< HEAD
+=======
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvAnalysisManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvAnalysisManager.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvAnalysisReader.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvAnalysisReader.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvFileManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvNtupleFileManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvNtupleManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvRNtupleManager.hh
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4EnvironmentUtils.hh
  /opt/geant4/10.7.p01/include/Geant4/G4Exception.hh
  /opt/geant4/10.7.p01/include/Geant4/G4ExceptionSeverity.hh
@@ -1469,6 +2145,7 @@ CMakeFiles/practice.dir/source/PracRunAction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/G4PrimaryVertex.hh
  /opt/geant4/10.7.p01/include/Geant4/G4Profiler.hh
  /opt/geant4/10.7.p01/include/Geant4/G4Profiler.icc
+<<<<<<< HEAD
  /opt/geant4/10.7.p01/include/Geant4/G4RootAnalysisManager.hh
  /opt/geant4/10.7.p01/include/Geant4/G4RootAnalysisManager.icc
  /opt/geant4/10.7.p01/include/Geant4/G4RootAnalysisReader.hh
@@ -1479,6 +2156,8 @@ CMakeFiles/practice.dir/source/PracRunAction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/G4RootNtupleManager.hh
  /opt/geant4/10.7.p01/include/Geant4/G4RootNtupleManager.icc
  /opt/geant4/10.7.p01/include/Geant4/G4RootRNtupleManager.hh
+=======
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4Run.hh
  /opt/geant4/10.7.p01/include/Geant4/G4String.hh
  /opt/geant4/10.7.p01/include/Geant4/G4String.icc
@@ -1526,13 +2205,21 @@ CMakeFiles/practice.dir/source/PracRunAction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/PTL/Globals.hh
  /opt/geant4/10.7.p01/include/Geant4/PTL/Types.hh
  /opt/geant4/10.7.p01/include/Geant4/PTL/Utility.hh
+<<<<<<< HEAD
  /opt/geant4/10.7.p01/include/Geant4/g4hntools_defs.hh
  /opt/geant4/10.7.p01/include/Geant4/g4root.hh
  /opt/geant4/10.7.p01/include/Geant4/g4root_defs.hh
+=======
+ /opt/geant4/10.7.p01/include/Geant4/evtdefs.hh
+ /opt/geant4/10.7.p01/include/Geant4/g4csv.hh
+ /opt/geant4/10.7.p01/include/Geant4/g4csv_defs.hh
+ /opt/geant4/10.7.p01/include/Geant4/g4hntools_defs.hh
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/globals.hh
  /opt/geant4/10.7.p01/include/Geant4/pwdefs.hh
  /opt/geant4/10.7.p01/include/Geant4/templates.hh
  /opt/geant4/10.7.p01/include/Geant4/tls.hh
+<<<<<<< HEAD
  /opt/geant4/10.7.p01/include/Geant4/tools/S_STRING
  /opt/geant4/10.7.p01/include/Geant4/tools/charp_out
  /opt/geant4/10.7.p01/include/Geant4/tools/cid
@@ -1540,6 +2227,13 @@ CMakeFiles/practice.dir/source/PracRunAction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/tools/cstr
  /opt/geant4/10.7.p01/include/Geant4/tools/forit
  /opt/geant4/10.7.p01/include/Geant4/tools/get_lines
+=======
+ /opt/geant4/10.7.p01/include/Geant4/tools/charp_out
+ /opt/geant4/10.7.p01/include/Geant4/tools/chars
+ /opt/geant4/10.7.p01/include/Geant4/tools/cid
+ /opt/geant4/10.7.p01/include/Geant4/tools/cids
+ /opt/geant4/10.7.p01/include/Geant4/tools/forit
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/tools/histo/axes
  /opt/geant4/10.7.p01/include/Geant4/tools/histo/axis
  /opt/geant4/10.7.p01/include/Geant4/tools/histo/b1
@@ -1548,6 +2242,7 @@ CMakeFiles/practice.dir/source/PracRunAction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/tools/histo/base_histo
  /opt/geant4/10.7.p01/include/Geant4/tools/histo/h1
  /opt/geant4/10.7.p01/include/Geant4/tools/histo/h1d
+<<<<<<< HEAD
  /opt/geant4/10.7.p01/include/Geant4/tools/histo/h1df
  /opt/geant4/10.7.p01/include/Geant4/tools/histo/h2
  /opt/geant4/10.7.p01/include/Geant4/tools/histo/h2d
@@ -1557,6 +2252,13 @@ CMakeFiles/practice.dir/source/PracRunAction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/tools/histo/h3df
  /opt/geant4/10.7.p01/include/Geant4/tools/histo/histo_data
  /opt/geant4/10.7.p01/include/Geant4/tools/histo/hmpi
+=======
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/h2
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/h2d
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/h3
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/h3d
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/histo_data
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/tools/histo/p1
  /opt/geant4/10.7.p01/include/Geant4/tools/histo/p1d
  /opt/geant4/10.7.p01/include/Geant4/tools/histo/p2
@@ -1565,12 +2267,16 @@ CMakeFiles/practice.dir/source/PracRunAction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/tools/impi
  /opt/geant4/10.7.p01/include/Geant4/tools/lina/eqT
  /opt/geant4/10.7.p01/include/Geant4/tools/long_out
+<<<<<<< HEAD
  /opt/geant4/10.7.p01/include/Geant4/tools/mapmanip
+=======
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/tools/mem
  /opt/geant4/10.7.p01/include/Geant4/tools/mnmx
  /opt/geant4/10.7.p01/include/Geant4/tools/ntuple_binding
  /opt/geant4/10.7.p01/include/Geant4/tools/ntuple_booking
  /opt/geant4/10.7.p01/include/Geant4/tools/num2s
+<<<<<<< HEAD
  /opt/geant4/10.7.p01/include/Geant4/tools/path
  /opt/geant4/10.7.p01/include/Geant4/tools/platform
  /opt/geant4/10.7.p01/include/Geant4/tools/press_func
@@ -1598,16 +2304,41 @@ CMakeFiles/practice.dir/source/PracRunAction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/tools/strip
  /opt/geant4/10.7.p01/include/Geant4/tools/stype
  /opt/geant4/10.7.p01/include/Geant4/tools/tosu
+=======
+ /opt/geant4/10.7.p01/include/Geant4/tools/press_func
+ /opt/geant4/10.7.p01/include/Geant4/tools/rcmp
+ /opt/geant4/10.7.p01/include/Geant4/tools/rcsv_ntuple
+ /opt/geant4/10.7.p01/include/Geant4/tools/realloc
+ /opt/geant4/10.7.p01/include/Geant4/tools/rntuple
+ /opt/geant4/10.7.p01/include/Geant4/tools/s2time
+ /opt/geant4/10.7.p01/include/Geant4/tools/safe_cast
+ /opt/geant4/10.7.p01/include/Geant4/tools/scast
+ /opt/geant4/10.7.p01/include/Geant4/tools/snpf
+ /opt/geant4/10.7.p01/include/Geant4/tools/snums
+ /opt/geant4/10.7.p01/include/Geant4/tools/sout
+ /opt/geant4/10.7.p01/include/Geant4/tools/sprintf
+ /opt/geant4/10.7.p01/include/Geant4/tools/sto
+ /opt/geant4/10.7.p01/include/Geant4/tools/strip
+ /opt/geant4/10.7.p01/include/Geant4/tools/stype
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/tools/touplow
  /opt/geant4/10.7.p01/include/Geant4/tools/typedefs
  /opt/geant4/10.7.p01/include/Geant4/tools/vdata
  /opt/geant4/10.7.p01/include/Geant4/tools/vfind
  /opt/geant4/10.7.p01/include/Geant4/tools/vmanip
+<<<<<<< HEAD
  /opt/geant4/10.7.p01/include/Geant4/tools/wcsv_ntuple
+=======
+ /opt/geant4/10.7.p01/include/Geant4/tools/wcsv_histo
+ /opt/geant4/10.7.p01/include/Geant4/tools/wcsv_ntuple
+ /opt/geant4/10.7.p01/include/Geant4/tools/words
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/base_leaf
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/basket
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/branch
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/branch_element
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/branch_object
+<<<<<<< HEAD
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/bufobj
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/columns.icc
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/date
@@ -1615,11 +2346,17 @@ CMakeFiles/practice.dir/source/PracRunAction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/element
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/file
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/free_seg
+=======
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/buffer
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/columns.icc
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/date
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/ibo
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/icol
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/idir
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/ifile
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/imutex
+<<<<<<< HEAD
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/info
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/infos
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/iobject
@@ -1634,6 +2371,18 @@ CMakeFiles/practice.dir/source/PracRunAction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/tree
  /opt/geant4/10.7.p01/include/Geant4/tools/wroot/wbuf
  include/PracAnalysis.hh
+=======
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/iobject
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/itree
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/key
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/leaf
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/mpi_create_basket
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/named
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/ntuple
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/seek
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/tree
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/wbuf
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  include/PracDetectorConstruction.hh
  include/PracPrimaryGeneratorAction.hh
  include/PracRunAction.hh
@@ -1733,13 +2482,38 @@ CMakeFiles/practice.dir/source/PracSteppingAction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/G4AffineTransform.icc
  /opt/geant4/10.7.p01/include/Geant4/G4Allocator.hh
  /opt/geant4/10.7.p01/include/Geant4/G4AllocatorPool.hh
+<<<<<<< HEAD
+=======
+ /opt/geant4/10.7.p01/include/Geant4/G4AnalysisManagerState.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4AnalysisUtilities.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4AnalysisVerbose.hh
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4ApplicationState.hh
  /opt/geant4/10.7.p01/include/Geant4/G4AutoLock.hh
  /opt/geant4/10.7.p01/include/Geant4/G4AuxiliaryNavServices.hh
  /opt/geant4/10.7.p01/include/Geant4/G4AuxiliaryNavServices.icc
+<<<<<<< HEAD
  /opt/geant4/10.7.p01/include/Geant4/G4BlockingList.hh
  /opt/geant4/10.7.p01/include/Geant4/G4BlockingList.icc
  /opt/geant4/10.7.p01/include/Geant4/G4ClassificationOfNewTrack.hh
+=======
+ /opt/geant4/10.7.p01/include/Geant4/G4BaseAnalysisManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4BaseFileManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4BaseNtupleManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4BaseRNtupleManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4BinScheme.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4BlockingList.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4BlockingList.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4ClassificationOfNewTrack.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvAnalysisManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvAnalysisManager.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvAnalysisReader.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvAnalysisReader.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvFileManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvNtupleFileManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvNtupleManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4CsvRNtupleManager.hh
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4DCofThisEvent.hh
  /opt/geant4/10.7.p01/include/Geant4/G4DataVector.hh
  /opt/geant4/10.7.p01/include/Geant4/G4DataVector.icc
@@ -1756,6 +2530,10 @@ CMakeFiles/practice.dir/source/PracSteppingAction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/G4ExceptionSeverity.hh
  /opt/geant4/10.7.p01/include/Geant4/G4Exp.hh
  /opt/geant4/10.7.p01/include/Geant4/G4FastVector.hh
+<<<<<<< HEAD
+=======
+ /opt/geant4/10.7.p01/include/Geant4/G4Fcn.hh
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4ForceCondition.hh
  /opt/geant4/10.7.p01/include/Geant4/G4GPILSelection.hh
  /opt/geant4/10.7.p01/include/Geant4/G4GRSSolid.hh
@@ -1764,7 +2542,16 @@ CMakeFiles/practice.dir/source/PracSteppingAction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/G4GRSVolume.icc
  /opt/geant4/10.7.p01/include/Geant4/G4GeomSplitter.hh
  /opt/geant4/10.7.p01/include/Geant4/G4GlobalConfig.hh
+<<<<<<< HEAD
  /opt/geant4/10.7.p01/include/Geant4/G4HCofThisEvent.hh
+=======
+ /opt/geant4/10.7.p01/include/Geant4/G4H1ToolsManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4H2ToolsManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4H3ToolsManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4HCofThisEvent.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4HnInformation.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4HnManager.hh
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4IonisParamElm.hh
  /opt/geant4/10.7.p01/include/Geant4/G4IonisParamMat.hh
  /opt/geant4/10.7.p01/include/Geant4/G4Isotope.hh
@@ -1792,7 +2579,15 @@ CMakeFiles/practice.dir/source/PracSteppingAction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/G4Navigator.icc
  /opt/geant4/10.7.p01/include/Geant4/G4NormalNavigation.hh
  /opt/geant4/10.7.p01/include/Geant4/G4NormalNavigation.icc
+<<<<<<< HEAD
  /opt/geant4/10.7.p01/include/Geant4/G4OrderedTable.hh
+=======
+ /opt/geant4/10.7.p01/include/Geant4/G4NtupleBookingManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4NtupleBookingManager.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4OrderedTable.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4P1ToolsManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4P2ToolsManager.hh
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4PDefManager.hh
  /opt/geant4/10.7.p01/include/Geant4/G4ParameterisedNavigation.hh
  /opt/geant4/10.7.p01/include/Geant4/G4ParameterisedNavigation.icc
@@ -1850,8 +2645,28 @@ CMakeFiles/practice.dir/source/PracSteppingAction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/G4String.hh
  /opt/geant4/10.7.p01/include/Geant4/G4String.icc
  /opt/geant4/10.7.p01/include/Geant4/G4SystemOfUnits.hh
+<<<<<<< HEAD
  /opt/geant4/10.7.p01/include/Geant4/G4Threading.hh
  /opt/geant4/10.7.p01/include/Geant4/G4ThreeVector.hh
+=======
+ /opt/geant4/10.7.p01/include/Geant4/G4TFileInformation.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4TFileManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4TFileManager.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4THnManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4THnManager.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4TNtupleDescription.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4TNtupleManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4TNtupleManager.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4TRNtupleDescription.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4TRNtupleManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4TRNtupleManager.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4Threading.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4ThreeVector.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4ToolsAnalysisManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4ToolsAnalysisManager.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4ToolsAnalysisReader.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4ToolsAnalysisReader.icc
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4TouchableHandle.hh
  /opt/geant4/10.7.p01/include/Geant4/G4TouchableHistory.hh
  /opt/geant4/10.7.p01/include/Geant4/G4TouchableHistory.icc
@@ -1879,24 +2694,58 @@ CMakeFiles/practice.dir/source/PracSteppingAction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/G4UserTrackingAction.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VAccumulable.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VAccumulable.icc
+<<<<<<< HEAD
  /opt/geant4/10.7.p01/include/Geant4/G4VDigiCollection.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VExceptionHandler.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VExternalNavigation.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VHitsCollection.hh
+=======
+ /opt/geant4/10.7.p01/include/Geant4/G4VAnalysisManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VAnalysisManager.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4VAnalysisReader.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VAnalysisReader.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4VDigiCollection.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VExceptionHandler.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VExternalNavigation.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VFileManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VH1Manager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VH2Manager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VH3Manager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VHitsCollection.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VNtupleFileManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VNtupleManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VP1Manager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VP2Manager.hh
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4VPVParameterisation.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VParticleChange.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VParticleChange.icc
  /opt/geant4/10.7.p01/include/Geant4/G4VPhysicalVolume.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VPhysicalVolume.icc
+<<<<<<< HEAD
  /opt/geant4/10.7.p01/include/Geant4/G4VProcess.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VSolid.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VSolid.icc
  /opt/geant4/10.7.p01/include/Geant4/G4VSteppingVerbose.hh
+=======
+ /opt/geant4/10.7.p01/include/Geant4/G4VPrimaryGenerator.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VProcess.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VRNtupleManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VSolid.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VSolid.icc
+ /opt/geant4/10.7.p01/include/Geant4/G4VSteppingVerbose.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VTFileManager.hh
+ /opt/geant4/10.7.p01/include/Geant4/G4VTHnFileManager.hh
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4VTouchable.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VTouchable.icc
  /opt/geant4/10.7.p01/include/Geant4/G4VTrajectory.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VUserDetectorConstruction.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VUserEventInformation.hh
+<<<<<<< HEAD
+=======
+ /opt/geant4/10.7.p01/include/Geant4/G4VUserPrimaryGeneratorAction.hh
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/G4VUserTrackInformation.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VVolumeMaterialScanner.hh
  /opt/geant4/10.7.p01/include/Geant4/G4VoxelNavigation.hh
@@ -1907,6 +2756,12 @@ CMakeFiles/practice.dir/source/PracSteppingAction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/PTL/Utility.hh
  /opt/geant4/10.7.p01/include/Geant4/Randomize.hh
  /opt/geant4/10.7.p01/include/Geant4/evtdefs.hh
+<<<<<<< HEAD
+=======
+ /opt/geant4/10.7.p01/include/Geant4/g4csv.hh
+ /opt/geant4/10.7.p01/include/Geant4/g4csv_defs.hh
+ /opt/geant4/10.7.p01/include/Geant4/g4hntools_defs.hh
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/geomdefs.hh
  /opt/geant4/10.7.p01/include/Geant4/geomwdefs.hh
  /opt/geant4/10.7.p01/include/Geant4/globals.hh
@@ -1914,6 +2769,86 @@ CMakeFiles/practice.dir/source/PracSteppingAction.cc.o
  /opt/geant4/10.7.p01/include/Geant4/rundefs.hh
  /opt/geant4/10.7.p01/include/Geant4/templates.hh
  /opt/geant4/10.7.p01/include/Geant4/tls.hh
+<<<<<<< HEAD
+=======
+ /opt/geant4/10.7.p01/include/Geant4/tools/charp_out
+ /opt/geant4/10.7.p01/include/Geant4/tools/chars
+ /opt/geant4/10.7.p01/include/Geant4/tools/cid
+ /opt/geant4/10.7.p01/include/Geant4/tools/cids
+ /opt/geant4/10.7.p01/include/Geant4/tools/forit
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/axes
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/axis
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/b1
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/b2
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/b3
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/base_histo
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/h1
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/h1d
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/h2
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/h2d
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/h3
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/h3d
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/histo_data
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/p1
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/p1d
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/p2
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/p2d
+ /opt/geant4/10.7.p01/include/Geant4/tools/histo/profile_data
+ /opt/geant4/10.7.p01/include/Geant4/tools/impi
+ /opt/geant4/10.7.p01/include/Geant4/tools/lina/eqT
+ /opt/geant4/10.7.p01/include/Geant4/tools/long_out
+ /opt/geant4/10.7.p01/include/Geant4/tools/mem
+ /opt/geant4/10.7.p01/include/Geant4/tools/mnmx
+ /opt/geant4/10.7.p01/include/Geant4/tools/ntuple_binding
+ /opt/geant4/10.7.p01/include/Geant4/tools/ntuple_booking
+ /opt/geant4/10.7.p01/include/Geant4/tools/num2s
+ /opt/geant4/10.7.p01/include/Geant4/tools/press_func
+ /opt/geant4/10.7.p01/include/Geant4/tools/rcmp
+ /opt/geant4/10.7.p01/include/Geant4/tools/rcsv_ntuple
+ /opt/geant4/10.7.p01/include/Geant4/tools/realloc
+ /opt/geant4/10.7.p01/include/Geant4/tools/rntuple
+ /opt/geant4/10.7.p01/include/Geant4/tools/s2time
+ /opt/geant4/10.7.p01/include/Geant4/tools/safe_cast
+ /opt/geant4/10.7.p01/include/Geant4/tools/scast
+ /opt/geant4/10.7.p01/include/Geant4/tools/snpf
+ /opt/geant4/10.7.p01/include/Geant4/tools/snums
+ /opt/geant4/10.7.p01/include/Geant4/tools/sout
+ /opt/geant4/10.7.p01/include/Geant4/tools/sprintf
+ /opt/geant4/10.7.p01/include/Geant4/tools/sto
+ /opt/geant4/10.7.p01/include/Geant4/tools/strip
+ /opt/geant4/10.7.p01/include/Geant4/tools/stype
+ /opt/geant4/10.7.p01/include/Geant4/tools/touplow
+ /opt/geant4/10.7.p01/include/Geant4/tools/typedefs
+ /opt/geant4/10.7.p01/include/Geant4/tools/vdata
+ /opt/geant4/10.7.p01/include/Geant4/tools/vfind
+ /opt/geant4/10.7.p01/include/Geant4/tools/vmanip
+ /opt/geant4/10.7.p01/include/Geant4/tools/wcsv_histo
+ /opt/geant4/10.7.p01/include/Geant4/tools/wcsv_ntuple
+ /opt/geant4/10.7.p01/include/Geant4/tools/words
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/base_leaf
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/basket
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/branch
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/branch_element
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/branch_object
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/buffer
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/columns.icc
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/date
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/ibo
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/icol
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/idir
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/ifile
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/imutex
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/iobject
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/itree
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/key
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/leaf
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/mpi_create_basket
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/named
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/ntuple
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/seek
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/tree
+ /opt/geant4/10.7.p01/include/Geant4/tools/wroot/wbuf
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
  /opt/geant4/10.7.p01/include/Geant4/trkdefs.hh
  include/PracCoutModeSingleton.hh
  include/PracDetectorConstruction.hh

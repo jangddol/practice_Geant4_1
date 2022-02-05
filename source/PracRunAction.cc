@@ -5,7 +5,11 @@
 #include "G4Run.hh"
 #include "G4AccumulableManager.hh"
 #include <vector>
+<<<<<<< HEAD
 #include "PracAnalysis.hh"
+=======
+#include "g4csv.hh"
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
 
 PracRunAction::PracRunAction() : G4UserRunAction(), stepLengthNumber(0), sumStepLength(0.), sqsumStepLength(0.), meanStepLength(0), stdvStepLength(0)
 {
@@ -24,7 +28,10 @@ PracRunAction::PracRunAction() : G4UserRunAction(), stepLengthNumber(0), sumStep
     anaMan -> CreateNtupleDColumn("ed");
     anaMan -> CreateNtupleDColumn("distance");
     anaMan -> FinishNtuple();
+<<<<<<< HEAD
     anaMan -> CreateH1("0", "Edep", 1000, 0., 120.);
+=======
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
 }
 
 

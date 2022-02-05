@@ -6,7 +6,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/sorimjangddol/termhome/practice_Geant4_1/practice.cc" "/home/sorimjangddol/termhome/practice_Geant4_1/CMakeFiles/practice.dir/practice.cc.o"
   "/home/sorimjangddol/termhome/practice_Geant4_1/source/PracActionInitialization.cc" "/home/sorimjangddol/termhome/practice_Geant4_1/CMakeFiles/practice.dir/source/PracActionInitialization.cc.o"
+<<<<<<< HEAD
   "/home/sorimjangddol/termhome/practice_Geant4_1/source/PracCoutModeSingleton.cc" "/home/sorimjangddol/termhome/practice_Geant4_1/CMakeFiles/practice.dir/source/PracCoutModeSingleton.cc.o"
+=======
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
   "/home/sorimjangddol/termhome/practice_Geant4_1/source/PracDetectorConstruction.cc" "/home/sorimjangddol/termhome/practice_Geant4_1/CMakeFiles/practice.dir/source/PracDetectorConstruction.cc.o"
   "/home/sorimjangddol/termhome/practice_Geant4_1/source/PracEventAction.cc" "/home/sorimjangddol/termhome/practice_Geant4_1/CMakeFiles/practice.dir/source/PracEventAction.cc.o"
   "/home/sorimjangddol/termhome/practice_Geant4_1/source/PracPrimaryGeneratorAction.cc" "/home/sorimjangddol/termhome/practice_Geant4_1/CMakeFiles/practice.dir/source/PracPrimaryGeneratorAction.cc.o"

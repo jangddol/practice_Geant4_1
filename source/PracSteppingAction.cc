@@ -65,6 +65,9 @@ void PracSteppingAction::UserSteppingAction(const G4Step* step)
             fEventAction->AddEnergyDepositVector(step->GetTotalEnergyDeposit());
             fEventAction->AddTravelDistanceVector(step->GetStepLength());
         }
+<<<<<<< HEAD
         fEventAction->AddEdep(step->GetTotalEnergyDeposit());
+=======
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
     }
 }

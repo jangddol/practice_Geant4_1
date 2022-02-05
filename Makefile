@@ -236,6 +236,7 @@ source/PracActionInitialization.cc.s:
 	$(MAKE) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/source/PracActionInitialization.cc.s
 .PHONY : source/PracActionInitialization.cc.s
 
+<<<<<<< HEAD
 source/PracCoutModeSingleton.o: source/PracCoutModeSingleton.cc.o
 
 .PHONY : source/PracCoutModeSingleton.o
@@ -263,6 +264,8 @@ source/PracCoutModeSingleton.cc.s:
 	$(MAKE) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/source/PracCoutModeSingleton.cc.s
 .PHONY : source/PracCoutModeSingleton.cc.s
 
+=======
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
 source/PracDetectorConstruction.o: source/PracDetectorConstruction.cc.o
 
 .PHONY : source/PracDetectorConstruction.o
@@ -418,9 +421,12 @@ help:
 	@echo "... source/PracActionInitialization.o"
 	@echo "... source/PracActionInitialization.i"
 	@echo "... source/PracActionInitialization.s"
+<<<<<<< HEAD
 	@echo "... source/PracCoutModeSingleton.o"
 	@echo "... source/PracCoutModeSingleton.i"
 	@echo "... source/PracCoutModeSingleton.s"
+=======
+>>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
 	@echo "... source/PracDetectorConstruction.o"
 	@echo "... source/PracDetectorConstruction.i"
 	@echo "... source/PracDetectorConstruction.s"
