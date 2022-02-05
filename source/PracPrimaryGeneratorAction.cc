@@ -15,7 +15,7 @@ PracPrimaryGeneratorAction::PracPrimaryGeneratorAction() : G4VUserPrimaryGenerat
 	// default particle kinematic
 	G4ParticleTable* particleTable = G4ParticleTable::GetParticleTable();
 	G4String particleName;
-	G4ParticleDefinition* particle = particleTable->FineParticle(particleName = "proton");
+	G4ParticleDefinition* particle = particleTable->FindParticle(particleName = "proton");
 	fParticleGun->SetParticleDefinition(particle);
 	fParticleGun->SetParticleMomentumDirection(G4ThreeVector(0., 0., 1.));
 	fParticleGun->SetParticleEnergy(100. * MeV);
@@ -28,11 +28,11 @@ PracPrimaryGeneratorAction::~PracPrimaryGeneratorAction()
 }
 
 
-void PracPrimaryGeneratorAction::GeneratorPrimaries(G4Event* anEvent)
+void PracPrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
 {
-	G4double x0 = 0;
-	G4double y0 = 0;
-	G4double z0 = -0.5;
+	G4double x0 = 0*m;
+	G4double y0 = 0*m;
+	G4double z0 = -0.5*m;
 
 	fParticleGun->SetParticlePosition(G4ThreeVector(x0, y0, z0));
 

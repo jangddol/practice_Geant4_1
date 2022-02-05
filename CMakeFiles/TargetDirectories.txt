@@ -1,0 +1,8 @@
+/home/sorimjangddol/termhome/practice_Geant4_1/CMakeFiles/install/local.dir
+/home/sorimjangddol/termhome/practice_Geant4_1/CMakeFiles/install.dir
+/home/sorimjangddol/termhome/practice_Geant4_1/CMakeFiles/list_install_components.dir
+/home/sorimjangddol/termhome/practice_Geant4_1/CMakeFiles/rebuild_cache.dir
+/home/sorimjangddol/termhome/practice_Geant4_1/CMakeFiles/edit_cache.dir
+/home/sorimjangddol/termhome/practice_Geant4_1/CMakeFiles/Prac.dir
+/home/sorimjangddol/termhome/practice_Geant4_1/CMakeFiles/install/strip.dir
+/home/sorimjangddol/termhome/practice_Geant4_1/CMakeFiles/practice.dir

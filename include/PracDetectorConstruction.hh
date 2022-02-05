@@ -13,14 +13,14 @@ class PracDetectorConstruction : public G4VUserDetectorConstruction
 {
 	public:
 		PracDetectorConstruction();
-		virtual ~B1DetectorConstruction();
+		virtual ~PracDetectorConstruction();
+        
+        G4LogicalVolume* GetScoringVolume() const {return fScoringVolume;}
 
 		virtual G4VPhysicalVolume* Construct();
 
-		G4LogicalVolume* GetScoringVolume() const { return fScoringVolume; }
-
-	protected:
-		G4LogicalVolume* fScoringVolume;
+    protected:
+        G4LogicalVolume* fScoringVolume;
 };
 
 #endif

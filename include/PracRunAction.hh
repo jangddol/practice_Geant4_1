@@ -3,19 +3,31 @@
 #ifndef PracRunAction_h
 #define PracRunAction_h
 
-#include "G4UserRuncAction.hh"
+#include "G4UserRunAction.hh"
+#include "G4Accumulable.hh"
 #include "globals.hh"
 
-clas G4Run;
+class G4Run;
 
-class PracRunAction : public G4RUserRunAction
+class PracRunAction : public G4UserRunAction
 {
 	public:
 		PracRunAction();
 		virtual ~PracRunAction();
+        
+        void PutStepLengthData(G4double stepLength);
+        G4int GetRunID(){return runID;}
 
-		virtual void BeginOfRunAction(const G4Run*);
-		virtual coid EndOfRunAction(const G4Run*);
+		virtual void BeginOfRunAction(const G4Run* run);
+		virtual void EndOfRunAction(const G4Run* run);
+
+    private:
+        G4Accumulable<G4int> stepLengthNumber;
+        G4Accumulable<G4double> sumStepLength;
+        G4Accumulable<G4double> sqsumStepLength;
+        G4double meanStepLength;
+        G4double stdvStepLength;
+        G4int runID;
 };
 
 #endif

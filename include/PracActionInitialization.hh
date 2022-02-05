@@ -13,6 +13,6 @@ class PracActionInitialization : public G4VUserActionInitialization
 
 		virtual void BuildForMaster() const;
 		virtual void Build() const;
-}
+};
 
 #endif
