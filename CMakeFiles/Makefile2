@@ -80,11 +80,7 @@ CMakeFiles/Prac.dir/all: CMakeFiles/practice.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Prac.dir/rule: cmake_check_build_system
-<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sorimjangddol/termhome/practice_Geant4_1/CMakeFiles 9
-=======
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sorimjangddol/termhome/practice_Geant4_1/CMakeFiles 8
->>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Prac.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sorimjangddol/termhome/practice_Geant4_1/CMakeFiles 0
 .PHONY : CMakeFiles/Prac.dir/rule
@@ -106,20 +102,12 @@ CMakeFiles/Prac.dir/clean:
 CMakeFiles/practice.dir/all:
 	$(MAKE) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/depend
 	$(MAKE) -f CMakeFiles/practice.dir/build.make CMakeFiles/practice.dir/build
-<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sorimjangddol/termhome/practice_Geant4_1/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target practice"
-=======
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sorimjangddol/termhome/practice_Geant4_1/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target practice"
->>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
 .PHONY : CMakeFiles/practice.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/practice.dir/rule: cmake_check_build_system
-<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sorimjangddol/termhome/practice_Geant4_1/CMakeFiles 9
-=======
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sorimjangddol/termhome/practice_Geant4_1/CMakeFiles 8
->>>>>>> ac5344fc3196136717d02df5a79fc375af59c22d
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/practice.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sorimjangddol/termhome/practice_Geant4_1/CMakeFiles 0
 .PHONY : CMakeFiles/practice.dir/rule
