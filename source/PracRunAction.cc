@@ -15,7 +15,7 @@ PracRunAction::PracRunAction() : G4UserRunAction(), stepLengthNumber(0), sumStep
     accumulableManager->RegisterAccumulable(sumStepLength);
     accumulableManager->RegisterAccumulable(sqsumStepLength);
 
-    G4AnalysisManager* anaMan = G4AnalysisManager::Instance();
+    G4VAnalysisManager* anaMan = G4CsvAnalysisManager::Instance();
     anaMan -> OpenFile("output");
     anaMan -> CreateNtuple("data", "data");
     anaMan -> CreateNtupleIColumn("RunID");
@@ -31,7 +31,7 @@ PracRunAction::PracRunAction() : G4UserRunAction(), stepLengthNumber(0), sumStep
 
 PracRunAction::~PracRunAction()
 {
-    G4AnalysisManager* anaMan = G4AnalysisManager::Instance();
+    G4VAnalysisManager* anaMan = G4CsvAnalysisManager::Instance();
     anaMan -> Write();
     anaMan -> CloseFile();
 }

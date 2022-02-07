@@ -2,7 +2,6 @@ import csv
 import numpy as np
 import matplotlib as mpl
 import matplotlib.pyplot as plt
-import sys
 
 f1 = open('output_nt_data_t0.csv', 'r')
 f2 = open('output_nt_data_t1.csv', 'r')
@@ -36,9 +35,10 @@ del ReaderList
 RawData = sorted(RawData, key=lambda x: (x[0], x[1]))
 eventMax = max(RawData, key=lambda x: x[0])[0]
 EventList = [[] for i in range(eventMax + 1)]
+rawEnergyDepositList = []
 for X in RawData:
     EventList[X[0]].append(X)
-
+    rawEnergyDepositList.append(X[3])
 del RawData
 
 CalculatedData = []
@@ -74,12 +74,6 @@ for X in CalculatedData:
     trackSortedEnergyDepositProtonList[X[0]-1].append(X[3])
     travelDistanceList.append(X[4])
 
-# print(energyDepositList)
-
-# energyDepositList = np.array(energyDepositList)
-# energyDepositProtonList = np.array(energyDepositProtonList)
-# travelDistanceList = np.array(travelDistanceList)
-
 histoutput = [0, 0, 0]
 histdata = [0, 0]
 binedge = [0, 0]
@@ -94,8 +88,8 @@ hist2dbin = 1000
 
 histoutput = axes[0, 0].hist(energyDepositList, bins=histbin, alpha=0.6, label='All Particles')
 histdata[0], binedge[0] = histoutput[:2]
+print("Number of Data : ", sum(histdata[0]))
 axes[0, 0].hist(energyDepositProtonList, binedge[0], alpha=0.4, label='Only Proton')
-# axes[0, 0].grid(linewidth=1)
 axes[0, 0].set_title("Energy Deposit Histogram")
 axes[0, 0].set_xlabel("Energy Deposit (MeV)")
 axes[0, 0].set_ylabel("Number of Data")
@@ -104,6 +98,7 @@ axes[0, 0].text(0, max(histdata[0]) * 0.48, "stdv : {:.3f}".format(np.std(energy
 
 histoutput = axes[0, 1].hist(travelDistanceList, bins=histbin)
 histdata[1], binedge[1] = histoutput[:2]
+print("Number of Data : ", sum(histdata[1]))
 axes[0, 1].grid(linewidth=0.3)
 axes[0, 1].set_title("Travel Distance Histogram")
 axes[0, 1].set_xlabel("Travel Distance (mm)")
@@ -143,7 +138,7 @@ fig2 = plt.figure(dpi=DPI, figsize=[14, 10])
 axes2 = fig2.subplots(nrows=3, ncols=3)
 i = 0
 while i < 9:
-    ax = axes2[int((i - i%3)/3), int(i%3)]
+    ax = axes2[int((i - i % 3)/3), int(i % 3)]
     ax.hist(trackSortedEnergyDepositList[i], binedge[0], alpha=0.4, label=str(trackIdList[i])+' tracks case')
     ax.set_title(str(trackIdList[i]) + "tracks case")
     ax.set_xlabel("Total Energy Deposit (MeV)")
@@ -152,3 +147,10 @@ while i < 9:
     i += 1
 fig2.subplots_adjust(wspace=0.3, hspace=0.3)
 fig2.savefig("Histogram_trackMax" + str(protonEnergy) + ".png")
+
+plt.figure(dpi=DPI, figsize=[14, 10])
+plt.hist(rawEnergyDepositList, bins=1000)
+plt.xlabel("Energy Deposit (MeV)")
+plt.ylabel("Number of Data")
+plt.yscale("log")
+plt.show()

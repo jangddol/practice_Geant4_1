@@ -60,7 +60,7 @@ void PracEventAction::EndOfEventAction(const G4Event* event)
         G4cout << G4endl;
     }
 
-    G4AnalysisManager* anaMan = G4AnalysisManager::Instance();
+    G4VAnalysisManager* anaMan = G4CsvAnalysisManager::Instance();
     
     if(fRunIdVector.size() != fEventIdVector.size())
     {
@@ -93,6 +93,6 @@ void PracEventAction::EndOfEventAction(const G4Event* event)
         anaMan -> FillNtupleDColumn(4, fEnergyDepositVector.at(i));
         anaMan -> FillNtupleDColumn(5, fTravelDistanceVector.at(i));
         anaMan -> AddNtupleRow();
-        anaMan -> FillH1(0, fEdep);
     }
+    anaMan -> FillH1(0, fEdep);
 }
