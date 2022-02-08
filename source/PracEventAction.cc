@@ -3,7 +3,7 @@
 #include "PracCoutModeSingleton.hh"
 
 #include "G4Event.hh"
-#include "G4CsvAnalysisManager.hh"
+#include "G4RootAnalysisManager.hh"
 
 #include <cassert>
 
@@ -60,7 +60,7 @@ void PracEventAction::EndOfEventAction(const G4Event* event)
         G4cout << G4endl;
     }
 
-    G4VAnalysisManager* anaMan = G4CsvAnalysisManager::Instance();
+    G4VAnalysisManager* anaMan = G4RootAnalysisManager::Instance();
     
     for (size_t i=0; i < vectorSize; ++i)
     {
