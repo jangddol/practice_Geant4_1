@@ -6,7 +6,7 @@
 #include "G4AccumulableManager.hh"
 #include <vector>
 
-#include "PracAnalysis.hh"
+#include "G4CsvAnalysisManager.hh"
 
 PracRunAction::PracRunAction() : G4UserRunAction(), stepLengthNumber(0), sumStepLength(0.), sqsumStepLength(0.), meanStepLength(0), stdvStepLength(0)
 {

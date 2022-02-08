@@ -3,7 +3,7 @@
 #include "PracCoutModeSingleton.hh"
 
 #include "G4Event.hh"
-#include "PracAnalysis.hh"
+#include "G4CsvAnalysisManager.hh"
 
 #include <cassert>
 
@@ -62,28 +62,6 @@ void PracEventAction::EndOfEventAction(const G4Event* event)
 
     G4VAnalysisManager* anaMan = G4CsvAnalysisManager::Instance();
     
-    if(fRunIdVector.size() != fEventIdVector.size())
-    {
-        G4cout << "1" << G4endl;
-    }
-    if(fRunIdVector.size() != fTrackIdVector.size())
-    {
-        G4cout << "2" << G4endl;
-    }
-    if(fRunIdVector.size() != fParticleNameVector.size())
-    {
-        G4cout << "3" << G4endl;
-    }
-    if(fRunIdVector.size() != fEnergyDepositVector.size())
-    {
-        G4cout << "fRunIdVector.size : " << fRunIdVector.size() << G4endl;
-        G4cout << "fEnergyDepositVector.size : " << fEnergyDepositVector.size() << G4endl;
-    }
-    if(fRunIdVector.size() != fTravelDistanceVector.size())
-    {
-        G4cout << "5" << G4endl;
-    }
-
     for (size_t i=0; i < vectorSize; ++i)
     {
         anaMan -> FillNtupleIColumn(0, fRunIdVector.at(i));

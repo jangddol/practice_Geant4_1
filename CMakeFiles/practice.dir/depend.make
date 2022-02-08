@@ -952,7 +952,6 @@ CMakeFiles/practice.dir/source/PracEventAction.cc.o: /opt/geant4/10.7.p01/includ
 CMakeFiles/practice.dir/source/PracEventAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/tools/wroot/seek
 CMakeFiles/practice.dir/source/PracEventAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/tools/wroot/tree
 CMakeFiles/practice.dir/source/PracEventAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/tools/wroot/wbuf
-CMakeFiles/practice.dir/source/PracEventAction.cc.o: include/PracAnalysis.hh
 CMakeFiles/practice.dir/source/PracEventAction.cc.o: include/PracCoutModeSingleton.hh
 CMakeFiles/practice.dir/source/PracEventAction.cc.o: include/PracEventAction.hh
 CMakeFiles/practice.dir/source/PracEventAction.cc.o: include/PracRunAction.hh
@@ -1390,7 +1389,6 @@ CMakeFiles/practice.dir/source/PracRunAction.cc.o: /opt/geant4/10.7.p01/include/
 CMakeFiles/practice.dir/source/PracRunAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/tools/wroot/seek
 CMakeFiles/practice.dir/source/PracRunAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/tools/wroot/tree
 CMakeFiles/practice.dir/source/PracRunAction.cc.o: /opt/geant4/10.7.p01/include/Geant4/tools/wroot/wbuf
-CMakeFiles/practice.dir/source/PracRunAction.cc.o: include/PracAnalysis.hh
 CMakeFiles/practice.dir/source/PracRunAction.cc.o: include/PracDetectorConstruction.hh
 CMakeFiles/practice.dir/source/PracRunAction.cc.o: include/PracPrimaryGeneratorAction.hh
 CMakeFiles/practice.dir/source/PracRunAction.cc.o: include/PracRunAction.hh
