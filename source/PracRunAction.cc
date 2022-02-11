@@ -6,7 +6,7 @@
 #include "G4AccumulableManager.hh"
 #include <vector>
 
-#include "G4RootAnalysisManager.hh"
+#include "G4CsvAnalysisManager.hh"
 
 PracRunAction::PracRunAction() : G4UserRunAction(), stepLengthNumber(0), sumStepLength(0.), sqsumStepLength(0.), meanStepLength(0), stdvStepLength(0)
 {
@@ -15,7 +15,7 @@ PracRunAction::PracRunAction() : G4UserRunAction(), stepLengthNumber(0), sumStep
     accumulableManager->RegisterAccumulable(sumStepLength);
     accumulableManager->RegisterAccumulable(sqsumStepLength);
 
-    G4VAnalysisManager* anaMan = G4RootAnalysisManager::Instance();
+    G4VAnalysisManager* anaMan = G4CsvAnalysisManager::Instance();
     anaMan -> OpenFile("output");
     anaMan -> CreateNtuple("data", "data");
     anaMan -> CreateNtupleIColumn("RunID");
@@ -31,7 +31,7 @@ PracRunAction::PracRunAction() : G4UserRunAction(), stepLengthNumber(0), sumStep
 
 PracRunAction::~PracRunAction()
 {
-    G4VAnalysisManager* anaMan = G4RootAnalysisManager::Instance();
+    G4VAnalysisManager* anaMan = G4CsvAnalysisManager::Instance();
     anaMan -> Write();
     anaMan -> CloseFile();
 }

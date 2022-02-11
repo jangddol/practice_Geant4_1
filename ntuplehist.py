@@ -10,7 +10,7 @@ f4 = open('output_nt_data_t3.csv', 'r')
 
 F = [f1, f2, f3, f4]
 
-protonEnergy = input("How much the Kinetic Energy of Proton is? : ")
+# protonEnergy = input("How much the Kinetic Energy of Proton is? : ")
 
 ReaderList = [csv.reader(f) for f in F]
 RawData = []
@@ -78,8 +78,8 @@ histoutput = [0, 0, 0]
 histdata = [0, 0]
 binedge = [0, 0]
 
-DPI = 300
-
+DPI = 150
+"""
 fig = plt.figure(figsize=[14, 10], dpi=DPI)
 axes = fig.subplots(nrows=2, ncols=2)
 
@@ -147,10 +147,13 @@ while i < 9:
     i += 1
 fig2.subplots_adjust(wspace=0.3, hspace=0.3)
 fig2.savefig("Histogram_trackMax" + str(protonEnergy) + ".png")
+"""
+casename = input("casename : ")
 
 plt.figure(dpi=DPI, figsize=[14, 10])
-plt.hist(rawEnergyDepositList, bins=1000)
+plt.hist(energyDepositList, bins=1000)
 plt.xlabel("Energy Deposit (MeV)")
 plt.ylabel("Number of Data")
 plt.yscale("log")
+plt.savefig("Only Hist - Total Energy Deposit_" + str(casename) +  ".png")
 plt.show()
