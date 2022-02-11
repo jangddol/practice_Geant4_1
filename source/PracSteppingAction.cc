@@ -11,9 +11,13 @@
 #include "G4SystemOfUnits.hh"
 
 
-PracSteppingAction::PracSteppingAction(PracEventAction* eventAction) : G4UserSteppingAction(), fEventAction(eventAction), fScoringVolume(0)
+PracSteppingAction::PracSteppingAction(PracEventAction* eventAction) : G4UserSteppingAction(), fEventAction(eventAction)
 {
-    // pass
+    PracCoutModeSingleton* coutModeSingleton = PracCoutModeSingleton::GetInstance();
+    coutmode = coutModeSingleton->GetPracCoutMode();
+
+    const PracDetectorConstruction* detectorConstruction = static_cast<const PracDetectorConstruction*>(G4RunManager::GetRunManager()->GetUserDetectorConstruction());
+    fScoringVolume = detectorConstruction->GetScoringVolume();
 }
 
 
@@ -25,9 +29,7 @@ PracSteppingAction::~PracSteppingAction()
 
 void PracSteppingAction::UserSteppingAction(const G4Step* step)
 {
-    PracCoutModeSingleton* coutModeSingleton = PracCoutModeSingleton::GetInstance();
-    G4bool coutMode = coutModeSingleton->GetPracCoutMode();
-    if (coutMode)
+    if (coutmode)
     {
         G4cout << "==================== Start of Step Information (Manual) ====================" << G4endl;
         G4cout << "Track - TrackID             : " << step->GetTrack()->GetTrackID() << G4endl;
@@ -41,11 +43,6 @@ void PracSteppingAction::UserSteppingAction(const G4Step* step)
         G4cout << G4endl;
     }
     
-    if (!fScoringVolume)
-    {
-        const PracDetectorConstruction* detectorConstruction = static_cast<const PracDetectorConstruction*>(G4RunManager::GetRunManager()->GetUserDetectorConstruction());
-        fScoringVolume = detectorConstruction->GetScoringVolume();
-    }
     G4LogicalVolume* currentLogicalVolume = step->GetPreStepPoint()->GetTouchableHandle()->GetVolume()->GetLogicalVolume();
     
     if (currentLogicalVolume == fScoringVolume) 

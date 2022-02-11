@@ -57,6 +57,7 @@ class PracEventAction : public G4UserEventAction
         G4double fEdep;
         PracRunAction* fRunAction;
         G4int fEventID;
+        G4bool coutmode;
 };
 
 #endif

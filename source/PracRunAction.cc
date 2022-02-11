@@ -17,15 +17,15 @@ PracRunAction::PracRunAction() : G4UserRunAction(), stepLengthNumber(0), sumStep
 
     G4VAnalysisManager* anaMan = G4CsvAnalysisManager::Instance();
     anaMan -> OpenFile("output");
-    anaMan -> CreateNtuple("data", "data");
-    anaMan -> CreateNtupleIColumn("RunID");
-    anaMan -> CreateNtupleIColumn("EventID");
-    anaMan -> CreateNtupleIColumn("TrackID");
-    anaMan -> CreateNtupleSColumn("Particle_Name");
-    anaMan -> CreateNtupleDColumn("ed");
-    anaMan -> CreateNtupleDColumn("distance");
-    anaMan -> FinishNtuple();
-    anaMan -> CreateH1("0", "Edep", 1000, 0., 120.);
+    // anaMan -> CreateNtuple("data", "data");
+    // anaMan -> CreateNtupleIColumn("RunID");
+    // anaMan -> CreateNtupleIColumn("EventID");
+    // anaMan -> CreateNtupleIColumn("TrackID");
+    // anaMan -> CreateNtupleSColumn("Particle_Name");
+    // anaMan -> CreateNtupleDColumn("ed");
+    // anaMan -> CreateNtupleDColumn("distance");
+    // anaMan -> FinishNtuple();
+    anaMan -> CreateH1("0", "Edep", 4000, 0., 20.);
 }
 
 

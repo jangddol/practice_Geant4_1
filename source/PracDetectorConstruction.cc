@@ -43,12 +43,13 @@ G4VPhysicalVolume* PracDetectorConstruction::Construct()
 													 checkOverlaps);  // overlaps checking
 
 	// Shape
-	G4double shape_sizeXYZ = 0.1*m;
-	G4Material* shape_material = nist->FindOrBuildMaterial("G4_Fe"); 
+	G4double shape_sizeXY = 0.1*m;
+    G4double shape_sizeZ = 1*mm;
+	G4Material* shape_material = nist->FindOrBuildMaterial("G4_POLYETHYLENE"); 
 	G4ThreeVector shape_position = G4ThreeVector(0, 0, 0);
 
 	G4Box* solidShape = new G4Box("Shape",                                                        // name of the Shape
-								  0.5 * shape_sizeXYZ, 0.5 * shape_sizeXYZ, 0.5 * shape_sizeXYZ); // size of the Shape
+								  0.5 * shape_sizeXY, 0.5 * shape_sizeXY, 0.5 * shape_sizeZ); // size of the Shape
 
 	G4LogicalVolume* logicShape = new G4LogicalVolume(solidShape,     // solid
 													  shape_material, // material
