@@ -9,12 +9,13 @@
 #include "G4UIsession.hh"
 #include "G4UIterminal.hh"
 #include "G4RunManagerFactory.hh"
+#include "G4StepLimiterPhysics.hh"
 
 #include "PracDetectorConstruction.hh"
 #include "PracActionInitialization.hh"
 #include "PracCoutModeSingleton.hh"
 
-#include "QGSP_BERT_HP.hh"
+#include "QGSP_BERT.hh"
 
 PracCoutModeSingleton* PracCoutModeSingleton::instance = nullptr;
 
@@ -59,8 +60,9 @@ int main(int argc, char** argv)
     runManager->SetNumberOfThreads(8);
 	
     //Physics List
-	G4VModularPhysicsList* physicsList = new QGSP_BERT_HP;
+	G4VModularPhysicsList* physicsList = new QGSP_BERT;
 	physicsList->SetVerboseLevel(1);
+    physicsList->RegisterPhysics(new G4StepLimiterPhysics());
 	runManager->SetUserInitialization(physicsList);
 
 	// Action Initialize

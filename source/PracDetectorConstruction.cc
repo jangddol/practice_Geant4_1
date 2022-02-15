@@ -55,10 +55,10 @@ G4VPhysicalVolume* PracDetectorConstruction::Construct()
 													  shape_material, // material
 													  "Shape");       // name
 
-    // G4double maxStep = 1*nm;
-    // auto fStepLimit = new G4UserLimits();
-    // fStepLimit->SetMaxAllowedStep(maxStep);
-    // logicShape->SetUserLimits(fStepLimit);
+    G4double maxStep = 1*nm;
+    auto fStepLimit = new G4UserLimits();
+    fStepLimit->SetMaxAllowedStep(maxStep);
+    logicShape->SetUserLimits(fStepLimit);
 	
     G4VPhysicalVolume* physShape = new G4PVPlacement(0,              // no rotation
 													 shape_position, // at (0, 0, 0)
