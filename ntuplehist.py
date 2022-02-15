@@ -7,8 +7,13 @@ f1 = open('output_nt_data_t0.csv', 'r')
 f2 = open('output_nt_data_t1.csv', 'r')
 f3 = open('output_nt_data_t2.csv', 'r')
 f4 = open('output_nt_data_t3.csv', 'r')
+f5 = open('output_nt_data_t4.csv', 'r')
+f6 = open('output_nt_data_t5.csv', 'r')
+f7 = open('output_nt_data_t6.csv', 'r')
+f8 = open('output_nt_data_t7.csv', 'r')
+h1 = open('output_h1_1.csv', 'r')
 
-F = [f1, f2, f3, f4]
+F = [f1, f2, f3, f4, f5, f6, f7, f8]
 
 protonEnergy = input("How much the Kinetic Energy of Proton is? : ")
 
@@ -137,7 +142,7 @@ plt.savefig("Histogram2D" + str(protonEnergy) + ".png")
 fig2 = plt.figure(dpi=DPI, figsize=[14, 10])
 axes2 = fig2.subplots(nrows=3, ncols=3)
 i = 0
-while i < 9:
+while i < min(9, len(trackSortedEnergyDepositList)):
     ax = axes2[int((i - i % 3)/3), int(i % 3)]
     ax.hist(trackSortedEnergyDepositList[i], binedge[0], alpha=0.4, label=str(trackIdList[i])+' tracks case')
     ax.set_title(str(trackIdList[i]) + "tracks case")
@@ -156,4 +161,5 @@ plt.xlabel("Energy Deposit (MeV)")
 plt.ylabel("Number of Data")
 plt.yscale("log")
 plt.savefig("Only Hist - Total Energy Deposit_" + str(casename) +  ".png")
+plt.title(str(casename) + " , " + "mean:{:.3e}".format(np.average(energyDepositList)) + " , " + "stdv:{:.3e}".format(np.std(energyDepositList)))
 plt.show()

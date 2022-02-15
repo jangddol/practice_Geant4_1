@@ -1,7 +1,7 @@
 import csv
 import matplotlib.pyplot as plt
 
-f1 = open("output_h1_0.csv")
+f1 = open("output_h1_1.csv")
 
 reader = csv.reader(f1)
 RawData = []
