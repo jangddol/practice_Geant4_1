@@ -6,7 +6,7 @@
 
 #include "G4NistManager.hh"
 #include "G4SystemOfUnits.hh"
-
+#include "G4UserLimits.hh"
 #include "G4Box.hh"
 
 
@@ -44,7 +44,7 @@ G4VPhysicalVolume* PracDetectorConstruction::Construct()
 
 	// Shape
 	G4double shape_sizeXY = 0.1*m;
-    G4double shape_sizeZ = 1*mm;
+    G4double shape_sizeZ = 1*um;
 	G4Material* shape_material = nist->FindOrBuildMaterial("G4_POLYETHYLENE"); 
 	G4ThreeVector shape_position = G4ThreeVector(0, 0, 0);
 
@@ -55,7 +55,12 @@ G4VPhysicalVolume* PracDetectorConstruction::Construct()
 													  shape_material, // material
 													  "Shape");       // name
 
-	G4VPhysicalVolume* physShape = new G4PVPlacement(0,              // no rotation
+    // G4double maxStep = 1*nm;
+    // auto fStepLimit = new G4UserLimits();
+    // fStepLimit->SetMaxAllowedStep(maxStep);
+    // logicShape->SetUserLimits(fStepLimit);
+	
+    G4VPhysicalVolume* physShape = new G4PVPlacement(0,              // no rotation
 													 shape_position, // at (0, 0, 0)
 													 logicShape,     // logical volume
 													 "Shape",        // name

@@ -64,4 +64,18 @@ void PracSteppingAction::UserSteppingAction(const G4Step* step)
         }
         fEventAction->AddEdep(step->GetTotalEnergyDeposit());
     }
+    else
+    {
+        if (step->GetTrack()->GetParticleDefinition()->GetParticleName() == "gamma")
+        {
+            if (step->IsLastStepInVolume())
+            {
+                fEventAction->AddEgamma(step->GetTrack()->GetTotalEnergy());
+            }
+        }
+        else if (coutmode)
+        {
+            G4cout << "not gamma : " << step->GetTrack()->GetParticleDefinition()->GetParticleName() << G4endl;
+        }
+    }
 }

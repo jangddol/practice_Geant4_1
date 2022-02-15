@@ -40,7 +40,9 @@ class PracEventAction : public G4UserEventAction
         void AddEnergyDepositVector(const G4double energyDeposit){fEnergyDepositVector.back() += energyDeposit;}
         void AddTravelDistanceVector(const G4double stepLength){fTravelDistanceVector.back() += stepLength;}
         void AddEdep(const G4double edep){fEdep += edep;}
+        void AddEgamma(const G4double egamma){fEgamma += egamma;}
         G4double GetEdep(){return fEdep;}
+        G4double GetEgamma(){return fEgamma;}
         G4int GetEventID(){return fEventID;}
         PracRunAction* GetRunAction(){return fRunAction;}
         
@@ -55,6 +57,7 @@ class PracEventAction : public G4UserEventAction
         std::vector<G4double> fEnergyDepositVector;
         std::vector<G4double> fTravelDistanceVector;
         G4double fEdep;
+        G4double fEgamma;
         PracRunAction* fRunAction;
         G4int fEventID;
         G4bool coutmode;

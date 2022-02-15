@@ -3,7 +3,7 @@
 #include "PracCoutModeSingleton.hh"
 
 #include "G4Event.hh"
-#include "G4CsvAnalysisManager.hh"
+#include "PracAnalysisManager.hh"
 
 #include <cassert>
 
@@ -36,6 +36,7 @@ void PracEventAction::BeginOfEventAction(const G4Event* event)
     fEnergyDepositVector = {};
     fTravelDistanceVector = {};
     fEdep = 0.;
+    fEgamma = 0.;
 }
 
 
@@ -45,30 +46,28 @@ void PracEventAction::EndOfEventAction(const G4Event* event)
 
     if (coutmode)
     {
-        G4double totalEnergyDeposit = 0;
-        for (size_t i=0; i < vectorSize; ++i)
-        {
-            totalEnergyDeposit += fEnergyDepositVector[i];
-        }
         G4cout << "==================== Start of Event Information (Manual) ====================" << G4endl;
-        G4cout << "Event ID                 : " << event->GetEventID() << G4endl;
-        G4cout << "Total Energy Deposit     : " << totalEnergyDeposit << G4endl;
-        G4cout << "Total Step Length        : " << fTravelDistanceVector.at(0) << G4endl;
+        G4cout << "Event ID                            : " << event->GetEventID() << G4endl;
+        G4cout << "Total Energy Deposit                : " << fEdep << G4endl;
+        G4cout << "Total Energy Deposit + gamma Energy : " << fEdep + fEgamma << G4endl;
+        G4cout << "Total Step Length                   : " << fTravelDistanceVector.at(0) << G4endl;
         G4cout << "====================  End of Event Information (Manual)  ====================" << G4endl;
         G4cout << G4endl;
     }
-
-    G4VAnalysisManager* anaMan = G4CsvAnalysisManager::Instance();
+    
+    G4VAnalysisManager* anaMan = PracAnalysisManager().GetInstance();
     
     for (size_t i=0; i < vectorSize; ++i)
     {
-        // anaMan -> FillNtupleIColumn(0, fRunIdVector.at(i));
-        // anaMan -> FillNtupleIColumn(1, fEventIdVector.at(i));
-        // anaMan -> FillNtupleIColumn(2, fTrackIdVector.at(i));
-        // anaMan -> FillNtupleSColumn(3, fParticleNameVector.at(i));
-        // anaMan -> FillNtupleDColumn(4, fEnergyDepositVector.at(i));
-        // anaMan -> FillNtupleDColumn(5, fTravelDistanceVector.at(i));
-        // anaMan -> AddNtupleRow();
+        anaMan -> FillNtupleIColumn(0, fRunIdVector.at(i));
+        anaMan -> FillNtupleIColumn(1, fEventIdVector.at(i));
+        anaMan -> FillNtupleIColumn(2, fTrackIdVector.at(i));
+        anaMan -> FillNtupleSColumn(3, fParticleNameVector.at(i));
+        anaMan -> FillNtupleDColumn(4, fEnergyDepositVector.at(i));
+        anaMan -> FillNtupleDColumn(5, fTravelDistanceVector.at(i));
+        anaMan -> AddNtupleRow();
     }
     anaMan -> FillH1(0, fEdep);
+    anaMan -> FillH1(1, fEdep + fEgamma);
+    anaMan -> FillH2(0, fEdep, fEdep + fEgamma);
 }
