@@ -18,7 +18,7 @@ PracPrimaryGeneratorAction::PracPrimaryGeneratorAction() : G4VUserPrimaryGenerat
 	G4ParticleDefinition* particle = particleTable->FindParticle(particleName = "proton");
 	fParticleGun->SetParticleDefinition(particle);
 	fParticleGun->SetParticleMomentumDirection(G4ThreeVector(0., 0., 1.));
-	fParticleGun->SetParticleEnergy(100. * MeV);
+	fParticleGun->SetParticleEnergy(500. * MeV);
 }
 
 

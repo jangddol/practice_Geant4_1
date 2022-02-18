@@ -18,9 +18,13 @@ PracRunAction::PracRunAction() : G4UserRunAction()
     anaMan -> CreateNtupleDColumn("ed");
     anaMan -> CreateNtupleDColumn("distance");
     anaMan -> FinishNtuple();
-    anaMan -> CreateH1("0", "Edep", 1000, 0., 0.02);
-    anaMan -> CreateH1("1", "Edep+gamma", 1000, 0., 0.02);
-    anaMan -> CreateH2("0", "Edep vs. Edep+gamma", 1000, 0., 0.02, 1000, 0., 0.02, "MeV", "MeV");
+    anaMan -> CreateH1("0", "Edep", 1000, 0., 120.);
+    anaMan -> CreateH1("1", "Edep+leak", 1000, 0., 120.);
+    anaMan -> CreateH1("2", "Edep-leak", 1000, 0., 120.);
+    anaMan -> CreateH1("3", "leak", 1000, 0., 120.);
+    anaMan -> CreateH1("4", "nonIonization", 1000, 0., 120.);
+    anaMan -> CreateH1("5", "Ionization", 1000, 0., 120.);
+    anaMan -> CreateH2("0", "Edep vs. Edep+Leak", 1000, 0., 120, 1000, 0., 120, "MeV", "MeV");
 }
 
 

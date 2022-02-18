@@ -45,7 +45,7 @@ void PracSteppingAction::UserSteppingAction(const G4Step* step)
     
     G4LogicalVolume* currentLogicalVolume = step->GetPreStepPoint()->GetTouchableHandle()->GetVolume()->GetLogicalVolume();
     
-    if (currentLogicalVolume == fScoringVolume) 
+    if (currentLogicalVolume == fScoringVolume) // In the Box 
     {
         G4int trackId = step->GetTrack()->GetTrackID();
         if (fEventAction->IsInTrackIdVector(trackId) == false)
@@ -63,19 +63,14 @@ void PracSteppingAction::UserSteppingAction(const G4Step* step)
             fEventAction->AddTravelDistanceVector(step->GetStepLength());
         }
         fEventAction->AddEdep(step->GetTotalEnergyDeposit());
+        fEventAction->AddEnonIon(step->GetNonIonizingEnergyDeposit());
     }
-    else
+    else // Outside of the Box
     {
-        if (step->GetTrack()->GetParticleDefinition()->GetParticleName() == "gamma")
+        fEventAction->AddEleak(step->GetTotalEnergyDeposit());
+        if (step->IsLastStepInVolume())
         {
-            if (step->IsLastStepInVolume())
-            {
-                fEventAction->AddEgamma(step->GetTrack()->GetTotalEnergy());
-            }
-        }
-        else if (coutmode)
-        {
-            G4cout << "not gamma : " << step->GetTrack()->GetParticleDefinition()->GetParticleName() << G4endl;
+            fEventAction->AddEleak(step->GetTrack()->GetTotalEnergy());
         }
     }
 }
