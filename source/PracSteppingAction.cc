@@ -70,7 +70,10 @@ void PracSteppingAction::UserSteppingAction(const G4Step* step)
         fEventAction->AddEleak(step->GetTotalEnergyDeposit());
         if (step->IsLastStepInVolume())
         {
-            fEventAction->AddEleak(step->GetTrack()->GetTotalEnergy());
+            if (step->GetTrack()->GetTrackID() != 1)
+            {
+                fEventAction->AddEleak(step->GetTrack()->GetKineticEnergy());
+            }
         }
     }
 }

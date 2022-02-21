@@ -61,7 +61,7 @@ int main(int argc, char** argv)
 	
     //Physics List
 	G4VModularPhysicsList* physicsList = new QGSP_BERT;
-	physicsList->SetVerboseLevel(1);
+	physicsList->SetVerboseLevel(2);
     physicsList->RegisterPhysics(new G4StepLimiterPhysics());
 	runManager->SetUserInitialization(physicsList);
 

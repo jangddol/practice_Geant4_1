@@ -44,9 +44,10 @@ G4VPhysicalVolume* PracDetectorConstruction::Construct()
 
 	// Shape
 	G4double shape_sizeXY = 0.1*m;
-    G4double shape_sizeZ = 1*um;
+    G4double shape_sizeZ = 1*mm;
 	G4Material* shape_material = nist->FindOrBuildMaterial("G4_C"); 
-	G4ThreeVector shape_position = G4ThreeVector(0, 0, 0);
+	G4cout << shape_material << G4endl;
+    G4ThreeVector shape_position = G4ThreeVector(0, 0, 0);
 
 	G4Box* solidShape = new G4Box("Shape",                                                        // name of the Shape
 								  0.5 * shape_sizeXY, 0.5 * shape_sizeXY, 0.5 * shape_sizeZ); // size of the Shape
@@ -55,7 +56,7 @@ G4VPhysicalVolume* PracDetectorConstruction::Construct()
 													  shape_material, // material
 													  "Shape");       // name
 
-    G4double maxStep = 10*nm;
+    G4double maxStep = 1000*nm;
     auto fStepLimit = new G4UserLimits();
     fStepLimit->SetMaxAllowedStep(maxStep);
     logicShape->SetUserLimits(fStepLimit);
