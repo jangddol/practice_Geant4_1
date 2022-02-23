@@ -31,9 +31,14 @@ void PracSteppingAction::UserSteppingAction(const G4Step* step)
 {
     if (coutmode)
     {
+        G4ProcessVector* processList = step->GetTrack()->GetParticleDefinition()->GetProcessManager()->GetProcessList();
         G4cout << "==================== Start of Step Information (Manual) ====================" << G4endl;
         G4cout << "Track - TrackID             : " << step->GetTrack()->GetTrackID() << G4endl;
         G4cout << "Track - Particle Name       : " << step->GetTrack()->GetParticleDefinition()->GetParticleName() << G4endl;
+        for (size_t i=0; i<processList->size(); i++)
+        {
+            G4cout << "Track - Process List entry : " << (*processList)[i]->GetProcessName() << G4endl;
+        }
         G4cout << "Track - Position            : " << (step->GetTrack()->GetPosition())/cm << G4endl;
         G4cout << "Track - Kinetic Energy      : " << step->GetTrack()->GetKineticEnergy() << G4endl;
         G4cout << "Step Length                 : " << (step->GetStepLength())/cm << G4endl;
