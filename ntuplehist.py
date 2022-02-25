@@ -96,13 +96,13 @@ histoutput = [0, 0, 0]
 histdata = [0, 0]
 binedge = [0, 0]
 
-DPI = 150
+DPI = 100
 
 histbin = 1000
 hist2dbin = 1000
 
-"""
-fig = plt.figure(figsize=[14, 10], dpi=DPI)
+
+fig = plt.figure(figsize=[12, 8], dpi=DPI)
 axes = fig.subplots(nrows=2, ncols=2)
 
 histoutput = axes[0, 0].hist(energyDepositList, bins=histbin, alpha=0.6, label='All Particles')
@@ -143,7 +143,8 @@ axes[1, 1].set_ylabel("Number of Data")
 plt.subplots(constrained_layout=True)
 fig.savefig("Histogram" + str(protonEnergy) + ".png")
 
-plt.figure(dpi=DPI, figsize=[14, 10])
+"""
+plt.figure(dpi=DPI, figsize=[12, 8])
 plt.hist2d(energyDepositList, energyDepositProtonList, bins=[hist2dbin, hist2dbin], norm=mpl.colors.LogNorm())
 plt.colorbar()
 plt.title("Total Energy Deposit vs. Proton Energy Deposit")
@@ -171,9 +172,9 @@ fig2.savefig("Histogram_trackMax" + str(protonEnergy) + ".png")
 
 casename = input("casename : ")
 
-plt.figure(dpi=DPI, figsize=[14, 10])
+plt.figure(dpi=DPI, figsize=[12, 8])
 histoutput = plt.hist(energyDepositList, bins=histbin, label='rawdata')
-plt.hist(energyDepositIfNotAlphaContainList, bins=histbin, label='data without alpha')
+plt.hist(energyDepositIfAlphaContainList, bins=histbin, label='data with alpha')
 # plt.hist(energyDepositIfC12ContainList, bins=histbin, label='data with C12')
 Thres = 7.9452
 """

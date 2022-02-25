@@ -88,13 +88,13 @@ histoutput = [0, 0, 0]
 histdata = [0, 0]
 binedge = [0, 0]
 
-DPI = 150
+DPI = 100
 
 histbin = 1000
 hist2dbin = 1000
 
 
-E_p = 100
+E_p = 2000
 gamma = 0.5772156649
 
 
@@ -109,10 +109,10 @@ def Energy_to_b2(E):
 
 def KSI(b2):
     K = 0.307075  # MeV cm^2 / mol
-    Z = 6
-    A = 12.011  # g/mol
-    rho = 2  # g/cm^3
-    s = 1000  # um
+    Z = 14  # C : 6, Si : 14
+    A = 28.0588  # g/mol, C : 12.011, Si : 28.0588
+    rho = 2.22  # g/cm^3, C : 2, Si : 2.33
+    s = 1  # um
     s = s * 1e-4  # um -> cm
     x = rho * s
     z = 1
@@ -218,16 +218,16 @@ def Landau_phi_approx_LAMBDA_2(x):
 def Density_Eff(b2):
     lorentz = 1 / np.sqrt(1 - b2)
     X = np.log10(np.sqrt(b2) * lorentz)
-    X_1 = 2.486
-    m = 3.00
-    a = 0.2024
-    C = -2.99
+    X_1 = 2.87  # C : 2.486, Si : 2.87
+    m = 3.25  # C : 3.00, Si : 3.25
+    a = 0.1492  # C : 0.2024, Si : 0.1492
+    C = -4.44  # C : -2.99, Si : -4.44
     return 4.6052*X + C + a * (X_1 - X)**m
 
 
 def Landau_lambda(E):
     # MeV
-    II = (81 * 1e-6)**2  # MeV**2
+    II = (173 * 1e-6)**2  # MeV**2, C : 81, Si : 173
     m_e = 0.51099895000  # MeV/c2
     c = 1
     m_ecc = m_e * c * c
@@ -248,6 +248,7 @@ def kappa(b2):
     return ksi / W_max
 
 
+print("KSI   : ", KSI(b2))
 print("kappa : ", kappa(b2))
 
 
@@ -261,17 +262,20 @@ def Landau_dist_e_LAMBDA_1(E):
 
 casename = input("casename : ")
 
-plt.figure(dpi=DPI, figsize=[14, 10])
-histoutput = plt.hist(energyDepositList, bins=20000, label='data')
+plt.figure(dpi=DPI, figsize=[12, 8])
+# histoutput = plt.hist(energyDepositList, bins=50000, label='data')
+histoutput = plt.hist(energyDepositList, bins=np.linspace(0, 5e-4, 1000), label='data')
 binedge = histoutput[1]
 binminmax = [binedge[0], binedge[-1]]
 plotrange = np.linspace(binminmax[0], -Landau_lambda(0)*ksi + 10*ksi, 1000)
 plt.plot(plotrange, [Landau_dist_e_LAMBDA_2(e)*dataNumber*(binedge[1] - binedge[0]) for e in plotrange], label='Landau Lindhard 2nd Approx')
-plt.plot(plotrange, [Landau_dist_e_LAMBDA_1(e)*dataNumber*(binedge[1] - binedge[0]) for e in plotrange], label='Landau Lindhard 1st Approx')
+# plt.plot(plotrange, [Landau_dist_e_LAMBDA_1(e)*dataNumber*(binedge[1] - binedge[0]) for e in plotrange], label='Landau Lindhard 1st Approx')
 plt.legend()
 plt.xlabel("Energy Deposit (MeV)")
 plt.ylabel("Number of Data")
-plt.xlim(-Landau_lambda(0)*ksi - 5*ksi, -Landau_lambda(0)*ksi + 10*ksi)
+# plt.xlim(-Landau_lambda(0)*ksi - 5*ksi, -Landau_lambda(0)*ksi + 10*ksi)
+plt.xlim(0, -Landau_lambda(0)*ksi + 10*ksi)
+plt.ylim(0, 5000)
 plt.title(str(casename) + " , " + "mean:{:.3e}".format(np.average(energyDepositList)) + " , " + "stdv:{:.3e}".format(np.std(energyDepositList)))
 plt.savefig("Only Hist - Total Energy Deposit_" + str(casename) + ".png")
 plt.show()

@@ -65,7 +65,7 @@ void PracSteppingAction::UserSteppingAction(const G4Step* step)
         else
         {
             fEventAction->AddEnergyDepositVector(step->GetTotalEnergyDeposit());
-            fEventAction->AddTravelDistanceVector(step->GetStepLength());
+            fEventAction->AddTravelDistanceVector(step->GetDeltaPosition().z());
         }
         fEventAction->AddEdep(step->GetTotalEnergyDeposit());
         fEventAction->AddEnonIon(step->GetNonIonizingEnergyDeposit());
