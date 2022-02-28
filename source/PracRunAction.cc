@@ -16,15 +16,14 @@ PracRunAction::PracRunAction() : G4UserRunAction()
     anaMan -> CreateNtupleIColumn("TrackID");
     anaMan -> CreateNtupleSColumn("Particle_Name");
     anaMan -> CreateNtupleDColumn("ed");
-    anaMan -> CreateNtupleDColumn("distance-z");
+    anaMan -> CreateNtupleDColumn("distance");
+    anaMan -> CreateNtupleDColumn("elInel");
+    anaMan -> CreateNtupleDColumn("eleak");
     anaMan -> FinishNtuple();
     anaMan -> CreateH1("0", "Edep", 1000, 0., 120.);
-    anaMan -> CreateH1("1", "Edep+leak", 1000, 0., 120.);
-    anaMan -> CreateH1("2", "Edep-leak", 1000, 0., 120.);
-    anaMan -> CreateH1("3", "leak", 1000, 0., 120.);
-    anaMan -> CreateH1("4", "nonIonization", 1000, 0., 120.);
-    anaMan -> CreateH1("5", "Ionization", 1000, 0., 120.);
-    anaMan -> CreateH2("0", "Edep vs. Edep+Leak", 1000, 0., 120, 1000, 0., 120, "MeV", "MeV");
+    anaMan -> CreateH1("1", "ElInel", 1000, 0., 120.);
+    anaMan -> CreateH1("2", "leak", 1000, 0., 120.);
+    anaMan -> CreateH1("3", "E_tot", 1000, 0., 120.);
 }
 
 

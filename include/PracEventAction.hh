@@ -37,14 +37,20 @@ class PracEventAction : public G4UserEventAction
         void AppendParticleNameVector(const G4String particleName){fParticleNameVector.push_back(particleName);}
         void AppendEnergyDepositVector(const G4double energyDeposit){fEnergyDepositVector.push_back(energyDeposit);}
         void AppendTravelDistanceVector(const G4double stepLength){fTravelDistanceVector.push_back(stepLength);}
+        void AppendEnergyLossInelasticVector(const G4double elInel){fEnergyLossInelasticVector.push_back(elInel);}
+        void AppendEnergyLossLeakVector(const G4double eleak){fEnergyLossLeakVector.push_back(eleak);}
+
         void AddEnergyDepositVector(const G4double energyDeposit){fEnergyDepositVector.back() += energyDeposit;}
         void AddTravelDistanceVector(const G4double stepLength){fTravelDistanceVector.back() += stepLength;}
+        void AddEnergyLossInelasticVector(const G4double elInel){fEnergyLossInelasticVector.back() += elInel;}
+        void AddEnergyLossLeakVector(const G4double eleak){fEnergyLossLeakVector.back() += eleak;}
         void AddEdep(const G4double edep){fEdep += edep;}
+        void AddElInel(const G4double elInel){fElInel += elInel;}
         void AddEleak(const G4double eleak){fEleak += eleak;}
-        void AddEnonIon(const G4double enonIon){fEnonIon += enonIon;}
+
         G4double GetEdep(){return fEdep;}
+        G4double GetElInel(){return fElInel;}
         G4double GetEleak(){return fEleak;}
-        G4double GetEnonIon(){return fEnonIon;}
         G4int GetEventID(){return fEventID;}
         PracRunAction* GetRunAction(){return fRunAction;}
         
@@ -58,9 +64,13 @@ class PracEventAction : public G4UserEventAction
         std::vector<G4String> fParticleNameVector;
         std::vector<G4double> fEnergyDepositVector;
         std::vector<G4double> fTravelDistanceVector;
+        std::vector<G4double> fEnergyLossInelasticVector;
+        std::vector<G4double> fEnergyLossLeakVector;
+
         G4double fEdep;
+        G4double fElInel;
         G4double fEleak;
-        G4double fEnonIon;
+
         PracRunAction* fRunAction;
         G4int fEventID;
         G4bool coutmode;

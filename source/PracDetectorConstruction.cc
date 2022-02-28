@@ -44,8 +44,8 @@ G4VPhysicalVolume* PracDetectorConstruction::Construct()
 
 	// Shape
 	G4double shape_sizeXY = 0.1*m;
-    G4double shape_sizeZ = 1*um;
-	G4Material* shape_material = nist->FindOrBuildMaterial("G4_Si"); 
+    G4double shape_sizeZ = 0.1*m;
+	G4Material* shape_material = nist->FindOrBuildMaterial("G4_POLYETHYLENE"); 
 	G4cout << shape_material << G4endl;
     G4ThreeVector shape_position = G4ThreeVector(0, 0, 0);
 

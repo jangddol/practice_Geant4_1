@@ -15,7 +15,8 @@
 #include "PracActionInitialization.hh"
 #include "PracCoutModeSingleton.hh"
 
-#include "QGSP_BERT.hh"
+#include "PracPhysicsList.hh"
+#include "QGSP_BERT_Prac.hh"
 
 PracCoutModeSingleton* PracCoutModeSingleton::instance = nullptr;
 

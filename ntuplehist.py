@@ -24,11 +24,13 @@ for reader in ReaderList:
             pass
         else:
             temp = []
-            temp.append(int(line[1]))
-            temp.append(int(line[2]))
-            temp.append(line[3])
-            temp.append(float(line[4]))
-            temp.append(float(line[5]))
+            temp.append(int(line[1]))    # event ID
+            temp.append(int(line[2]))    # track ID
+            temp.append(line[3])         # particle Name
+            temp.append(float(line[4]))  # energy loss
+            temp.append(float(line[5]))  # distance
+            temp.append(float(line[6]))  # energy loss in Inelastic
+            temp.append(float(line[7]))  # energy leak
             RawData.append(temp)
 
 for f in F:
@@ -50,15 +52,19 @@ for X in EventList:
     trackMax = max(X, key=lambda x: x[1])[1]  # 1부터 센다
     particleNameList = []
     energyDeposit = 0
+    energyLossInelastic = 0
+    energyLossLeak = 0
     energyDepositProton = 0
     travelDistance = 0
     for x in X:
         particleNameList.append(x[2])
         energyDeposit += x[3]
+        energyLossInelastic += x[5]
+        energyLossLeak += x[6]
         if x[1] == 1:
             energyDepositProton = x[3]
             travelDistance = x[4]
-    CalculatedData.append([trackMax, particleNameList, energyDeposit, energyDepositProton, travelDistance])
+    CalculatedData.append([trackMax, particleNameList, energyDeposit, energyDepositProton, travelDistance, energyLossInelastic, energyLossLeak])
 
 del EventList
 
@@ -68,10 +74,15 @@ dataNumber = len(CalculatedData)
 
 trackIdList = [0 for i in range(trackMaxMax)]
 energyDepositList = []
+energyLossInelasticList = []
+energyLossLeakList = []
+energyTotalLossList = []
 energyDepositProtonList = []
 energyDepositIfAlphaContainList = []
+energyTotalLossIfAlphaContainList = []
 energyDepositIfNotAlphaContainList = []
 energyDepositIfC12ContainList = []
+energyTotalLossIfC12ContainList = []
 energyDepositIfNotC12ContainList = []
 trackSortedEnergyDepositList = [[] for i in range(trackMaxMax)]
 trackSortedEnergyDepositProtonList = [[] for i in range(trackMaxMax)]
@@ -83,12 +94,17 @@ for X in CalculatedData:
     trackSortedEnergyDepositList[X[0]-1].append(X[2])
     trackSortedEnergyDepositProtonList[X[0]-1].append(X[3])
     travelDistanceList.append(X[4])
+    energyLossInelasticList.append(X[5])
+    energyLossLeakList.append(X[6])
+    energyTotalLossList.append(X[2] + X[5] + X[6])
     if 'alpha' in X[1]:
         energyDepositIfAlphaContainList.append(X[2])
+        energyTotalLossIfAlphaContainList.append(X[2] + X[5] + X[6])
     else:
         energyDepositIfNotAlphaContainList.append(X[2])
     if 'C12' in X[1]:
         energyDepositIfC12ContainList.append(X[2])
+        energyTotalLossIfC12ContainList.append(X[2] + X[5] + X[6])
     else:
         energyDepositIfNotC12ContainList.append(X[2])
 
@@ -172,9 +188,41 @@ fig2.savefig("Histogram_trackMax" + str(protonEnergy) + ".png")
 
 casename = input("casename : ")
 
+fig3 = plt.figure(dpi=DPI, figsize=[12, 8])
+axes3 = fig3.subplots(nrows=2, ncols=2)
+
+axes3[0, 0].hist(energyDepositProtonList, bins=histbin)
+axes3[0, 0].grid(linewidth=0.3)
+axes3[0, 0].set_yscale("log")
+axes3[0, 0].set_title("Energy Deposit Histogram (Log Scale)")
+axes3[0, 0].set_xlabel("Energy Deposit (MeV)")
+axes3[0, 0].set_ylabel("Number of Data")
+
+axes3[0, 1].hist(energyLossInelasticList, bins=histbin)
+axes3[0, 1].grid(linewidth=0.3)
+axes3[0, 1].set_yscale("log")
+axes3[0, 1].set_title("Energy Loss with Inelastic Histogram (Log Scale)")
+axes3[0, 1].set_xlabel("Energy Loss with Inelastic (MeV)")
+axes3[0, 1].set_ylabel("Number of Data")
+
+axes3[1, 0].hist(energyLossLeakList, bins=histbin)
+axes3[1, 0].grid(linewidth=0.3)
+axes3[1, 0].set_yscale("log")
+axes3[1, 0].set_title("Leak Energy Histogram (Log Scale)")
+axes3[1, 0].set_xlabel("Leak Energy (MeV)")
+axes3[1, 0].set_ylabel("Number of Data")
+
+axes3[1, 1].hist(energyTotalLossList, bins=histbin)
+axes3[1, 1].grid(linewidth=0.3)
+axes3[1, 1].set_yscale("log")
+axes3[1, 1].set_title("Total Energy Loss Histogram (Log Scale)")
+axes3[1, 1].set_xlabel("Total Energy Loss (MeV)")
+axes3[1, 1].set_ylabel("Number of Data")
+
+
 plt.figure(dpi=DPI, figsize=[12, 8])
-histoutput = plt.hist(energyDepositList, bins=histbin, label='rawdata')
-plt.hist(energyDepositIfAlphaContainList, bins=histbin, label='data with alpha')
+histoutput = plt.hist(energyTotalLossList, bins=histbin, label='Total Energy Loss')
+plt.hist(energyTotalLossIfAlphaContainList, bins=histbin, label='TEL with alpha')
 # plt.hist(energyDepositIfC12ContainList, bins=histbin, label='data with C12')
 Thres = 7.9452
 """
@@ -190,6 +238,6 @@ binminmax = [binedge[0], binedge[-1]]
 plt.xlabel("Energy Deposit (MeV)")
 plt.ylabel("Number of Data")
 plt.title(str(casename) + " , " + "mean:{:.3e}".format(np.average(energyDepositList)) + " , " + "stdv:{:.3e}".format(np.std(energyDepositList)))
-plt.savefig("Only Hist - Total Energy Deposit_" + str(casename) + ".png")
+plt.savefig("Total Energy Loss_" + str(casename) + ".png")
 plt.show()
 
