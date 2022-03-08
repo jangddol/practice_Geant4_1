@@ -24,6 +24,7 @@ PracRunAction::PracRunAction() : G4UserRunAction()
     anaMan -> CreateH1("1", "ElInel", 1000, 0., 120.);
     anaMan -> CreateH1("2", "leak", 1000, 0., 120.);
     anaMan -> CreateH1("3", "E_tot", 1000, 0., 120.);
+    anaMan -> CreateH2("0", "Edep vs ElInel", 1000, 0., 120., 1000, 0., 120.);
 }
 
 
@@ -41,10 +42,15 @@ void PracRunAction::BeginOfRunAction(const G4Run* run)
     {
         runID = run->GetRunID();
     }
+    processNameVector = {};
 }
 
 
 void PracRunAction::EndOfRunAction(const G4Run*)
 {
-    // pass
+    for (size_t i=0; i<processNameVector.size(); i++)
+    {
+        G4cout << " processName : " << processNameVector.at(i) << G4endl;
+    }
+    G4cout << "Total : " << processNameVector.size() << G4endl;
 }

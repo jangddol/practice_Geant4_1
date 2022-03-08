@@ -2,10 +2,12 @@
 #include "PracRunAction.hh"
 #include "PracCoutModeSingleton.hh"
 
+#include "G4Track.hh"
 #include "G4Event.hh"
 #include "PracAnalysisManager.hh"
 
 #include <cassert>
+#include <vector>
 
 #include "G4SystemOfUnits.hh"
 
@@ -16,7 +18,8 @@ PracEventAction::PracEventAction(PracRunAction* runAction) : G4UserEventAction()
                                                              fParticleNameVector({}),
                                                              fEnergyDepositVector({}),
                                                              fTravelDistanceVector({}),
-                                                             fRunAction(runAction)
+                                                             fRunAction(runAction),
+                                                             preStepTrackID(1)
 {
 	PracCoutModeSingleton* coutmodeinstance = PracCoutModeSingleton::GetInstance();
     coutmode = coutmodeinstance->GetPracCoutMode();
@@ -24,6 +27,20 @@ PracEventAction::PracEventAction(PracRunAction* runAction) : G4UserEventAction()
 
 
 PracEventAction::~PracEventAction() {}
+
+
+void PracEventAction::ManageSecondaryKineticMap(const std::vector<const G4Track*>* secondaryTrackVector)
+{
+    size_t trackLength = secondaryTrackVector -> size();
+    intptr_t elementpointer;
+    for (size_t i=0; i < trackLength; i++)
+    {
+        const G4Track* element = secondaryTrackVector -> at(i);
+        elementpointer = reinterpret_cast<intptr_t>(element);
+        G4double elementKinetic = element -> GetKineticEnergy();
+        secondaryKineticMap[elementpointer] = elementKinetic;
+    }
+}
 
 
 void PracEventAction::BeginOfEventAction(const G4Event* event)
@@ -40,6 +57,7 @@ void PracEventAction::BeginOfEventAction(const G4Event* event)
     fEdep = 0.;
     fElInel = 0.;
     fEleak = 0.;
+    preStepTrackID = 1;
 }
 
 
@@ -77,4 +95,5 @@ void PracEventAction::EndOfEventAction(const G4Event* event)
     anaMan -> FillH1(1, fElInel);
     anaMan -> FillH1(2, fEleak);
     anaMan -> FillH1(3, fEdep + fElInel + fEleak);
+    anaMan -> FillH2(0, fEdep, fElInel);
 }

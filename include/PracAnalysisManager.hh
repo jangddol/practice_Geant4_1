@@ -11,8 +11,8 @@ class PracAnalysisManager
     public:
         G4VAnalysisManager* GetInstance()
         {
-            return G4CsvAnalysisManager::Instance();
-            // return G4RootAnalysisManager::Instance();
+            // return G4CsvAnalysisManager::Instance();
+            return G4RootAnalysisManager::Instance();
         }
 };
 

@@ -189,9 +189,10 @@ fig2.savefig("Histogram_trackMax" + str(protonEnergy) + ".png")
 casename = input("casename : ")
 
 fig3 = plt.figure(dpi=DPI, figsize=[12, 8])
+fig3.suptitle("Energy Loss Histogram : " + casename)
 axes3 = fig3.subplots(nrows=2, ncols=2)
 
-axes3[0, 0].hist(energyDepositProtonList, bins=histbin)
+axes3[0, 0].hist(energyDepositList, bins=histbin)
 axes3[0, 0].grid(linewidth=0.3)
 axes3[0, 0].set_yscale("log")
 axes3[0, 0].set_title("Energy Deposit Histogram (Log Scale)")
@@ -219,6 +220,7 @@ axes3[1, 1].set_title("Total Energy Loss Histogram (Log Scale)")
 axes3[1, 1].set_xlabel("Total Energy Loss (MeV)")
 axes3[1, 1].set_ylabel("Number of Data")
 
+fig3.savefig("Energy Loss Histogram_" + casename + ".png")
 
 plt.figure(dpi=DPI, figsize=[12, 8])
 histoutput = plt.hist(energyTotalLossList, bins=histbin, label='Total Energy Loss')

@@ -10,6 +10,7 @@
 #include <vector>
 #include <cassert>
 #include <algorithm>
+#include <map>
 
 #include "globals.hh"
 
@@ -39,7 +40,14 @@ class PracEventAction : public G4UserEventAction
         void AppendTravelDistanceVector(const G4double stepLength){fTravelDistanceVector.push_back(stepLength);}
         void AppendEnergyLossInelasticVector(const G4double elInel){fEnergyLossInelasticVector.push_back(elInel);}
         void AppendEnergyLossLeakVector(const G4double eleak){fEnergyLossLeakVector.push_back(eleak);}
-
+        
+        void ManageSecondaryKineticMap(const std::vector<const G4Track*>*);
+        G4double GetSecondaryKineticEnergy(const G4Track* track)
+        {
+            intptr_t trackpointer = reinterpret_cast<intptr_t>(track);
+            return secondaryKineticMap[trackpointer];
+        }
+        
         void AddEnergyDepositVector(const G4double energyDeposit){fEnergyDepositVector.back() += energyDeposit;}
         void AddTravelDistanceVector(const G4double stepLength){fTravelDistanceVector.back() += stepLength;}
         void AddEnergyLossInelasticVector(const G4double elInel){fEnergyLossInelasticVector.back() += elInel;}
@@ -54,6 +62,9 @@ class PracEventAction : public G4UserEventAction
         G4int GetEventID(){return fEventID;}
         PracRunAction* GetRunAction(){return fRunAction;}
         
+        G4int GetPreStepTrackID(){return preStepTrackID;}
+        void SetPreStepTrackID(const G4int trackID){preStepTrackID = trackID;}
+
 		virtual void BeginOfEventAction(const G4Event* event);
 		virtual void EndOfEventAction(const G4Event* event);
 
@@ -67,12 +78,15 @@ class PracEventAction : public G4UserEventAction
         std::vector<G4double> fEnergyLossInelasticVector;
         std::vector<G4double> fEnergyLossLeakVector;
 
+        std::map<intptr_t, G4double> secondaryKineticMap;
+
         G4double fEdep;
         G4double fElInel;
         G4double fEleak;
 
         PracRunAction* fRunAction;
         G4int fEventID;
+        G4int preStepTrackID;
         G4bool coutmode;
 };
 
