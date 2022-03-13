@@ -1,4 +1,5 @@
 #include "PracPrimaryGeneratorAction.hh"
+#include "PracParticleEnergy.hh"
 
 #include "G4RunManager.hh"
 #include "G4ParticleGun.hh" // gun
@@ -18,7 +19,10 @@ PracPrimaryGeneratorAction::PracPrimaryGeneratorAction() : G4VUserPrimaryGenerat
 	G4ParticleDefinition* particle = particleTable->FindParticle(particleName = "proton");
 	fParticleGun->SetParticleDefinition(particle);
 	fParticleGun->SetParticleMomentumDirection(G4ThreeVector(0., 0., 1.));
-	fParticleGun->SetParticleEnergy(100 * MeV);
+    
+    G4double particleEnergy = PracParticleEnergy().GetParticleEnergy();
+
+	fParticleGun->SetParticleEnergy(particleEnergy);
 }
 
 

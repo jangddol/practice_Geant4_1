@@ -19,11 +19,15 @@ PracRunAction::PracRunAction() : G4UserRunAction()
     anaMan -> CreateNtupleDColumn("distance");
     anaMan -> CreateNtupleDColumn("elInel");
     anaMan -> CreateNtupleDColumn("eleak");
+    anaMan -> CreateNtupleDColumn("BEdif");
     anaMan -> FinishNtuple();
     anaMan -> CreateH1("0", "Edep", 1000, 0., 120.);
     anaMan -> CreateH1("1", "ElInel", 1000, 0., 120.);
     anaMan -> CreateH1("2", "leak", 1000, 0., 120.);
     anaMan -> CreateH1("3", "E_tot", 1000, 0., 120.);
+    anaMan -> CreateH1("4", "BEdif", 1000, 0., 120.);
+    anaMan -> CreateH1("5", "ElInel - BEdif", 1000, -20., 20.);
+    anaMan -> CreateH1("6", "Edep + BEdif + leak", 1000, 0., 120.);
     anaMan -> CreateH2("0", "Edep vs ElInel", 1000, 0., 120., 1000, 0., 120.);
 }
 

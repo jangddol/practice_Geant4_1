@@ -40,7 +40,8 @@ class PracEventAction : public G4UserEventAction
         void AppendTravelDistanceVector(const G4double stepLength){fTravelDistanceVector.push_back(stepLength);}
         void AppendEnergyLossInelasticVector(const G4double elInel){fEnergyLossInelasticVector.push_back(elInel);}
         void AppendEnergyLossLeakVector(const G4double eleak){fEnergyLossLeakVector.push_back(eleak);}
-        
+        void AppendBindingEnergyDifferenceVector(const G4double bindingEnergyDif){fBindingEnergyDifferenceVector.push_back(bindingEnergyDif);}
+
         void ManageSecondaryKineticMap(const std::vector<const G4Track*>*);
         G4double GetSecondaryKineticEnergy(const G4Track* track)
         {
@@ -52,18 +53,24 @@ class PracEventAction : public G4UserEventAction
         void AddTravelDistanceVector(const G4double stepLength){fTravelDistanceVector.back() += stepLength;}
         void AddEnergyLossInelasticVector(const G4double elInel){fEnergyLossInelasticVector.back() += elInel;}
         void AddEnergyLossLeakVector(const G4double eleak){fEnergyLossLeakVector.back() += eleak;}
+        void AddBindingEnergyDifferenceVector(const G4double bindingEnergyDif){fBindingEnergyDifferenceVector.back() += bindingEnergyDif;}
         void AddEdep(const G4double edep){fEdep += edep;}
         void AddElInel(const G4double elInel){fElInel += elInel;}
         void AddEleak(const G4double eleak){fEleak += eleak;}
+        void AddBEdif(const G4double bindingEnergyDif){fBEdif += bindingEnergyDif;}
 
         G4double GetEdep(){return fEdep;}
         G4double GetElInel(){return fElInel;}
         G4double GetEleak(){return fEleak;}
+        G4double GetBEdif(){return fBEdif;}
         G4int GetEventID(){return fEventID;}
         PracRunAction* GetRunAction(){return fRunAction;}
         
         G4int GetPreStepTrackID(){return preStepTrackID;}
         void SetPreStepTrackID(const G4int trackID){preStepTrackID = trackID;}
+        
+        G4double GetPreStepKineticEnergy(){return preStepKineticEnergy;}
+        void SetPreStepKineticEnergy(const G4double energy){preStepKineticEnergy = energy;}
 
 		virtual void BeginOfEventAction(const G4Event* event);
 		virtual void EndOfEventAction(const G4Event* event);
@@ -77,16 +84,19 @@ class PracEventAction : public G4UserEventAction
         std::vector<G4double> fTravelDistanceVector;
         std::vector<G4double> fEnergyLossInelasticVector;
         std::vector<G4double> fEnergyLossLeakVector;
+        std::vector<G4double> fBindingEnergyDifferenceVector;
 
         std::map<intptr_t, G4double> secondaryKineticMap;
 
         G4double fEdep;
         G4double fElInel;
         G4double fEleak;
+        G4double fBEdif;
 
         PracRunAction* fRunAction;
         G4int fEventID;
         G4int preStepTrackID;
+        G4double preStepKineticEnergy;
         G4bool coutmode;
 };
 

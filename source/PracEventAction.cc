@@ -1,6 +1,7 @@
 #include "PracEventAction.hh"
 #include "PracRunAction.hh"
 #include "PracCoutModeSingleton.hh"
+#include "PracParticleEnergy.hh"
 
 #include "G4Track.hh"
 #include "G4Event.hh"
@@ -57,7 +58,9 @@ void PracEventAction::BeginOfEventAction(const G4Event* event)
     fEdep = 0.;
     fElInel = 0.;
     fEleak = 0.;
+    fBEdif = 0.;
     preStepTrackID = 1;
+    preStepKineticEnergy = PracParticleEnergy().GetParticleEnergy();
 }
 
 
@@ -89,11 +92,15 @@ void PracEventAction::EndOfEventAction(const G4Event* event)
         anaMan -> FillNtupleDColumn(5, fTravelDistanceVector.at(i));
         anaMan -> FillNtupleDColumn(6, fEnergyLossInelasticVector.at(i));
         anaMan -> FillNtupleDColumn(7, fEnergyLossLeakVector.at(i));
+        anaMan -> FillNtupleDColumn(8, fBindingEnergyDifferenceVector.at(i));
         anaMan -> AddNtupleRow();
     }
     anaMan -> FillH1(0, fEdep);
     anaMan -> FillH1(1, fElInel);
     anaMan -> FillH1(2, fEleak);
     anaMan -> FillH1(3, fEdep + fElInel + fEleak);
+    anaMan -> FillH1(4, fBEdif);
+    anaMan -> FillH1(5, fElInel - fBEdif);
+    anaMan -> FillH1(6, fEdep + fBEdif + fEleak);
     anaMan -> FillH2(0, fEdep, fElInel);
 }
