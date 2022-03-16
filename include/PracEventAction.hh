@@ -40,7 +40,7 @@ class PracEventAction : public G4UserEventAction
         void AppendTravelDistanceVector(const G4double stepLength){fTravelDistanceVector.push_back(stepLength);}
         void AppendEnergyLossInelasticVector(const G4double elInel){fEnergyLossInelasticVector.push_back(elInel);}
         void AppendEnergyLossLeakVector(const G4double eleak){fEnergyLossLeakVector.push_back(eleak);}
-        void AppendBindingEnergyDifferenceVector(const G4double bindingEnergyDif){fBindingEnergyDifferenceVector.push_back(bindingEnergyDif);}
+        void AppendEnergyLossByMassVector(const G4double energyLossByMass){fEnergyLossByMassVector.push_back(energyLossByMass);}
 
         void ManageSecondaryKineticMap(const std::vector<const G4Track*>*);
         G4double GetSecondaryKineticEnergy(const G4Track* track)
@@ -53,16 +53,16 @@ class PracEventAction : public G4UserEventAction
         void AddTravelDistanceVector(const G4double stepLength){fTravelDistanceVector.back() += stepLength;}
         void AddEnergyLossInelasticVector(const G4double elInel){fEnergyLossInelasticVector.back() += elInel;}
         void AddEnergyLossLeakVector(const G4double eleak){fEnergyLossLeakVector.back() += eleak;}
-        void AddBindingEnergyDifferenceVector(const G4double bindingEnergyDif){fBindingEnergyDifferenceVector.back() += bindingEnergyDif;}
+        void AddEnergyLossByMassVector(const G4double energyLossByMass){fEnergyLossByMassVector.back() += energyLossByMass;}
         void AddEdep(const G4double edep){fEdep += edep;}
         void AddElInel(const G4double elInel){fElInel += elInel;}
         void AddEleak(const G4double eleak){fEleak += eleak;}
-        void AddBEdif(const G4double bindingEnergyDif){fBEdif += bindingEnergyDif;}
+        void AddElBM(const G4double energyLossByMass){fElBM += energyLossByMass;}
 
         G4double GetEdep(){return fEdep;}
         G4double GetElInel(){return fElInel;}
         G4double GetEleak(){return fEleak;}
-        G4double GetBEdif(){return fBEdif;}
+        G4double GetElBM(){return fElBM;}
         G4int GetEventID(){return fEventID;}
         PracRunAction* GetRunAction(){return fRunAction;}
         
@@ -84,14 +84,14 @@ class PracEventAction : public G4UserEventAction
         std::vector<G4double> fTravelDistanceVector;
         std::vector<G4double> fEnergyLossInelasticVector;
         std::vector<G4double> fEnergyLossLeakVector;
-        std::vector<G4double> fBindingEnergyDifferenceVector;
+        std::vector<G4double> fEnergyLossByMassVector;
 
         std::map<intptr_t, G4double> secondaryKineticMap;
 
         G4double fEdep;
         G4double fElInel;
         G4double fEleak;
-        G4double fBEdif;
+        G4double fElBM;
 
         PracRunAction* fRunAction;
         G4int fEventID;

@@ -22,9 +22,11 @@ class PracSteppingAction : public G4UserSteppingAction
 		virtual ~PracSteppingAction();
         
         G4double GetBindingEnergyDifference(const G4Step* step,
-                                            const std::vector<const G4Track*>* vectorSecondaryTrack,
-                                            const G4double energyLossInelastic);
-
+                                            const std::vector<const G4Track*>* vectorSecondaryTrack);
+        G4double GetEnergyLossAnnihilConv(const G4Step* step);
+        G4double GetEnergyLossByMass(const G4Step* step,
+                                     const std::vector<const G4Track*>* vectorSecondaryTrack,
+                                     const G4double energyLossInelastic);
 		virtual void UserSteppingAction(const G4Step*);
 	
 	private:

@@ -21,14 +21,15 @@ PracRunAction::PracRunAction() : G4UserRunAction()
     anaMan -> CreateNtupleDColumn("eleak");
     anaMan -> CreateNtupleDColumn("BEdif");
     anaMan -> FinishNtuple();
-    anaMan -> CreateH1("0", "Edep", 1000, 0., 120.);
-    anaMan -> CreateH1("1", "ElInel", 1000, 0., 120.);
-    anaMan -> CreateH1("2", "leak", 1000, 0., 120.);
-    anaMan -> CreateH1("3", "E_tot", 1000, 0., 120.);
-    anaMan -> CreateH1("4", "BEdif", 1000, 0., 120.);
-    anaMan -> CreateH1("5", "ElInel - BEdif", 1000, -20., 20.);
-    anaMan -> CreateH1("6", "Edep + BEdif + leak", 1000, 0., 120.);
+    anaMan -> CreateH1("0", "Energy Deposit", 1000, 0., 120.);
+    anaMan -> CreateH1("1", "Energy Loss in Inelastic", 1000, -20., 120.);
+    anaMan -> CreateH1("2", "Energy Leak", 1000, 0., 120.);
+    anaMan -> CreateH1("3", "Total Energy Loss", 1000, 0., 120.);
+    anaMan -> CreateH1("4", "Energy Loss By E=mc^2", 1000, -20., 120.);
+    anaMan -> CreateH1("5", "ElInel - ElBM", 1000, -20., 20.);
+    anaMan -> CreateH1("6", "Edep + ElBM + leak", 1000, 0., 120.);
     anaMan -> CreateH2("0", "Edep vs ElInel", 1000, 0., 120., 1000, 0., 120.);
+    anaMan -> CreateH2("1", "ElInel vs ElBM", 1000, 0., 120., 1000, 0., 120.);
 }
 
 

@@ -30,8 +30,7 @@ PracSteppingAction::~PracSteppingAction()
 }
 
 G4double PracSteppingAction::GetBindingEnergyDifference(const G4Step* step,
-                                                        const std::vector<const G4Track*>* vectorSecondaryTrack,
-                                                        const G4double energyLossInelastic)
+                                                        const std::vector<const G4Track*>* vectorSecondaryTrack)
 {
     G4String processName = step->GetPostStepPoint()->GetProcessDefinedStep()->GetProcessName();
     
@@ -54,13 +53,6 @@ G4double PracSteppingAction::GetBindingEnergyDifference(const G4Step* step,
         sumN += N;
         G4double binding = Z * (m_p) + N * m_n - mass;
         sumbinding += binding;
-
-        // G4cout << "protonInelastic Secondary Particle : " << particle->GetParticleName() << G4endl;
-        // G4cout << "                                   : Mass : " << particle->GetPDGMass() << G4endl;
-        // G4cout << "                                   : Atomic Mass : " << particle->GetAtomicMass() << G4endl;
-        // G4cout << "                                   : Atomic Number : " << particle->GetAtomicNumber() << G4endl;
-        // G4cout << "                                   : Charge : " << particle->GetPDGCharge() << G4endl;
-        // G4cout << "                                   : Binding Energy : " << binding << G4endl;
     }
         
     auto incident = step->GetTrack()->GetParticleDefinition();
@@ -76,25 +68,22 @@ G4double PracSteppingAction::GetBindingEnergyDifference(const G4Step* step,
     if (trackLength == 0)
     {
         matter_binding = -incident_binding;
+        bindingEnergyDifference = incident_binding + matter_binding - sumbinding;
     } 
     else
     {
-        if ((processName == "compt")   ||
-            (processName == "phot")    ||
-            (processName == "eIoni")   ||
-            (processName == "annihil") ||
-            (processName == "conv")    ||
-            (processName == "eBrem"))
+        if ((processName == "compt")       ||
+            (processName == "phot")        ||
+            (processName == "eIoni")       ||
+            (processName == "conv")        ||
+            (processName == "eBrem")       ||
+            (processName == "CoulombScat") ||
+            (processName == "hadElastic")  ||
+            (processName == "conv")        ||
+            (processName == "hIoni")       ||
+            (processName == "annihil"))
         {
-            matter_binding = 0;
-        }
-        else if (processName == "CoulombScat")
-        {
-            matter_binding = sumbinding - incident_binding;
-        }
-        else if (processName == "hadElastic")
-        {
-            matter_binding = sumbinding - incident_binding;
+            bindingEnergyDifference = 0;
         }
         else if (matter_Z + matter_N == 0)
         {
@@ -109,21 +98,53 @@ G4double PracSteppingAction::GetBindingEnergyDifference(const G4Step* step,
                 G4cout << " secondary particle Name : " << particle->GetParticleName() << G4endl;
             }
             G4cout << "===================================================================================================" << G4endl;
+            bindingEnergyDifference = incident_binding + matter_binding - sumbinding;
         }
         else
         {
             G4double matter_mass = G4IonTable::GetIonTable()->GetNucleusMass(matter_Z, matter_Z + matter_N);
             matter_binding = matter_Z * m_p + matter_N * m_n - matter_mass;
+            bindingEnergyDifference = incident_binding + matter_binding - sumbinding;
         }
     }
-    bindingEnergyDifference = incident_binding + matter_binding - sumbinding;
     
-    G4double threshold = 1;
-    if (bindingEnergyDifference - energyLossInelastic < -threshold || bindingEnergyDifference - energyLossInelastic > threshold)
+    return bindingEnergyDifference; 
+}
+
+
+G4double PracSteppingAction::GetEnergyLossAnnihilConv(const G4Step* step)
+{
+    G4String processName = step->GetPostStepPoint()->GetProcessDefinedStep()->GetProcessName();
+    G4double m_e = 0.510999;
+    G4double energyLoss = 0;
+    if (processName == "conv")
     {
+        energyLoss = 2 * m_e;
+    }
+    else if (processName == "annihil")
+    {
+        energyLoss = -2 * m_e;
+    }
+    return energyLoss;
+}
+
+
+G4double PracSteppingAction::GetEnergyLossByMass(const G4Step* step, const std::vector<const G4Track*>* vectorSecondaryTrack, G4double energyLossInelastic)
+{
+    G4double bindingEnergyDifference = GetBindingEnergyDifference(step, vectorSecondaryTrack);
+    G4double energyLossAnnihilConv = GetEnergyLossAnnihilConv(step);
+    G4double energyLossByMass = bindingEnergyDifference + energyLossAnnihilConv;
+
+    G4double threshold = 0.5;
+    if (energyLossByMass - energyLossInelastic < -threshold || energyLossByMass - energyLossInelastic > threshold)
+    {
+        G4String processName = step->GetPostStepPoint()->GetProcessDefinedStep()->GetProcessName();
+        G4String incidentName = step->GetTrack()->GetParticleDefinition()->GetParticleName();
+        size_t trackLength = vectorSecondaryTrack->size();
+
         G4cout << "===========================================================" << G4endl;
         G4cout << "processName : " << processName << G4endl;
-        G4cout << "incident : " << incident -> GetParticleName() << G4endl;
+        G4cout << "incident : " << incidentName << G4endl;
         for (size_t i=0; i<trackLength; i++)
         {
             G4cout << "secondary : " << vectorSecondaryTrack->at(i)->GetParticleDefinition()->GetParticleName() << G4endl;
@@ -133,7 +154,7 @@ G4double PracSteppingAction::GetBindingEnergyDifference(const G4Step* step,
         G4cout << "KineticEnergy : " << step->GetTrack()->GetKineticEnergy() << G4endl;
     }
 
-    return bindingEnergyDifference; 
+    return energyLossByMass;
 }
 
 
@@ -173,7 +194,7 @@ void PracSteppingAction::UserSteppingAction(const G4Step* step)
         fEventAction -> GetRunAction() -> ManageProcessNameVector(processNameDefinedThisStep);
     }
     
-    G4double bindingEnergyDifference = PracSteppingAction::GetBindingEnergyDifference(step, vectorSecondaryTrack, energyLossInelastic);
+    G4double energyLossByMass = PracSteppingAction::GetEnergyLossByMass(step, vectorSecondaryTrack, energyLossInelastic);
     
     if (coutmode)
     {
@@ -186,17 +207,19 @@ void PracSteppingAction::UserSteppingAction(const G4Step* step)
         if ((processNameDefinedThisStep == "protonInelastic") ||
             (processNameDefinedThisStep == "alphaInelastic") ||
             (processNameDefinedThisStep == "hadElastic") ||
-            (processNameDefinedThisStep == "ionInelastic"))
+            (processNameDefinedThisStep == "ionInelastic") ||
+            (processNameDefinedThisStep == "conv") ||
+            (processNameDefinedThisStep == "annihil"))
         {
             G4cout << "  PreStep Kinetic Energy              : " << currentKineticEnergy << G4endl;
             G4cout << "  Energy transfered to Secondary      : " << secondaryKineticEnergy << G4endl;
-            G4cout << "  Energy Deposit in this Step         : " << step->GetTotalEnergyDeposit() << G4endl;
-            G4cout << "  Energy Loss in 'hadElastic' process : " << energyLossInelastic << G4endl;
         }
         
-        G4cout << "Track - Kinetic Energy      : " << nextKineticEnergy << G4endl;
-        G4cout << "Step Length                 : " << step->GetStepLength() << G4endl;
-        G4cout << "Total Energy Deposit        : " << step->GetTotalEnergyDeposit() << G4endl;
+        G4cout << "Track - Kinetic Energy            : " << nextKineticEnergy << G4endl;
+        G4cout << "Step Length                       : " << step->GetStepLength() << G4endl;
+        G4cout << "Total Energy Deposit              : " << step->GetTotalEnergyDeposit() << G4endl;
+        G4cout << "Energy Loss in Inelasticc process : " << energyLossInelastic << G4endl;
+        G4cout << "Energy Loss By E=mc^2             : " << energyLossByMass << G4endl;
         G4cout << "=============================================================================" << G4endl;
         G4cout << G4endl;
     }
@@ -216,7 +239,7 @@ void PracSteppingAction::UserSteppingAction(const G4Step* step)
             fEventAction -> AppendTravelDistanceVector(step->GetDeltaPosition().z());   // Projected Range
             fEventAction -> AppendEnergyLossInelasticVector(energyLossInelastic);
             fEventAction -> AppendEnergyLossLeakVector(0);
-            fEventAction -> AppendBindingEnergyDifferenceVector(bindingEnergyDifference);
+            fEventAction -> AppendEnergyLossByMassVector(energyLossByMass);
         }
         else // If current Track have considered
         {
@@ -224,11 +247,11 @@ void PracSteppingAction::UserSteppingAction(const G4Step* step)
             // fEventAction -> AddTravelDistanceVector(step->GetStepLength());            // True Range
             fEventAction -> AddTravelDistanceVector(step->GetDeltaPosition().z());      // Projected Range
             fEventAction -> AddEnergyLossInelasticVector(energyLossInelastic);
-            fEventAction -> AddBindingEnergyDifferenceVector(bindingEnergyDifference);
+            fEventAction -> AddEnergyLossByMassVector(energyLossByMass);
         }
         fEventAction -> AddEdep(step->GetTotalEnergyDeposit());
         fEventAction -> AddElInel(energyLossInelastic);
-        fEventAction -> AddBEdif(bindingEnergyDifference);
+        fEventAction -> AddElBM(energyLossByMass);
     }
     else // Outside of the Box
     {
@@ -247,7 +270,7 @@ void PracSteppingAction::UserSteppingAction(const G4Step* step)
             fEventAction -> AppendEnergyDepositVector(0);
             fEventAction -> AppendTravelDistanceVector(0);
             fEventAction -> AppendEnergyLossInelasticVector(0);
-            fEventAction -> AppendBindingEnergyDifferenceVector(0);
+            fEventAction -> AppendEnergyLossByMassVector(0);
             
             fEventAction->AppendEnergyLossLeakVector(step->GetTotalEnergyDeposit());
             if ((step->IsLastStepInVolume()) && (currentTrackID != 1))
